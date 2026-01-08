@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: known-limitations.html 
+keywords: limitations, builders, eda, electronic design automation 
+summary: 今回のリリースでサポートされていない、または今回のリリースでは正常に機能しないプラットフォーム、デバイス、機能が記載されています。これらの制限事項をよく確認してください。 
+---
+= NetApp Workload Factory for EDA の既知の制限
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+今回のリリースでサポートされていない、または今回のリリースでは正常に機能しないプラットフォーム、デバイス、機能が記載されています。これらの制限事項をよく確認してください。
+
+
+
+== オペレーターの権限が必要
+
+NetApp Workload Factory for EDA が正しく機能するにはオペレータ権限が必要です。

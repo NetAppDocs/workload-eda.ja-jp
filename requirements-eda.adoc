@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: requirements-eda.html 
+keywords: Builders, FSx, project, projects. eda, electronic design automation, requirements, setup, workload factory 
+summary: NetApp Workload Factory for EDA の使用を開始する前に、Workload Factory と AWS が適切にセットアップされていることを確認してください。これには、AWS ログイン認証情報、デプロイされた FSx for ONTAPファイルシステムなどが含まれます。 
+---
+= EDAの要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory for EDA を使用する前に、Workload Factory と AWS が適切にセットアップされていることを確認してください。これには、AWS ログイン認証情報、デプロイされた FSx for ONTAPファイルシステムなどが含まれます。
+
+ワークロードファクトリーのログインとアカウント:: 必要となるのは https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factoryでアカウントを設定する"^] 次のいずれかを使用してログインします https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソール体験"^]。
+AWS の認証情報と権限:: 読み取り / 書き込み権限を持つ AWS 認証情報を Workload Factory に追加する必要があります。つまり、EDA の _読み取り/書き込み_ モードで Workload Factory を使用することになります。
+
+
+現時点では、_基本_モードと_読み取り専用_モードの権限はサポートされていません。
+
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Workload FactoryにAWS認証情報を追加する方法を学ぶ"^]
+
+FSx for ONTAPファイルシステム:: ONTAPファイル システムには少なくとも 1 つの FSx が必要です。
++
+--
+* ファイル システムは、作成したプロジェクトとワークスペースを保存するために EDA によって使用されます。
++
+この FSx for ONTAPファイル システムでは、 FlexVolボリュームを使用する必要があります。FlexGroupボリュームはサポートされていません。
+
+* AWS FSx for ONTAPファイルシステムが存在する AWS リージョン、VPC、サブネットを知っておく必要があります。
+* ファイルシステムには、次の構成のボリュームが少なくとも 1 つ必要です。
++
+** ボリュームは NFS 共有として構成する必要があります。
+** ファイルシステムはリンクを使用して構成する必要があります。 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["リンクについてさらに詳しく"^]。
+
+
+* このデプロイメントの一部である AWS リソースに適用するタグのキーと値のペアを考慮する必要があります (オプション)。
++
+https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["FSx for ONTAPファイルシステムの導入と管理方法を学ぶ"^]
+
+
+
+--
+

@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: quick-start-eda.html 
+keywords: requirements, permissions, eda, builders, quick start, electronic design automation 
+summary: データベースには、要件が異なる 3 つの異なるモードがあります。 
+---
+= EDA クイックスタート
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+EDA プロジェクトの作成を開始します。管理者とチーム リーダーは EDA を使用して、開発者チームのプロジェクトとワークスペースを管理できます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"] ワークロードファクトリーにログイン
+[role="quick-margin-para"]
+必要となるのは https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factoryでアカウントを設定する"^] 次のいずれかを使用してログインします https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソール体験"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]資格情報と権限を追加する
+[role="quick-margin-para"]
+ニーズに合わせて権限ポリシーを選択します。
+
+[role="quick-margin-para"]
+権限を付与しない場合は、Workload Factory for EDA を使用して、部分的に完了したコード サンプルをコピーできます。
+
+[role="quick-margin-para"]
+権限を付与することを選択した場合は、EDA や AI などのワークロード機能の選択や、必要な権限の IAM ポリシーの作成など、アカウントに認証情報を手動で追加する必要があります。
+
+[role="quick-margin-para"]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["資格情報と権限を追加する方法を学ぶ"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"] EDA要件を満たす環境を設定する
+[role="quick-margin-para"]
+NFS 共有として設定されたボリュームが少なくとも 1 つ含まれる、デプロイされ検出された FSx for ONTAPファイル システムが必要です。
+
+[role="quick-margin-para"]
+link:requirements-eda.html["EDA要件の詳細"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4"] プロジェクトダッシュボードを構成する
+[role="quick-margin-para"]
+プロジェクト ダッシュボードを構成して、システムの健全性、パフォーマンス、ストレージの使用状況を監視し、EDA 環境を効果的に最適化できるようにします。
+
+[role="quick-margin-para"]
+link:task-configure-dashboard.html["プロジェクトダッシュボードの設定方法を学ぶ"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 他のサービスとの統合
+[role="quick-margin-para"]
+ワークロード Factory REST APIを使用して、EDA をサービス ポータルや Perforce Helix Core などの他のサービスと統合します。
+
+[role="quick-margin-para"]
+link:integrate-perforce.html["EDAとPerforceを統合する方法を学ぶ"^]。

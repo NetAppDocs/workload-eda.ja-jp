@@ -1,0 +1,11 @@
+= クローンサポート
+:allow-uri-read: 
+
+
+
+
+=== クローンサポート
+
+BlueXP Workload Factory for Builders でプロジェクトを複製できるようになりました。プロジェクトを複製すると、Builders はスナップショットから元のプロジェクトと同じ構成の新しいプロジェクトを作成します。クローン作成は、類似のプロジェクトをすばやく作成したり、テストしたりする場合に役立ちます。ビルダーの指示に従って、新しいプロジェクトのクローンをマウントできます。
+
+https://docs.netapp.com/us-en/workload-builders/version-projects.html["BlueXP Workload Factory for Builders プロジェクトのバージョンを管理する"]

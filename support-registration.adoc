@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: support-registration.html 
+keywords: support registration, register for support, support, nss account, add nss account 
+summary: NetAppテクニカル サポートでサポート ケースを開く前に、 NetApp Support Siteアカウントを Workload Factory に追加し、サポートに登録する必要があります。 
+---
+= NetApp Workload Factory for EDAのサポートに登録する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetAppテクニカル サポートでサポート ケースを開く前に、 NetApp Support Siteアカウントを Workload Factory に追加し、サポートに登録する必要があります。
+
+NetApp Workload Factoryとそのストレージ ソリューションおよびサービスに固有のテクニカル サポートを受けるには、サポート登録が必要です。Workload Factory とは別のWebベースのコンソールであるNetApp Consoleからサポートに登録する必要があります。
+
+サポートに登録しても、クラウド プロバイダファイル サービスに対するNetAppサポートは有効になりません。クラウド プロバイダのファイル サービス、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品の Workload Factory ドキュメントの「ヘルプの取得」を参照してください。
+
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSx for ONTAP"^]
+
+
+
+== サポート登録の概要
+
+アカウント ID サポート サブスクリプション ( NetApp Consoleの [サポート リソース] ページにある 20 桁の 960xxxxxxxxx シリアル番号) を登録すると、単一のサポート サブスクリプション ID として機能します。各NetAppアカウント レベルのサポート サブスクリプションを登録する必要があります。
+
+登録すると、サポート チケットの開設やケースの自動生成などの機能が有効になります。登録は、以下の説明に従ってNetApp ConsoleにNetApp Support Site(NSS) アカウントを追加することで完了します。
+
+
+
+== NetAppサポートのアカウントを登録する
+
+サポートに登録し、サポート資格を有効にするには、アカウント内の 1 人のユーザーがNetApp Support SiteアカウントをNetApp Consoleログインに関連付ける必要があります。NetAppサポートに登録する方法は、NetApp Support Site(NSS) アカウントをすでにお持ちかどうかによって異なります。
+
+
+
+=== NSSアカウントをお持ちの既存顧客
+
+NSS アカウントをお持ちのNetApp のお客様の場合は、 NetApp Consoleからサポートに登録するだけです。
+
+.手順
+. Workload Factory コンソールの右上で、[ヘルプ] > [サポート] を選択します。
++
+このオプションを選択すると、新しいブラウザ タブでNetApp Consoleが開き、サポート ダッシュボードが読み込まれます。
+
+. NetApp Consoleメニューから、*管理* を選択し、*資格情報* を選択します。
+. *ユーザー資格情報*を選択します。
+. *NSS 資格情報の追加* を選択し、 NetAppサポート サイト (NSS) の認証プロンプトに従います。
+. 登録プロセスが成功したことを確認するには、[ヘルプ] アイコンを選択し、[サポート] を選択します。
++
+*リソース* ページには、アカウントがサポートに登録されていることが表示されます。
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-support-registration.png["アカウントのシリアル番号、緑色のチェックボックス、および「サポートに登録済み」というテキストが表示されているスクリーンショット。"]
+
++
+NetApp ConsoleログインにNetApp Support Siteアカウントを関連づけていない場合、他のNetApp Consoleユーザーには同じサポート登録ステータスが表示されません。ただし、これはNetAppアカウントがサポートに登録されていないことを意味するものではありません。アカウント内の 1 人のユーザーがこれらの手順を実行していれば、アカウントは登録済みになります。
+
+
+
+
+
+=== 既存の顧客だがNSSアカウントがない
+
+既存のNetApp顧客であり、既存のライセンスとシリアル番号を持っているものの、NSS アカウントを持っていない場合は、NSS アカウントを作成し、それをNetApp Consoleログインに関連付ける必要があります。
+
+.手順
+. NetAppサポートサイトのアカウントを作成するには、 https://mysupport.netapp.com/site/user/registration["NetAppサポートサイト ユーザー登録フォーム"^]
++
+.. 適切なユーザー レベル (通常は * NetApp顧客/エンド ユーザー*) を選択してください。
+.. 上記で使用したNetAppアカウントのシリアル番号 (960xxxx) を必ずシリアル番号フィールドにコピーしてください。これにより、アカウント処理が高速化されます。
+
+
+. 以下の手順を実行して、新しいNSSアカウントをNetApp Consoleログインに関連付けます。 <<NSSアカウントをお持ちの既存顧客>>。
+
+
+
+
+=== NetAppの新着情報
+
+NetAppを初めて使用し、NSS アカウントをお持ちでない場合は、以下の手順に従ってください。
+
+.手順
+. Workload Factory コンソールの右上で、[ヘルプ] > [サポート] を選択します。
++
+このオプションを選択すると、新しいブラウザ タブでNetApp Consoleが開き、サポート ダッシュボードが読み込まれます。
+
+. サポート リソース ページからアカウント ID シリアル番号を見つけます。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-serial-number.png["「サポート」が最初のオプションとしてリストされている「ヘルプ」メニューのスクリーンショット"]
+
+. 移動先 https://register.netapp.com["NetAppのサポート登録サイト"^]*私は登録済みのNetApp顧客ではありません* を選択します。
+. 必須フィールド（赤いアスタリスクが付いているフィールド）に入力します。
+. *製品ライン* フィールドで、*Cloud Manager* を選択し、該当する請求プロバイダーを選択します。
+. 上記の手順 2 からアカウントのシリアル番号をコピーし、セキュリティ チェックを完了して、NetApp のグローバル データ プライバシー ポリシーを読んだことを確認します。
++
+この安全な取引を完了するために、指定されたメールボックスに電子メールが直ちに送信されます。検証メールが数分以内に届かない場合は、必ずスパム フォルダーを確認してください。
+
+. メール内からアクションを確認します。
++
+確認すると、リクエストがNetAppに送信され、 NetAppサポート サイトのアカウントを作成することが推奨されます。
+
+. NetAppサポートサイトのアカウントを作成するには、 https://mysupport.netapp.com/site/user/registration["NetAppサポートサイト ユーザー登録フォーム"^]
++
+.. 適切なユーザー レベル (通常は * NetApp顧客/エンド ユーザー*) を選択してください。
+.. 上記で使用したアカウントのシリアル番号 (960xxxx) を必ずシリアル番号フィールドにコピーしてください。これにより、アカウント処理が高速化されます。
+
+
+
+
+.終了後の操作
+このプロセス中に、 NetAppから連絡が来るはずです。これは、新規ユーザー向けの 1 回限りのオンボーディング演習です。
+
+NetApp Support Siteのアカウントを取得したら、以下の手順を実行して、アカウントをNetApp Consoleのログインに関連付けます。 <<NSSアカウントをお持ちの既存顧客>>。

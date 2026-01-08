@@ -1,0 +1,60 @@
+---
+settings:
+  name: EDA workloads
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  release_notes_autogen:
+    release_notes_repo: workload-relnotes
+  langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
+sidebar:
+  entries:
+  - title: EDAワークロードドキュメント
+    url: "/index.html"
+  - title: リリース ノート
+    entries:
+    - title: 新着情報
+      url: "/whats-new.html"
+    - title: 既知の制限事項
+      url: "/known-limitations.html"
+  - title: 始めましょう
+    entries:
+    - title: EDA向けNetApp Workload Factoryの詳細
+      url: "/learn-eda.html"
+    - title: クイック スタート
+      url: "/quick-start-eda.html"
+  - title: プロジェクトダッシュボードを使用する
+    entries:
+    - title: ダッシュボードを使用する
+      url: "/task-configure-dashboard.html"
+  - title: Perforce統合を使用する
+    entries:
+    - title: Perforce 統合について学ぶ
+      url: "/learn-eda-workloads.html"
+    - title: 要件
+      url: "/requirements-eda.html"
+    - title: プロジェクトの管理
+      url: "/manage-projects.html"
+    - title: プロジェクトのバージョンを管理する
+      url: "/version-projects.html"
+    - title: ワークスペースを作成する
+      url: "/create-workspaces.html"
+    - title: Codeboxで自動化
+      url: "/automate-codebox.html"
+    - title: Perforceとの統合
+      url: "/integrate-perforce.html"
+  - title: 知識とサポート
+    entries:
+    - title: サポートに登録する
+      url: "/support-registration.html"
+    - title: ヘルプを受ける
+      url: "/get-help-eda.html"
+  - title: 法的通知
+    url: "/legal-notices.html"
+product-family:
+  name: NetApp Workload Factory
+  repo: workload-family

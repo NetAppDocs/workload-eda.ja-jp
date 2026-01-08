@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: automate-codebox.html 
+keywords: automation, code automation, automate, codebox 
+summary: Codebox を使用すると、ホストのデプロイメント、データベースの作成などを自動化できます。 
+---
+= Codebox で EDA ワークロード タスクを自動化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Codebox を使用すると、プロジェクトの作成とデータ保護の操作を自動化できます。Codebox は、Workload Factory でサポートされているあらゆる操作を実行するためのコードを生成するのに役立つ、コードとしてのインフラストラクチャ (IaC) のコパイロットです。
+
+詳細はこちら link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["コードボックスの自動化"^] そしてそれをどのように使うか。

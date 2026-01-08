@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, Workload Factory, builders, Workload Factory, EDA, electronic design automation' 
+summary: Workload Factory for EDA の新機能について学びます。 
+---
+= NetApp Workload Factory for EDAの新機能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory の EDA 機能の新機能について説明します。
+
+
+
+== 2026年1月4日
+
+
+
+=== NetApp Workload Factory for Builders がNetApp Workload Factory for EDA に
+
+Workload Factory for Builders は Workload Factory for EDA になりました。名前の変更は、電子設計自動化 (EDA) ワークロードに重点が置かれていることを反映しています。
+
+Workload Factory for EDA は、複数のファイルシステムにわたって FSx for ONTAPを最適化するのに役立ちます。ストレージ パラメータを自動化し、パフォーマンス制約を分析し、EDA プロジェクトに関する分析情報を取得することで、パフォーマンスを最適化し、運用コストを削減できます。Workload Factory for EDA は、Infrastructure as Code (IaC) フレームワークと統合するように設計されています。
+
+
+
+=== Ask me AIアシスタントのホームページ統合
+
+Workload Factory コンソールのホームページには Ask me AI アシスタントが組み込まれており、独自のストレージ資産について質問したり、環境から直接パーソナライズされた分析情報を取得したり、以前の会話を参照したりすることができます。コンソールを離れることなく、「Ask me」と対話してワークロードを理解し、問題をトラブルシューティングし、Workload Factory について詳しく知ることができます。
+
+
+
+== 2025年10月5日
+
+
+
+=== BlueXP workload factoryがNetApp Workload Factoryに
+
+BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。その結果、 BlueXP workload factoryの名前がNetApp Workload Factoryに変更されました。
+
+
+
+== 2025年6月16日
+
+
+
+=== クローンサポート
+
+BlueXP Workload Factory for Builders でプロジェクトを複製できるようになりました。プロジェクトを複製すると、Builders はスナップショットから元のプロジェクトと同じ構成の新しいプロジェクトを作成します。クローン作成は、類似のプロジェクトをすばやく作成したり、テストしたりする場合に役立ちます。ビルダーの指示に従って、新しいプロジェクトのクローンをマウントできます。
+
+https://docs.netapp.com/us-en/workload-builders/version-projects.html["BlueXP Workload Factory for Builders プロジェクトのバージョンを管理する"]
+
+
+
+== 2025年5月4日
+
+
+
+=== 権限に関する用語の更新
+
+Workload Factory のユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り / 書き込み」を使用するようになりました。
+
+
+
+== 2024年12月1日
+
+
+
+=== ビルダーワークロードの初期リリース
+
+BlueXP Workload Factory for Builders はソフトウェア バージョンの使用とアクセスを簡素化し、カスタム ツールやスクリプトの必要性を排除します。これにより、開発プロセスに便利なワークスペースとして Perforce Helix Core と統合されたインスタント クローンとしてソフトウェア バージョンを使用できるようになるため、時間とリソースを節約できます。
+
+最初のリリースには、プロジェクトとワークスペースを管理し、Codebox を使用してアクションを自動化する機能が含まれています。また、Builders を Perforce Helix Core と統合して、各プロジェクトの異なるバージョンを管理し、それらをすばやく切り替えることもできます。

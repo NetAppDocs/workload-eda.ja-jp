@@ -1,0 +1,40 @@
+---
+indexpage:
+  title: EDA 向けNetApp Workload Factoryドキュメント
+  lead: パフォーマンスを最適化し、IaC と統合してストレージ パラメータを自動化し、運用の健全性を確保することで、 NetApp Workload Factoryでの
+    EDA ストレージ操作を合理化します。
+  tiles:
+  - title: 始めましょう
+    links:
+    - title: リリース ノート
+      url: "/whats-new.html"
+    - title: EDA向けNetApp Workload Factoryの詳細
+      url: "/learn-eda.html"
+    - title: クイック スタート
+      url: "/quick-start-eda.html"
+  - title: プロジェクトダッシュボードを使用する
+    links:
+    - title: ダッシュボードを使用する
+      url: "/task-configure-dashboard.html"
+  - title: Perforce統合を使用する
+    links:
+    - title: Perforce 統合について学ぶ
+      url: "/learn-eda-workloads.html"
+    - title: 要件
+      url: "/requirements-eda.html"
+    - title: Codeboxで自動化
+      url: "/automate-codebox.html"
+  - title: 知識とサポート
+    links:
+    - title: サポートに登録する
+      url: "/support-registration.html"
+    - title: ヘルプを受ける
+      url: "/get-help-eda.html"
+  - title: ブログとコミュニティ
+    links:
+    - title: NetApp Console
+      url: https://www.netapp.com/console
+    - title: NetApp Data Services
+      url: https://www.netapp.com/data-services/
+    - title: NetAppコミュニティ
+      url: https://community.netapp.com/
