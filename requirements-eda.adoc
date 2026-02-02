@@ -19,6 +19,9 @@ AWS の認証情報と権限:: 読み取り / 書き込み権限を持つ AWS �
 
 現時点では、_基本_モードと_読み取り専用_モードの権限はサポートされていません。
 
+
+NOTE: レイテンシ監視機能を使用するには、CloudWatch メトリクスを収集してボリュームのパフォーマンス分析を行うため、AWS認証情報も必要です。link:task-monitor-latency.html["レイテンシ監視について学ぶ"].
+
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Workload FactoryにAWS認証情報を追加する方法を学ぶ"^]
 
 FSx for ONTAPファイルシステム:: ONTAPファイル システムには少なくとも 1 つの FSx が必要です。

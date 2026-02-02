@@ -20,5 +20,6 @@ Workload Factory for EDA は、複数の FSx for ONTAPファイル システム�
 以下の機能を提供します:
 
 * link:task-configure-dashboard.html["EDAプロジェクトダッシュボード"]: FSx for ONTAPファイルシステム全体のストレージ消費量を一元的に表示し、プロジェクト全体のストレージ使用状況に関する計画、コストの評価、情報の収集に役立ちます。
+* link:task-monitor-latency.html["レイテンシ監視"]：構成可能な警告および重大なイベントしきい値を使用して、ボリュームの読み取りおよび書き込みの遅延パフォーマンスをプロアクティブに監視し、潜在的なパフォーマンスのボトルネックを特定します。
 * link:learn-eda-workloads.html["CI/CD"]: FSx for ONTAPボリューム クローン機能を活用して、ソフトウェアのビルド時間を効率化し、短縮します。
 

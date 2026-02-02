@@ -31,6 +31,10 @@ sidebar:
     entries:
     - title: ダッシュボードを使用する
       url: "/task-configure-dashboard.html"
+  - title: ボリュームのレイテンシを監視する
+    entries:
+    - title: ボリュームのレイテンシを監視する
+      url: "/task-monitor-latency.html"
   - title: Perforce統合を使用する
     entries:
     - title: Perforce 統合について学ぶ

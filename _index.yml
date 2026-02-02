@@ -16,6 +16,10 @@ indexpage:
     links:
     - title: ダッシュボードを使用する
       url: "/task-configure-dashboard.html"
+  - title: ボリュームのレイテンシを監視する
+    links:
+    - title: ボリュームのレイテンシを監視する
+      url: "/task-monitor-latency.html"
   - title: Perforce統合を使用する
     links:
     - title: Perforce 統合について学ぶ
