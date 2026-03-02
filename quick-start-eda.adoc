@@ -37,14 +37,28 @@ NFS 共有として設定されたボリュームが少なくとも 1 つ含ま�
 [role="quick-margin-para"]
 link:requirements-eda.html["EDA要件の詳細"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4"] プロジェクトダッシュボードを構成する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4"]概要ダッシュボードを有効にします
+[role="quick-margin-para"]
+概要ダッシュボードを有効にして、FSx for ONTAP クラスタの健全性、容量、スループットを監視します。同意プロンプトに同意して、Workload Factory が CloudWatch メトリックの収集を開始することを許可します。
+
+[role="quick-margin-para"]
+link:task-use-overview-dashboard.html["概要ダッシュボードを有効にする方法について説明します"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]プロジェクトダッシュボードを設定する
 [role="quick-margin-para"]
 プロジェクト ダッシュボードを構成して、システムの健全性、パフォーマンス、ストレージの使用状況を監視し、EDA 環境を効果的に最適化できるようにします。
 
 [role="quick-margin-para"]
 link:task-configure-dashboard.html["プロジェクトダッシュボードの設定方法を学ぶ"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 他のサービスとの統合
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] FSx レイテンシ分析を設定する
+[role="quick-margin-para"]
+レイテンシしきい値を設定して、シミュレーション実行時間に影響する前にパフォーマンスの問題を事前に特定して解決します。警告および重大なアラートを設定し、自動化された基本分析を活用します。
+
+[role="quick-margin-para"]
+link:task-monitor-latency.html["レイテンシ監視の設定方法を確認する"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["セブン"] 他のサービスとの統合
 [role="quick-margin-para"]
 ワークロード Factory REST APIを使用して、EDA をサービス ポータルや Perforce Helix Core などの他のサービスと統合します。
 

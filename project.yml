@@ -27,14 +27,18 @@ sidebar:
       url: "/learn-eda.html"
     - title: クイック スタート
       url: "/quick-start-eda.html"
-  - title: プロジェクトダッシュボードを使用する
+  - title: EDAストレージの概要
     entries:
-    - title: ダッシュボードを使用する
-      url: "/task-configure-dashboard.html"
-  - title: ボリュームのレイテンシを監視する
+    - title: EDAストレージ操作の管理
+      url: "/task-use-overview-dashboard.html"
+  - title: FSx レイテンシ分析
     entries:
-    - title: ボリュームのレイテンシを監視する
+    - title: FSxボリュームのレイテンシを監視する
       url: "/task-monitor-latency.html"
+  - title: プロジェクト使用状況分析
+    entries:
+    - title: プロジェクトのストレージ使用量を分析する
+      url: "/task-configure-dashboard.html"
   - title: Perforce統合を使用する
     entries:
     - title: Perforce 統合について学ぶ
