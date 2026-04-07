@@ -17,10 +17,10 @@ NetApp Workload Factory for EDA を使用する前に、Workload Factory と AWS
 AWS の認証情報と権限:: 読み取り / 書き込み権限を持つ AWS 認証情報を Workload Factory に追加する必要があります。つまり、EDA の _読み取り/書き込み_ モードで Workload Factory を使用することになります。
 
 
-現時点では、_基本_モードと_読み取り専用_モードの権限はサポートされていません。
+現時点では、_Basic_モードおよび_Read-only_モードの権限はサポートされていません。
 
 
-NOTE: レイテンシ監視機能を使用するには、CloudWatch メトリクスを収集してボリュームのパフォーマンス分析を行うため、AWS認証情報も必要です。link:task-monitor-latency.html["レイテンシ監視について学ぶ"].
+NOTE: レイテンシー監視機能を使用するには、AWS 認証情報も必要です。この機能は、ボリュームパフォーマンス分析のためのCloudWatchメトリックを収集します。複雑なレイテンシーシナリオにおけるオプションのAIエージェント分析を有効にするには、Amazon BedrockモデルのARNも指定する必要があります。link:task-monitor-latency.html["レイテンシ監視について学ぶ"]。
 
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Workload FactoryにAWS認証情報を追加する方法を学ぶ"^]
 
