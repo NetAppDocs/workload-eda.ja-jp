@@ -4,7 +4,7 @@ permalink: task-use-overview-dashboard.html
 keywords: cluster overview, cluster dashboard, FSx for ONTAP, cluster health, cluster usage, capacity, throughput, IOPS, EMS events, latency events, performance widgets, clusters table, volume placement, scale up, scale down, CloudWatch metrics, CSV export 
 summary: 概要ダッシュボードを使用して、FSx for ONTAP ファイルシステムの健全性、容量、スループットを監視します。ストレージの使用状況を大規模に表示し、ボリュームの配置と容量の拡張について情報に基づいた意思決定を行います。 
 ---
-= EDA ワークロードで概要ダッシュボードを使用する
+= EDAストレージ操作の管理
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -89,7 +89,7 @@ Workload Factoryは、設定済みのAWS認証情報に関連付けられたす�
 対象となるファイルシステム全体で検出されたレイテンシイベントの数を表示します。
 
 * *Review*を選択すると、*Latency*タブが表示されます。
-* レイテンシ監視を有効にしている場合にのみ、レイテンシ情報を表示できます。レイテンシしきい値を構成していない場合は、*構成*を選択します。レイテンシ監視の詳細については、link:task-monitor-latency.html["FSx レイテンシ分析"^]を参照してください。
+* レイテンシ監視を有効にしている場合にのみ、レイテンシ情報を表示できます。レイテンシしきい値を構成していない場合は、*構成*を選択します。レイテンシ監視の詳細については、link:task-monitor-latency.html["FSx for ONTAP レイテンシ分析"^]を参照してください。
 
 
 

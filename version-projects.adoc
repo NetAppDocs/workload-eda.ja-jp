@@ -4,14 +4,14 @@ permalink: version-projects.html
 keywords: snapshot, clone, project, protect, API, version, versions, versioning 
 summary: スナップショットとクローンを使用して EDA プロジェクトのバージョンを管理します。 
 ---
-= EDAプロジェクト向けNetApp Workload Factoryのバージョン管理
+= Workload Factory for EDAプロジェクトのバージョンを管理
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory からオンデマンドショットやクローンを直接作成して、EDA プロジェクトのさまざまなバージョンを操作します。プロジェクトのスナップショットとクローンは、プロジェクトの作成時にプロジェクトに関連付けられたファイルシステムに保存されます。スナップショットとクローンを管理するには、 https://console.workloads.netapp.com/api-doc["ワークロードファクトリーREST API"^]。
+Workload Factoryから直接オンデマンドスナップショットとクローンを作成することで、EDAプロジェクトのさまざまなバージョンを操作できます。プロジェクトのスナップショットとクローンは、プロジェクト作成時に関連付けられていたファイルシステムに保存されます。 https://console.workloads.netapp.com/api-doc["ワークロードファクトリーREST API"^]を使用してスナップショットとクローンを管理することもできます。
 
 
 

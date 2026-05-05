@@ -4,7 +4,7 @@ permalink: integrate-perforce.html
 keywords: software builders, integrate, integration, Perforce, EDA, electronic design automation 
 summary: EDA と Perforce を統合する方法を学びます。 
 ---
-= EDAとPerforceの統合
+= Workload Factory for EDAをPerforceと統合する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: task-configure-dashboard.html
 keywords: configure, dashboard, AWS tags, CloudWatch, FSx for ONTAP, Workload Factory, EDA, electronic design automation, volume details, top volumes, capacity utilization, throughput utilization, IOPS utilization 
 summary: メトリックを収集するためのタグを追加して、EDA Project ダッシュボードを設定します。単一選択または複数選択のオプションを使用して、ビジネスニーズに合わせてフィルターをカスタマイズできます。 
 ---
-= プロジェクトダッシュボードを使用する
+= Workload Factory for EDA のプロジェクトダッシュボードを使用する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

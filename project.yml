@@ -31,10 +31,12 @@ sidebar:
     entries:
     - title: EDAストレージ操作の管理
       url: "/task-use-overview-dashboard.html"
-  - title: FSx レイテンシ分析
+  - title: FSx for ONTAP レイテンシ分析
     entries:
-    - title: FSxボリュームのレイテンシを監視する
+    - title: FSx for ONTAP ボリュームのレイテンシを監視
       url: "/task-monitor-latency.html"
+    - title: レイテンシの傾向を分析
+      url: "/task-analyze-latency-trends.html"
   - title: プロジェクト使用状況分析
     entries:
     - title: プロジェクトのストレージ使用量を分析する

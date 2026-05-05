@@ -16,9 +16,9 @@ indexpage:
     links:
     - title: EDAストレージ操作の管理
       url: "/task-use-overview-dashboard.html"
-  - title: FSx レイテンシ分析
+  - title: FSx for ONTAP レイテンシ分析
     links:
-    - title: FSxボリュームのレイテンシを監視する
+    - title: FSx for ONTAP ボリュームのレイテンシを監視
       url: "/task-monitor-latency.html"
   - title: プロジェクト使用状況分析
     links:
