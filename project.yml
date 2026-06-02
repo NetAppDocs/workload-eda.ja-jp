@@ -29,18 +29,30 @@ sidebar:
       url: "/quick-start-eda.html"
   - title: EDAストレージの概要
     entries:
-    - title: EDAストレージ操作の管理
+    - title: 概要ダッシュボードについて
+      url: "/learn-overview-dashboard.html"
+    - title: 概要ダッシュボードを有効にする
+      url: "/task-activate-overview-dashboard.html"
+    - title: 概要ダッシュボードを使用する
       url: "/task-use-overview-dashboard.html"
   - title: FSx for ONTAP レイテンシ分析
     entries:
-    - title: FSx for ONTAP ボリュームのレイテンシを監視
-      url: "/task-monitor-latency.html"
+    - title: レイテンシ監視について学ぶ
+      url: "/learn-latency-monitoring.html"
+    - title: レイテンシー監視の設定
+      url: "/task-configure-latency-monitoring.html"
+    - title: レイテンシの問題を分析
+      url: "/task-analyze-latency-issues.html"
     - title: レイテンシの傾向を分析
       url: "/task-analyze-latency-trends.html"
   - title: プロジェクト使用状況分析
     entries:
-    - title: プロジェクトのストレージ使用量を分析する
-      url: "/task-configure-dashboard.html"
+    - title: プロジェクトダッシュボードについて
+      url: "/learn-project-dashboard.html"
+    - title: プロジェクトダッシュボードを設定する
+      url: "/task-configure-project-dashboard.html"
+    - title: プロジェクトダッシュボードを使用する
+      url: "/task-use-project-dashboard.html"
   - title: Perforce統合を使用する
     entries:
     - title: Perforce 統合について学ぶ

@@ -159,7 +159,6 @@
   <block id="a087ba044cc23ff2c6dc451db3a70ced" category="section-title">EDAのプロジェクトとワークスペース</block>
   <block id="427ad364fcc508c8123dff592683a053" category="paragraph">プロジェクトを作成し、ソフトウェア環境とその成果物を表すボリュームを割り当てることができます。ソフトウェアの新しいバージョンを作成するたびに、ボリューム データを再同期し、プロジェクト スナップショットを作成して、ボリュームの状態を既知のバージョンとしてマークする必要があります。プロジェクトのソース ボリュームはローリング アップデートを取得し、複数のバージョンをマークするために複数のスナップショットを持つ場合があります。各スナップショットは、開発者、QA、またはビルド プロセスで使用できる専用または共有の編集可能なリポジトリであるインスタント クローンとしてすぐに使用できます。特定のソフトウェア バージョンのコンテキストにおけるクローンとは、ワークスペースのことです。</block>
   <block id="5354d1e9ecaabd928d4235d17bb92d9e" category="section-title">Workload Factory Codebox による自動化</block>
-  <block id="e8d2772773d0b560ee5057d9b413b85b" category="paragraph">ワークロード ファクトリーでは、_Codebox_ による組み込みの自動化が導入されています。Codebox は次のような自動化の利点を提供します。</block>
   <block id="f1214f35af0ff103c79251078e169af6" category="list-text">*コード スニペットの生成*: リソースの作成中に Infrastructure-as-Code (IaC) スニペットが生成され、既存のオーケストレーション ワークフローとのシームレスな統合が可能になります。</block>
   <block id="3b9355b880979c4a10f7d88ded288364" category="list-text">*Infrastructure-as-code のコパイロット*: Codebox は、開発者と DevOps が Workload Factory でサポートされているあらゆる操作を実行するためのコードを生成するのに役立つ Infrastructure-as-code (IaC) コパイロットです。</block>
   <block id="d8135e6fae6748dcba5e9d108c9af427" category="list-text">*コード ビューアと自動化カタログ*: Codebox は、自動化をすばやく分析するためのコード ビューアと、将来の再利用を迅速に行うための自動化カタログを提供します。</block>
@@ -172,7 +171,6 @@
   <block id="10476aa104cddb6c41cdc64fc271134e" category="paragraph">EDA は、FSx for ONTAPがサポートされているすべての商用リージョンでサポートされています。<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">次の AWS リージョンはサポートされていません。</block>
   <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">中国地域</block>
-  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud（米国）リージョン</block>
   <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">シークレットクラウド</block>
   <block id="151ef168e17772f7a361db78a0c86552" category="list-text">トップシークレットクラウド</block>
   <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">助けを得る</block>
@@ -266,12 +264,10 @@
   <block id="10b5ea1be0d70891fd944479056f796a" category="paragraph"><block ref="52ec48856eba661b3a8f3a8489ac6cc4" category="inline-link-macro-rx"></block>。</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">4</block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
-  <block id="816e9ad4acc00dc8e266d7bd5cec516b" category="paragraph">ワークロード Factory REST APIを使用して、EDA をサービス ポータルや Perforce Helix Core などの他のサービスと統合します。</block>
   <block id="dce6d9a52d216801c96ea309acf6ac73" category="inline-link-macro">EDAとPerforceを統合する方法を学ぶ</block>
   <block id="79d86c078f10e35b854431eab12b31a6" category="paragraph"><block ref="46b2e9ce515b7538a0db67e1aa1bc892" category="inline-link-macro-rx"></block>。</block>
   <block id="0ce746c3ad5ad5ef805497116e224e0c" category="summary">NetApp Workload Factory for EDA の使用を開始する前に、Workload Factory と AWS が適切にセットアップされていることを確認してください。これには、AWS ログイン認証情報、デプロイされた FSx for ONTAPファイルシステムなどが含まれます。</block>
   <block id="e637e8dfaf1801d56b1ae323e4bb23fb" category="paragraph">NetApp Workload Factory for EDA を使用する前に、Workload Factory と AWS が適切にセットアップされていることを確認してください。これには、AWS ログイン認証情報、デプロイされた FSx for ONTAPファイルシステムなどが含まれます。</block>
-  <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">ワークロードファクトリーのログインとアカウント</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="list-text">AWS の認証情報と権限</block>
   <block id="42f4fbe9bc96b7b414265e0b938084d8" category="list-text">読み取り / 書き込み権限を持つ AWS 認証情報を Workload Factory に追加する必要があります。つまり、EDA の _読み取り/書き込み_ モードで Workload Factory を使用することになります。</block>
   <block id="b6358992bb0152c2af9f3e2e315ef468" category="inline-link">Workload FactoryにAWS認証情報を追加する方法を学ぶ</block>
@@ -326,29 +322,13 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">上記で使用したアカウントのシリアル番号 (960xxxx) を必ずシリアル番号フィールドにコピーしてください。これにより、アカウント処理が高速化されます。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">このプロセス中に、 NetAppから連絡が来るはずです。これは、新規ユーザー向けの 1 回限りのオンボーディング演習です。</block>
   <block id="f335678326583cea28377216c5515221" category="paragraph">NetApp Support Siteのアカウントを取得したら、以下の手順を実行して、アカウントをNetApp Consoleのログインに関連付けます。 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
-  <block id="00909736de459ef354dd54f7a12c7137" category="paragraph">収集される CloudWatch メトリクスには次のものが含まれます。</block>
-  <block id="83ec7827b9a51abd480f21f9797d1c3b" category="list-text">プロビジョニングされた容量: プロビジョニングされたストレージ容量を表すボリューム レベルのメトリック。</block>
-  <block id="99051abc318cae9824d95692d1c95b25" category="list-text">使用容量: 使用されたストレージを表すボリューム レベルのメトリック。</block>
-  <block id="ff1cfca20a1660c53ade527b17be8ad8" category="list-text">平均/最大スループット: 指定された期間の DataReadBytes と DataWriteBytes の合計の平均または最大値として計算されます。</block>
-  <block id="a0932dae893409aa61370e810d740d59" category="list-text">平均/最大 IOPS: 指定された期間における DataReadOperations、DataWriteOperations、および MetadataOperations の合計の平均または最大値として計算されます。</block>
-  <block id="c4d073c70378b04dc94a31c6e002190c" category="section-title">ダッシュボードを設定する</block>
   <block id="4c6f0009ac1f9c550c3c27ca47734a94" category="inline-link">タグとは何ですか?</block>
   <block id="6ec564eeb8bbd7d65ea723d7377e4535" category="inline-link">AWS リソースグループタグ付け API リファレンス</block>
-  <block id="12b1905f436fbb7db0d6037ed14f827e" category="paragraph">設定が完了したら、*タグ設定* ページで、ダッシュボードに表示する AWS タグキー名と対応するラベルを指定します。</block>
-  <block id="b7292e9663476d06f727bb41cc243d7b" category="paragraph">これらのタグが適用されると、Workload Factory は関連する CloudWatch メトリクスの収集と表示を開始します。</block>
-  <block id="40dded464250d8f5174e221d1ee142f9" category="paragraph">ダッシュボードは、組織のニーズに基づいてリソースを整理、追跡、フィルタリングするための動的なツールになります。</block>
   <block id="976e508c4d7059185077a486bc23c939" category="section-title">カスタムフィルターを設定する</block>
   <block id="0de06b59453acb74b09edb405890d19b" category="paragraph">ダッシュボードをまだ構成していない場合は、自動的に構成するように求められます。</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">*適用*を選択します。</block>
-  <block id="cd272c40b08a69d4fcdc74ed592a2f25" category="list-text">タグやフィルターを適用した後に変更を表示するには、ダッシュボードの更新アイコンを選択します。新しいフィルターで構成された動的ダッシュボードが、EDA プロジェクト ダッシュボードに表示されます。</block>
   <block id="365caa3dff9ac22391eab30998fdad59" category="list-text">後でダッシュボードの設定を編集するには、[設定] を選択します。</block>
   <block id="26949f06981e97a3e3cda29668de2aff" category="section-title">ダッシュボードをフィルタリングする</block>
-  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">Credentials</block>
-  <block id="f447ac856e7e72435904956e3b15f433" category="list-text">リージョン</block>
-  <block id="53b936091a984a22f4042eeb94499891" category="list-text">ファイルシステム</block>
-  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">ボリューム タイプ</block>
-  <block id="8ae4a627e28635267b1fc532c618e41b" category="list-text">Time range</block>
-  <block id="8a9876fcec3611024b1737894816d045" category="paragraph">必要なフィルターを選択したら、更新アイコンを選択してダッシュボード情報を更新します。</block>
   <block id="a3f123658200529c4e7f0b941eeacf6a" category="paragraph">カードに表示される情報の説明については、そのカードの情報アイコンを選択してください。</block>
   <block id="663855c524023164098db8a9a351a92a" category="summary">スナップショットとクローンを使用して EDA プロジェクトのバージョンを管理します。</block>
   <block id="0270aa16b7068d8fdfd9200b20cfc5ce" category="inline-link">ワークロードファクトリーREST API</block>
@@ -365,7 +345,6 @@
   <block id="c9f8a1bc51e7ad4b5dbd3b4fd54d159e" category="list-text">クローンの名前を入力します。</block>
   <block id="ef9eed0d84a82b3fb511fd837da2eef7" category="paragraph">クローンのデフォルト名は、現在の日付と時刻の接尾辞が付いたプロジェクト名になります。</block>
   <block id="34ec6730fd54f4c463f31402d0ea9b83" category="list-text">クローンのベースとして使用するスナップショットを選択します。</block>
-  <block id="c53c752e3fb8fda71f585d5e8721e833" category="paragraph">ワークロード ファクトリーによってプロジェクトの新しいクローンが作成され、そのクローンが [プロジェクト] ページに新しいプロジェクトとして表示されます。</block>
   <block id="91ff6a222c07990103d82fb8831e3c69" category="summary">Workload Factory for EDA の新機能について学びます。</block>
   <block id="ddd57eb702782b0c009fb89b951edaae" category="paragraph">Workload Factory の EDA 機能の新機能について説明します。</block>
   <block id="992efefab3dd15099f5eff3f904d8df4" category="section-title">2025年10月5日</block>
@@ -411,37 +390,15 @@
   <block id="3589dd4e8f5f2cbdba29810271d0f1d9" category="paragraph"><block ref="6f22f53277ef02f84f5ed64bde49085d" category="inline-link-rx"></block>.</block>
   <block id="7e565772caac09d981d6b3641bb20148" category="inline-link-macro">レイテンシ監視について学ぶ</block>
   <block id="9918911ccf4f48662bd23b3fa6ea97a8" category="inline-link-macro">ボリュームのレイテンシを監視する</block>
-  <block id="c09e7b1ab90792168923158989ca6297" category="paragraph">ダッシュボードでは、割り当てられた容量、使用されている容量、スループット、IOPSなど、ストレージの使用状況を監視できます。プロアクティブなレイテンシパフォーマンス監視については、<block ref="4d71518cae1e26b3714fb432b3fb2249" category="inline-link-macro-rx"></block>をご覧ください。</block>
-  <block id="3eeb776c775a0a186eaac0ae86ca4408" category="paragraph">ダッシュボードを効果的に活用するには、ビジネス要件に基づいて、FSx for ONTAP ボリュームに最大 5 つの AWS タグ（プロジェクトやビジネスユニットを表すタグなど）を設定します。詳細については、<block ref="56431a7f0461e9258a1144a0e01a6b8d" category="inline-xref-macro-rx"></block>をご覧ください。</block>
-  <block id="b915af974b3255995db1b551b1e1dcbb" category="paragraph">AWSタグに基づいて最大5つのカスタムフィルターを設定できます。各カスタムフィルターには、フィルターラベル名、AWSタグキー名、選択タイプ（単一選択または複数選択）の3つのコンポーネントが必要です。カスタムフィルターを設定しない場合は、デフォルトのフィルター（ファイルシステム、ボリュームタイプ、時間範囲）が引き続き使用できるため、ダッシュボードの表示と操作は引き続き可能です。</block>
   <block id="27e0e44d189c553eb00dc006b35029f5" category="list-text">*+ フィルターを追加*を選択します。</block>
-  <block id="5678492274c56b0e9a6e36ba6f34b836" category="list-text">作成するカスタム フィルター（最大 5 個）ごとに、次の情報を指定します：</block>
-  <block id="7371329c5bc9fb1913a92db5445368eb" category="list-text">*Filter label name*：ダッシュボードに表示される表示名。</block>
-  <block id="9dc66313c07505b9b6ee97b9490648d4" category="list-text">*AWS タグキー名*：このフィルターに対応する AWS リソースタグキー。</block>
-  <block id="6245bc7faa3c897c2839919b1e0f6c5d" category="list-text">*複数選択*：このフィルターで単一選択を許可するか複数選択を許可するかを選択します。*複数選択*を選択すると、このフィルターで複数の値を同時に選択できます。単一選択を選択すると、一度に選択できる値は1つだけです。</block>
   <block id="0be6ab8a3d394d63c0aaea5444fc4d94" category="admonition">フィルターは設定した順序でダッシュボードに表示されます。アクセスしやすいように、最も頻繁に使用するフィルターを最初に整理することを検討してください。</block>
   <block id="58812a046615ae0cede06aa76e867511" category="paragraph">変更を適用する前に、そのフィルターの横にあるゴミ箱アイコンを選択すると、カスタム フィルターを削除できます。</block>
-  <block id="7ad57d97a4e7251a593b560f3edd7c6c" category="paragraph">デフォルトのフィルターと作成したカスタムフィルターを組み合わせて使用することで、ダッシュボードに表示される情報をフィルタリングできます。</block>
-  <block id="0893a6eb6fac2bd4489c23ad574e3e32" category="paragraph">次のデフォルト フィルターは常に使用できます：</block>
-  <block id="b6c5b00ab5f9877d11bf9e5b5bc8b2fa" category="paragraph">設定したカスタムフィルターは、これらのデフォルトフィルターに加えてダッシュボードに表示されます。フィルターを使用する場合：</block>
-  <block id="0d9da1f1a6c87419d9a59e59c2f60af2" category="list-text">*複数選択フィルター*を使用すると、複数の値を同時に選択して表示範囲を広げることができます。例えば、複数のプロジェクトを選択して、それらのメトリクスを組み合わせたものを表示できます。</block>
-  <block id="2ad8dabd47e501a4ed1c3d01be491886" category="list-text">*単一選択フィルター*では、一度に選択できる値は1つだけに制限されます。これは、特定のリソースまたはカテゴリに重点を置く必要がある場合に便利です。</block>
   <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">ボリュームの詳細を表示</block>
-  <block id="c42e01801b1f2ef2fbdf3f8841353b73" category="paragraph">ダッシュボードには、ストレージメトリクスの分析に役立つ2つの表示モード（合計ビューとボリュームビュー）があります。ダッシュボード上のタブを使用して、これらのモードを切り替えることができます。</block>
   <block id="ee855ba807a55874eb4b38814389078f" category="section-title">合計ビュー</block>
   <block id="515b555dcf569c4cc1d2a938ae9822d3" category="section-title">ボリュームビュー</block>
-  <block id="5753fce8315ebaa06a713e75985750bf" category="paragraph">ボリューム ビューに切り替えるには、ダッシュボードの *Volume* タブを選択します。</block>
   <block id="f768a8e9133dfc338015fd0d83ec2cf0" category="section-title">表示されるボリュームメトリック</block>
-  <block id="2347e9819148413af6cc4e5827b02d4e" category="paragraph">ボリューム ビューを選択すると、ダッシュボードにはボリュームの合計数のうち上位 10 件のボリュームが表示されます。* *ボリュームの使用済み容量*：現在使用中の容量が最も高いボリュームが表示されます。* *IOPS*：選択した期間中の平均 IOPS が最も高いボリュームが表示されます。* *スループット*：選択した期間中の平均スループットが最も高いボリュームが表示されます。</block>
   <block id="286b672abb5d35bb05baef5e5758a310" category="admonition">ダッシュボードには、各メトリックの上位10件のボリュームのみが表示されます。ボリュームが10件を超える場合、詳細ビューに一部のボリュームが表示されない場合があります。</block>
-  <block id="502ab59dcef25c014584999b381b739b" category="paragraph">*ボリューム使用容量*、*IOPS*、および*スループット*のメトリックに同じボリュームが表示される場合、ダッシュボードの凡例では一貫した色分けが使用され、異なるメトリック間で特定のボリュームを簡単に追跡できるようになります。</block>
-  <block id="4745a2c999b128a25bda01aed19ab2f8" category="paragraph">水平軸には時間の範囲が表示され、凡例にはグラフに表されるすべてのボリューム（最大 10）が表示されます。</block>
   <block id="90681f223ffce7f43af4ac6e8572f319" category="section-title">インタラクティブボリュームデータ</block>
-  <block id="409e7e820a2aec1df14db5a88edd443e" category="paragraph">グラフ内の任意のボリューム ラインにマウス カーソルを合わせると、詳細情報が表示されます：</block>
-  <block id="66098fe1f75297ccbc3e4c2332830104" category="paragraph">*ボリューム使用容量*：ボリューム名、その時点での使用容量、割り当て済み容量を表示します。</block>
-  <block id="748334bb99d46cf2ef3aa45e610baf24" category="paragraph">*IOPS*：ボリューム名、時間範囲の平均IOPS、時間範囲の最大IOPSを表示します。</block>
-  <block id="04eeb8d03cf6b4755481c052a6e535e6" category="paragraph">*スループット*：ボリューム名、時間範囲の平均スループット、および時間範囲の最大スループットを表示します。</block>
-  <block id="f2c7e3d31586c840e7c17c779b7d70dd" category="paragraph">このインタラクティブなデータは、ボリュームのパフォーマンスパターンを分析し、潜在的なボトルネックや最適化の機会を特定するのに役立ちます。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">概要</block>
   <block id="196a1b1d4d7eff75b0b7bc0f6fa282e7" category="inline-link-macro">AWS認証情報を追加する</block>
   <block id="70317e3abbdadfb99e6ea364d432bd9b" category="paragraph">AWS 認証情報をまだ設定していない場合は、<block ref="53eda59ec5ff13cb6e6660c47027e8c7" category="inline-link-macro-rx"></block>を参照してください。</block>
@@ -450,17 +407,6 @@
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">タスク概要</block>
   <block id="e1cf2ece0db166d8b4c6b87f20794e11" category="inline-image-macro">ハンバーガーメニューアイコン</block>
   <block id="c625174f1f2ee54505e8df5c7884aaa1" category="list-text">メニュー<block ref="438b712f6e6afc173ce78a756adc207c" category="inline-image-macro-rx" type="image"></block>を選択し、*EDA*を選択します。</block>
-  <block id="e98927daa3269d89ed40e1d00b9894f4" category="list-text">EDA レイテンシ構成ページで、次のしきい値を構成します：</block>
-  <block id="6a92339b37a09c472028f07967682c85" category="list-text">*警告イベント*</block>
-  <block id="7a9ff4c8c2260709d5b8ca3ea5720d48" category="list-text">*読み取りレイテンシしきい値*：レイテンシしきい値をミリ秒単位で入力します。デフォルト：6 ms。</block>
-  <block id="c7ffe38ce2716364ec13888fb0fb4d18" category="list-text">*読み取りIOPSしきい値*：IOPSしきい値を1秒あたりの操作数で入力します。デフォルト：100 ops/sec。</block>
-  <block id="a9c123b2457943cad2a4a7b1da9e2ba2" category="list-text">*読み取り時間範囲*：時間範囲を分単位で入力します（5～20分）。デフォルト：10分。</block>
-  <block id="0bb2971cdc9904893b398e127f86ccc1" category="list-text">*書き込みレイテンシしきい値*：レイテンシしきい値をミリ秒単位で入力します。デフォルト：8 ms。</block>
-  <block id="f1d2b429b535ce1659d20f6a98f239da" category="list-text">*書き込みIOPSしきい値*：IOPSしきい値を1秒あたりの操作数で入力します。デフォルト：100 ops/sec。</block>
-  <block id="a0274640a4f41ca07311c67d74f332b1" category="list-text">*書き込み時間範囲*：時間範囲を分単位で入力します（5～20）。デフォルト：10分。</block>
-  <block id="a3ca3437ce0a7bbf111f75af4d05ea72" category="list-text">*重大なイベント*</block>
-  <block id="fe225c18ccd35d621ab2e58cf79459b5" category="list-text">*読み取りレイテンシしきい値*：レイテンシしきい値をミリ秒単位で入力します。デフォルト：12 ms。</block>
-  <block id="84da8d5b9264494d5cd9cb035bc28120" category="list-text">*書き込みレイテンシしきい値*：レイテンシしきい値をミリ秒単位で入力します。デフォルト：15 ミリ秒。</block>
   <block id="6bc0e94d709a00317b3fdd4f3958342b" category="section-title">アラートについて</block>
   <block id="ee34286f143c9ac572df816e88226163" category="section-title">収集されたメトリック</block>
   <block id="bea060c037959de7378c9c2f91ea4219" category="paragraph">システムは各ボリュームについて次のCloudWatchメトリックを収集します：</block>
@@ -475,15 +421,12 @@
   <block id="e0b18d5b04f677d427e5a029d591d7a9" category="section-title">イベントの重大度</block>
   <block id="a0136d636bd452e02818b34b1fb9eb98" category="section-title">レイテンシイベントを表示する</block>
   <block id="7776f517a75d578f349901d6f0886405" category="list-text">イベントは 72 時間後に自動的に削除されます。</block>
-  <block id="fe78c594fbd3ab20c9638e8c15888f03" category="list-text">*検出時刻*:侵害が検出された時刻</block>
   <block id="01bd639bef6ec9a56687ee7ffd9f246c" category="section-title">レイテンシ設定を管理する</block>
-  <block id="7851fb52b1039fde0650c3e8173c2a5a" category="paragraph">初期設定後、しきい値を編集できます。</block>
   <block id="6fe6ef1cbd27d3257ff9500aab5f9ab9" category="list-text">*Latency* ページで、*Edit* を選択します。</block>
   <block id="d53bdccd3ec334ddfd63d2269906352a" category="list-text">必要に応じて、しきい値を変更します。</block>
   <block id="247a926ff070f20efece2fd2ed4162c3" category="admonition">重要しきい値が警告しきい値よりも高い値に設定されていることを確認してください。重要しきい値を警告しきい値よりも低く設定した場合、システムはエラーを表示します。</block>
   <block id="d3152a664d12079fbf89a50fcb166ef3" category="list-text">変更を保存するには、*適用*を選択します。</block>
   <block id="c2ffe02d76c4f089648f1647b43e4ee5" category="section-title">ベストプラクティス</block>
-  <block id="9034aebe9b693f759faa32d33c7d1358" category="paragraph">レイテンシ分析を構成および使用するときは、次の推奨事項を考慮してください：</block>
   <block id="6a17347e669ad40689359f41fee3efc9" category="list-text">*現実的なしきい値を設定する*：ワークロード要件に基づいてしきい値を設定します。デフォルト値は出発点となりますが、特定の環境に合わせて調整が必要になる場合があります。</block>
   <block id="8d2a6ec04c3428e17318eec752e34640" category="list-text">*警告しきい値から開始*：重要なしきい値を微調整する前に、警告イベントを使用してベースラインパフォーマンスの期待値を確立します。</block>
   <block id="1f3a99c8bf0d4110ea6d8f943c76ad49" category="list-text">*時間範囲を慎重に検討してください*：短い時間範囲（5～10分）では問題の検出が速くなりますが、アラートが多く生成される可能性があります。長い時間範囲（15～20分）では誤検知は減りますが、検出が遅れる可能性があります。</block>
@@ -504,74 +447,32 @@
   <block id="b365ed726bb3010ba5b4a6a1479128f9" category="paragraph">新しいブックマークをクリックすると、どのページからでも Ask Me を開くことができます。現在の作業を中断することなく、サイドパネルで Ask Me を起動し、現在行っている作業に関連する簡単な説明と推奨事項を提供します。</block>
   <block id="80dcbdee31e7f18a301f863f8b73dc64" category="inline-link-macro">Ask Meの詳細</block>
   <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
-  <block id="9f8fc4b6d5129d1b72493ddaf0f177cd" category="inline-link-macro">プロジェクトダッシュボード</block>
-  <block id="2621556594828dd93047cabafe8b26f2" category="list-text"><block ref="bac4b9b5c5366540fe87e1b00f6342f2" category="inline-link-macro-rx"></block>：FSx for ONTAPファイルシステム全体のストレージ消費量を一元的に表示し、プロジェクト全体のストレージ使用状況に関する計画、コストの評価、情報の収集を支援します。</block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
   <block id="7a13522750dff612c4af95a525a5075b" category="inline-link-macro">レイテンシ監視の設定方法を確認する</block>
   <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">セブン</block>
   <block id="28d16b2155b937481f163959c1136c11" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> 他のサービスとの統合</block>
-  <block id="0069d41df3c7692bcf3427c1413ed191" category="paragraph">EDAワークロードを監視するIT管理者またはプロジェクトマネージャーは、プロジェクトタブを使用して、FSx for ONTAPファイルシステムとボリューム全体のプロジェクトの使用状況を観察および分析できます。ダッシュボードは、容量の拡張の計画、コストの評価、およびリソース割り当てに関するデータ主体の意思決定に役立ちます。AWSタグに基づいて最大5つのカスタムフィルターを作成し、単一または複数選択のオプションを使用して、プロジェクト、チーム、アプリケーションなどの特定のビジネス要件に応じてデータを整理およびフィルター処理できます。</block>
-  <block id="93dd1acc9636871cfa2441fefe5fb419" category="paragraph">ダッシュボードでは、ストレージの使用パターンを可視化できるため、リソースを大量に消費するプロジェクトを特定し、コストを追跡し、容量やパフォーマンスの問題がEDAシミュレーションに影響する前にストレージの割り当てを最適化できます。</block>
-  <block id="1f50074b022d705f9703972869c8b8c2" category="paragraph">カスタムフィルタを設定すると、プロジェクト、チーム、アプリケーションなど、ビジネス構造別に整理されたメトリックを表示できます。この整理により、コストを正確に追跡し、どのプロジェクトが最も多くのリソースを消費しているかを特定し、リソースの割り当てと予算計画について十分な情報に基づいた決定を下すのに役立ちます。</block>
-  <block id="1df61e5b936693f0edc17d20c2d57f5e" category="paragraph">AWS タグは、AWS リソースのメタデータです。これらは、プロジェクト、アプリケーション、ビジネスユニットなど、さまざまな方法で AWS リソースを分類するのに役立ちます。タグ付けの詳細については、<block ref="3a728828042c1a731e3aa740ed780475" category="inline-link-rx"></block>および<block ref="53b3c63786d21199a28ae32477919693" category="inline-link-rx"></block>を参照してください。</block>
   <block id="70a93a55e7195aacefbcc36526b9120a" category="paragraph">カスタムフィルタを使用すると、組織の運営方法に応じてダッシュボードデータを整理できます。フィルタをプロジェクト構造、チーム、またはコストセンターに合わせて調整することで、無関係な情報を参照することなく、必要な特定のデータにすばやくアクセスできます。これにより、容量の拡張計画、コスト追跡、パフォーマンス監視がより効率的になります。</block>
   <block id="ebc79d489165a581dfeb4961b6f2036f" category="list-text">*プロジェクト*を選択します。</block>
   <block id="e1d216bb41cdf9c41639ce06fa5f7892" category="paragraph">フィルタリングにより、ストレージリソースの特定のサブセットに焦点を当てることができるため、傾向の分析、問題の特定、関係者向けのレポートの生成が容易になります。複数のフィルタを組み合わせることで、「ASIC プロジェクトチームはどれくらいのストレージを使用しているか」や「US-West リージョンで IOPS が最も高いボリュームはどれか」などの特定のビジネス上の質問に答えることができます。</block>
   <block id="618bee4f32c762781e00f2ae36db9103" category="paragraph">集約されたボリュームパフォーマンスと個々のボリュームパフォーマンスの両方を理解することで、容量の拡張とパフォーマンスの最適化について情報に基づいた意思決定を行うことができます。合計ビューには全体的な傾向が表示され、ボリュームビューでは注意、最適化、または追加のリソースが必要な特定のボリュームを識別するのに役立ちます。</block>
-  <block id="3b2e82a7db8895e573b7793ae75197df" category="paragraph">合計ビュー（デフォルト）には、選択したフィルターに一致するすべてのボリュームの集計メトリックが表示されます。このビューには、全体的なストレージパフォーマンスの概要が表示され、容量、IOPS、スループットメトリックの合計が示されます。このビューを使用して、全体的な傾向を把握し、将来の容量ニーズを計画し、プロジェクトまたはチーム全体のリソース消費量の合計をレポートします。</block>
-  <block id="50bd9972092e5f07d70cda13706daa20" category="paragraph">ボリュームビューには、時間の経過に伴う個々のボリュームのパフォーマンスが表示され、各メトリックの上位10件のボリュームが表示されます。このビューは、リソース使用量を増加させている特定のボリュームを識別し、選択した期間にわたるその動作を観察するのに役立ちます。このビューを使用して、パフォーマンスのボトルネックを見つけたり、適切なサイズ設定が必要なボリュームを識別したり、最も多くのリソースを消費している特定のプロジェクトまたはワークロードを正確に特定したりできます。</block>
   <block id="d9bc5fa39156750788e0c19b51ff9b90" category="paragraph">インタラクティブなホバーデータは、特定の時点での正確なメトリックを提供し、パフォーマンスの変化を特定のイベントまたは期間と関連付けるのに役立ちます。この詳細な情報は、パフォーマンスの問題のトラブルシューティング、最適化の取り組みの検証、関係者へのリソース使用パターンの説明に役立ちます。</block>
-  <block id="bb3f1fee880e4d3b2d95074d40c5f096" category="paragraph">レイテンシ監視および分析機能を使用するには、次の要件を満たしていることを確認してください：</block>
   <block id="c4909262f33027f9d6430abfd14a7941" category="list-text">読み取り / 書き込み権限を持つAWS認証情報をWorkload Factoryに追加する必要があります。レイテンシ監視機能では、AWS認証情報に関連付けられたすべてのFSx for ONTAPボリュームのCloudWatchメトリクスへのアクセスが必要です。</block>
   <block id="c2ef204dc55e5ae693bd27e7c1a816a4" category="list-text">AWS 環境にデプロイされたボリュームを持つ少なくとも 1 つの FSx for ONTAP ファイルシステムが必要です。レイテンシー監視機能は、設定された AWS 認証情報に関連付けられているすべてのボリュームのメトリクスを自動的に収集します。</block>
   <block id="d65de0ffa05b31f0beebf22d3e28dbde" category="list-text">FSx for ONTAP へのリンク</block>
   <block id="8997880c88dd70fe80799ee97bb7ac0c" category="inline-link-macro">リンクを作成</block>
   <block id="e631d9996b49ecdb5d4d4146db562c6d" category="paragraph">リンクの作成と関連付けの手順については、<block ref="27f80dd01569e18971f783f257cc7294" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="1ca1e4067fc4b6f31aac0c6e9c6b5efe" category="admonition">ONTAP QoS分析とCloudWatchデータのレイテンシ値には、収集方法の違いにより若干の差異がある可能性があります。基本的な分析では、根本原因の特定にONTAPデータを使用します。</block>
-  <block id="ce963a448d1278ae4d6db6d01991d19b" category="paragraph">ダッシュボードには次のものが含まれます：</block>
   <block id="bf7cc54e388f0b806386888989c37589" category="list-text">表示権限を持つ AWS クレデンシャル</block>
   <block id="84655b4612a4abb6eb6d8897db0655a6" category="admonition">同意してからメトリックの収集に時間がかかる場合があります。初期収集の進行中はダッシュボードに通知が表示されます。</block>
   <block id="2daabc6822724771970f17e8ae6a4cee" category="list-text">* Overview *タブを選択します。</block>
   <block id="a2fbf7fa6f022aa585757c4d6cf5cfbe" category="list-text">表示権限を持つ認証情報が検出されない場合は、*認証情報の追加*を選択し、プロンプトに従って表示権限を持つ AWS 認証情報を設定します。次に、*概要*タブに戻ります。</block>
   <block id="03cb5cf45e1d3709e52191d359385d38" category="list-text">FSx for ONTAP ファイルシステムに対して収集される CloudWatch メトリクスについて説明している同意プロンプトを確認します。</block>
   <block id="ee58964f46df645da6108475c6d86f30" category="list-text">ダッシュボードをアクティブ化し、メトリックの収集を開始するには、* Activate * を選択します。</block>
-  <block id="076f6cc58ee6a014913d5c5405ce8028" category="paragraph">利用可能なフィルター：</block>
-  <block id="e1f5223a6a7fff100d8e7f38b7321b39" category="list-text">* リージョン * ：1 つ以上の AWS リージョンでフィルタリングします。</block>
-  <block id="cc88c8520cacdcbd154b678b080f5359" category="list-text">* AWS アカウント*：設定された認証情報に関連付けられた 1 つ以上の AWS アカウントでフィルタリングします。</block>
   <block id="f1dd68ee490b7c8bd34a8f05569cfb01" category="section-title">クラスタのヘルスステータス</block>
-  <block id="26ae7bdd1d6fb8c4886e6fde8d12601c" category="section-title">レイテンシ</block>
-  <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="section-title">容量</block>
-  <block id="596b10dc3c83c43203ecb5e35057ea82" category="list-text">ディレクトリサイズがいっぱいです</block>
-  <block id="8e556aa1506dff11340a95a83ac47877" category="list-text">inodeがいっぱい</block>
-  <block id="319a7785bfcc6f7c0a470154dca5433d" category="inline-link-macro">容量イベント</block>
-  <block id="00607b7ab91b89088225f156c398c6d2" category="paragraph">監視対象のEMSイベントの完全なリストについては、<block ref="a40747a48e3f0f6173aa7b11e42e30dd" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="6084cc2ec06c72c60a2d7fceeec8943b" category="paragraph">*容量*を選択すると、ストレージワークロードの容量分析画面に移動します。</block>
-  <block id="812b62dbc874f456acb070f5f8ecf49c" category="section-title">可用性と保護</block>
-  <block id="d03926204e5f51c77414928489a670fa" category="paragraph">監視対象となるイベントには、FlexCacheおよびSnapMirror関連のEMSイベントが含まれます。</block>
-  <block id="d2029ab099c48ad138099bf1b3364b44" category="paragraph">*可用性と保護*を選択すると、Storage workloadsの可用性と保護の分析画面に移動します。</block>
-  <block id="b7185c6b9e81995f26cf9003aba3cfc2" category="section-title">セキュリティとその他</block>
-  <block id="6b76ab95e7f59cec483e612f646cb2e5" category="paragraph">*Security &amp; other*を選択すると、Storage workloadsのイベント分析画面に移動します。</block>
   <block id="92343cbd448d1ecb633a73e2ddb96510" category="section-title">クラスタテーブル</block>
-  <block id="4755ce9c858d32c6af3b801fa19a40b4" category="section-title">検索とフィルタリング</block>
-  <block id="4bcd1d96fe911e1ac9b37e82f78cc769" category="list-text">検索を使用して、名前、ファイルシステムID、リージョン、またはその他の属性で特定のクラスターを検索します。</block>
-  <block id="e5e3ff7f849d4d03e6ff43e57a789165" category="list-text">任意の列ヘッダーを選択すると、その列でテーブルが並べ替えられます。</block>
-  <block id="352e4bc46981c9686b3bd1568c7d705f" category="list-text">列ごとのフィルタコントロールを使用して、テーブル内の結果を絞り込みます。</block>
-  <block id="217e5e8d4058183335421ccd86655c77" category="list-text">表はページ分割されています。ページ間を移動するには、表の下部にあるページネーションコントロールを使用します。</block>
-  <block id="be39bb193d872e11bb21388add6eca23" category="section-title">列をカスタマイズする</block>
-  <block id="a8398be8d41d0ae61fe7c99f4c84c715" category="paragraph">クラスタテーブルに列を追加または削除するには：</block>
-  <block id="37fea8a26e09123c44b09e72fdfb6658" category="list-text">右側の表の上にある列選択アイコンを選択します。</block>
-  <block id="16e1af4a4ebe89d8625170b9771719fa" category="list-text">表示または非表示にする列を選択または選択解除します。</block>
-  <block id="e611170230a6e8353ed957ebfb35e9ed" category="section-title">テーブルをCSVにエクスポート</block>
-  <block id="ec23945650f6dd8a065ef9052e1e1fa7" category="paragraph">現在表示されているテーブルデータをCSVファイルにエクスポートして、さらに分析したりレポートしたりできます。</block>
-  <block id="344ccd95594db0b6bfcbc00e804c50d9" category="list-text">エクスポートに反映するフィルタや列のカスタマイズを適用します。</block>
-  <block id="801ab24683a4a8c433c6eb40c48bcd9d" category="inline-image-macro">ダウンロード</block>
-  <block id="e75fdb0ef1b83c160c1f3ca4bff622c5" category="list-text">クラスターテーブルの上にある<block ref="d2e5c9ca6fcd7f605e1d5f7b4f6a6a99" category="inline-image-macro-rx" type="image"></block>ボタンを選択します。</block>
-  <block id="94fddf2754b119bd3ea2e006084f6a2d" category="paragraph">CSVファイルがダウンロードされ、現在表示されている列のみを含む、テーブルに現在表示されているすべての行が含まれます。</block>
   <block id="2c5e7dde0b5d8fe45e7e905c674f4c31" category="section-title">2026年3月1日</block>
   <block id="4fdbac3671b30e3a2d6d3233ee4023d0" category="sidebar">EDAストレージの概要</block>
-  <block id="ea637c5687abbd47d05bd10d63c621ce" category="sidebar">EDAストレージ操作の管理</block>
   <block id="d0efe11222ff735f348a5bd5e26ce56d" category="sidebar">プロジェクト使用状況分析</block>
-  <block id="c5fc13d61eed82ccc80e74a9ac0ecd18" category="sidebar">プロジェクトのストレージ使用量を分析する</block>
   <block id="baf7dcba0c4a80ef2ec1dd0465a27ee0" category="paragraph">数十台のFSx for ONTAPファイルシステムを管理するIT管理者は、概要ダッシュボードを使用して、クラスタの状態、使用率、ボリュームの配置に関する一般的な運用上の質問に答えることができます。</block>
   <block id="a75658829d674de492a2dd7d0818e7ca" category="paragraph">概要ダッシュボードには以下が含まれます：</block>
   <block id="bac99350c8b9abdf51c8cb6c7a0467fd" category="inline-link">概要ダッシュボードの詳細</block>
@@ -595,19 +496,9 @@
   <block id="3a0eea1249d5ea83860d68d281f6c97b" category="inline-link">AIエージェント分析の詳細</block>
   <block id="af2687c5a2b9873716f0987242df8169" category="paragraph"><block ref="2915288e95b80b72c9de65e94d4fc279" category="inline-link-rx"></block>.</block>
   <block id="903ae19f4744109bd449ffef22e131cc" category="inline-link-macro">概要ダッシュボード</block>
-  <block id="ad3ee48dbaf8bd15170288a8cbaf9111" category="list-text"><block ref="c43085d6db3011d68248506cba6c2189" category="inline-link-macro-rx"></block>：FSx for ONTAP クラスターの健全性、容量、スループットを監視し、新しいボリュームを配置する場所を決定し、容量とスループットの拡張について情報に基づいた意思決定を行い、自動化された容量推奨事項を受け取るのに役立つ集中型クラスタ ビューを提供します。</block>
   <block id="76fe6a2921854a310876f2886d0744fa" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 概要ダッシュボードを有効にする</block>
   <block id="208586cd32a8a0d00042653ba4659b8e" category="paragraph">概要ダッシュボードを有効にして、FSx for ONTAP クラスタの健全性、容量、スループットを監視します。同意プロンプトを承認して、Workload Factory が CloudWatch メトリックの収集を開始できるようにします。</block>
-  <block id="c2151e2d1dba976fab30173e26e64ace" category="inline-link-macro">概要ダッシュボードを有効にする方法を確認する</block>
-  <block id="b624256e7cfc943995093a9c263a4c29" category="paragraph"><block ref="6607f81f673b2b1acab74297bdcef96e" category="inline-link-macro-rx"></block>.</block>
-  <block id="1cd1b3707d9ff6df30af6368c98a254e" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> プロジェクトダッシュボードの設定</block>
-  <block id="37be776cacb7f2116612a9a0dd1fe4be" category="paragraph">プロジェクトダッシュボードを設定して、システムの状態、パフォーマンス、ストレージの使用状況を監視することで、EDA環境を効果的に最適化できます。</block>
-  <block id="c6be2ff5f814ccc204c4fa5cc9a26402" category="inline-link-macro">プロジェクトダッシュボードの設定方法を学びましょう</block>
-  <block id="5eec74fa0479342640b4f0cf89f95ace" category="paragraph"><block ref="dee2cdd0dc5bf217faec6f43b7f77ae0" category="inline-link-macro-rx"></block>.</block>
   <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">現時点では、_Basic_モードおよび_Read-only_モードの権限はサポートされていません。</block>
-  <block id="e8a5e8ec2e90f68cc56140acc19fe659" category="summary">メトリックを収集するためのタグを追加して、EDA Project ダッシュボードを設定します。単一選択または複数選択のオプションを使用して、ビジネスニーズに合わせてフィルターをカスタマイズできます。</block>
-  <block id="e532219ff10a9efe2b7516b9eabb80ec" category="admonition">プロジェクトダッシュボードに最初にアクセスした管理者ユーザーのみが、カスタムフィルターの設定、追加、または削除を行うことができます。後任の管理者を含むその他のすべてのユーザーは、フィルターへの読み取り専用アクセス権を持ちます。</block>
-  <block id="2a4f511f8ad738b70bd3748a9e642173" category="paragraph">EDAワークロードを管理するIT管理者またはDevOpsエンジニアは、レイテンシ分析を使用してFSx for ONTAPボリュームの読み取りおよび書き込みレイテンシを監視できます。パフォーマンスの問題を早期に検出するために、警告および重大なしきい値を設定してください。イベントが発生すると、Workload Factoryは自動的に基本的な分析を提供します。また、必要に応じてAIエージェントによる分析を実行し、根本原因の詳細、影響を受けるクライアント、推奨される修復手順などを確認できます。</block>
   <block id="14148bac5b7c3663c54f10f09a5bd49a" category="paragraph">レイテンシ監視では、_Basic_モードおよび_Read-only_モードの権限はサポートされていません。</block>
   <block id="289fde61867c520c9e1b763ec58e4782" category="list-text">Amazon Bedrock モデル ARN（オプション）</block>
   <block id="2c428aa993eaa904ca8a12c78bcdf21a" category="list-text">オプションのAIエージェント分析機能を使用するには、Workload Factoryの設定でAmazon BedrockモデルのARNを指定する必要があります。</block>
@@ -617,46 +508,20 @@
   <block id="a76142b21bf8fd3e217700ad47520a99" category="list-text">*重大なイベント*：直ちに調査が必要な深刻なレイテンシを示します</block>
   <block id="85af8e40cac423345858be0210476d20" category="list-text">*レイテンシ*タブを選択します。</block>
   <block id="a336da6bfc59dea8a34a61e330a80866" category="paragraph">レイテンシイベントテーブルは、過去72時間以内に検出されたすべての警告イベントと重大イベントを一元的に表示します。</block>
-  <block id="0dea20f75813d2ed33976d047d4feb75" category="list-text">*重大度*：イベントが重大か警告かを示します</block>
-  <block id="ab9c0c767f9043ec9da24ddf4988d6df" category="list-text">*ボリューム名*：影響を受けるボリュームの名前</block>
-  <block id="6b854e2d874f08fa11e8527be7a67311" category="list-text">*ボリューム ID*：影響を受けるボリュームの ID</block>
-  <block id="a4ea9bee29b55456bed1615792abaa8d" category="list-text">*ファイルシステム*：ボリュームを含む FSx for ONTAP ファイルシステム</block>
-  <block id="f0abce0c8eb9545d70bbad5d74599eec" category="list-text">*中央値レイテンシ（ms）*：違反期間中の中央値レイテンシ値</block>
-  <block id="65b8e7b4f221cb001b2617746bfea3c2" category="list-text">*しきい値超過率*：設定されたしきい値をレイテンシが超えた割合</block>
   <block id="039dfdde9abd9ac1aa8a2a98cfb44323" category="inline-image-macro">アクション メニュー アイコン</block>
   <block id="8915e02d8d5fd0d498876dbe62c67555" category="list-text">1つまたは複数のイベントを破棄するには、各イベントの横にある<block ref="fae3e4e28bd0d43fa65e8d02aaf53cac" category="inline-image-macro-rx" type="image"></block>*却下*を選択します。</block>
   <block id="d539b5c7c0d30ab9075ef09bb7eeaed1" category="inline-image-macro">列アイコン</block>
   <block id="628efbb82f0f8c3afdae512a42ac4ffd" category="list-text">テーブルに列を追加するには、<block ref="82e9020bee7d7516519b387592b50c34" category="inline-image-macro-rx" type="image"></block>を選択し、列を選択してから*適用*を選択します。</block>
   <block id="38eacd6054dad756b607d4c8329eee03" category="section-title">レイテンシ分析パネル</block>
-  <block id="5ce70a0653bfe7f6bff6e2eddd206a0e" category="list-text">*FlexCache*：FlexCache処理からのレイテンシ</block>
-  <block id="68ba76b3b80fb774692fafaa3bca3244" category="list-text">*容量プール*：容量プール操作による遅延</block>
-  <block id="df0c1b63249b6e6a43327ad7270f9a50" category="list-text">*QoS最小値*：QoSポリシーグループの下限値からのレイテンシ</block>
-  <block id="23ddd65f9d5440568ff13b972c23e64d" category="list-text">*QoS max*：QoSポリシーグループの上限制限による遅延</block>
-  <block id="eb6661848ca72d51dd7462a9ecdc6c2b" category="list-text">*ディスク*：ストレージ サブシステムからのレイテンシ</block>
-  <block id="1b04caaa22ceaef074dc3dd87240ca56" category="list-text">*データ*：CPU処理、メタデータ更新、キャッシュ管理を含むWAFLサブシステムからのレイテンシ</block>
-  <block id="de3ae150d2eddb964a39576f4d93c994" category="list-text">*クラスタ*：内部接続されたノード間のレイテンシ</block>
-  <block id="214e41afc37c18a28923389d4435f505" category="list-text">*その他*：NVRAMやネットワークなどの他のサブシステムからのレイテンシ</block>
   <block id="1af9d8d07caa5522beed26e2ac87c9b0" category="section-title">AIエージェント分析を実行する</block>
-  <block id="b82697b621a677f2c131ea161ca15ca5" category="paragraph">基本的な分析では遅延の原因を特定できますが、データやクラスタコンポーネントが関わる複雑なシナリオでは、具体的な根本原因と潜在的な修復手順を特定するために、より詳細な調査が必要となることがよくあります。AIエージェント分析は、基本的な分析では検出できないbully volume、非最適な構成、またはスケールアウト要件などの問題を特定することで、このより深いレベルのトラブルシューティングを提供します。</block>
-  <block id="390b6ebb0dada50f5e02de14863d5d9a" category="paragraph">AIエージェントによる分析を実行すると、システムは自動的に基本分析データを更新し、それをAIエージェントへの入力として使用します。AIエージェントは遅延シナリオを評価し、以下の情報を提供します：</block>
   <block id="f825ff4432099d6f44cdb5f8f4bfc6db" category="list-text">*潜在的な根本原因*：遅延問題の原因に関する詳細な説明</block>
   <block id="102e5bfcdb00d2737ee47f8cfa62267e" category="list-text">*影響を受けるクライアント*：レイテンシの影響を受けるEC2インスタンス名のリスト</block>
   <block id="97a2c1af5741eeecb9eaa5c7c36521b7" category="list-text">*潜在的な修復手順*：問題を解決するための2つ以上の具体的なアクション</block>
-  <block id="bb0c63ab29749b360678ffe47d4f316d" category="paragraph">AIエージェントは、以下のようなシナリオを特定するために、基本的な分析ガイドラインに従います：</block>
-  <block id="5aac3372cec1e7a6593b4badcd13ba0c" category="list-text">過剰なリソースを消費する大量のボリューム（データ遅延の原因となる）</block>
-  <block id="11f8d553328592c85be4033bc3f64803" category="list-text">最適ではないマウントポイント構成（クラスタ遅延の原因）</block>
-  <block id="7b4aa399068fb6652866c4a35815dac2" category="list-text">FlexGroup の再バランスのニーズ（クラスターの遅延に対応）</block>
-  <block id="7b9daeff6b6cce80aff1d790b8c602de" category="list-text">スケールアウト要件（クラスタ遅延の場合）</block>
   <block id="e38b13dd2c91516a7427e9ddddaee80a" category="list-text">*レイテンシ*タブで、分析するイベントを探します。</block>
   <block id="55778645f90c4570ed888c2e7a8fd0cd" category="list-text">遅延の問題を解決するために、推奨される修復手順を実施してください。</block>
   <block id="eef392bb1b41a4e082bfc98d04dc9517" category="list-text">修復後、レイテンシイベントテーブルを監視して問題が解決したことを確認してください。</block>
   <block id="f425eb4d55adb205ccf2c677df8ee7a9" category="list-text">*AIエージェント分析を戦略的に活用する*：基本的な分析で推奨されるデータおよびクラスタのシナリオに対して、AIエージェント分析を実行します。AIエージェントによる分析は、詳細なトラブルシューティングを必要とする複雑なパフォーマンス問題に対して、より深い洞察を提供します。</block>
-  <block id="8d2d238b8187f64d495cfc9978b55898" category="summary">概要ダッシュボードを使用して、FSx for ONTAP ファイルシステムの健全性、容量、スループットを監視します。ストレージの使用状況を大規模に表示し、ボリュームの配置と容量の拡張について情報に基づいた意思決定を行います。</block>
-  <block id="027bcc17ae543ed5fe33c2d273a75b59" category="paragraph">複数のFSx for ONTAPファイルシステム（ONTAPクラスター）にわたるEDAワークロードを管理するIT管理者は、概要ダッシュボードを使用して、クラスターの状態と使用状況をすばやく評価できます。これを使用して、新しいボリュームやジョブの配置場所を決定したり、ボリュームやSVMの移動候補を特定したり、容量やスループットを拡張するタイミングを決定したりできます。</block>
-  <block id="000c45e9b90aaab86ef0c09071b10409" category="paragraph">概要ダッシュボードは、容量やスループットなど、FSx for ONTAPクラスタの一元的なビューを提供します。これを使用して、新しいボリュームを配置したり、ワークロードのバランスを再調整したり、容量やスループットのスケーリングを計画したりできます。</block>
-  <block id="cb545ee4a07ff5112b26d255e807b577" category="list-text">*クラスターの健全性ステータス*：ダッシュボードの上部に要約された情報で、レイテンシイベント、SSDの使用率と容量の推奨事項、およびファイルシステム全体にわたるONTAP EMSイベントを強調表示します。</block>
   <block id="57322efe01b3d8754cbc219dffa5e1a3" category="list-text">*クラスタテーブル*：各クラスタの使用状況とパフォーマンス指標を示す詳細な検索可能なテーブルで、フィルタリング、ソート、ページネーション、CSVエクスポートをサポートしています。</block>
-  <block id="63f116ebfaf0192bfdf2f32c33c4cf78" category="paragraph">ダッシュボードを使用する前に、以下の要件を満たしていることを確認してください：</block>
   <block id="c3feff18acbe4e3addd9196da0c369bc" category="list-text">Workload FactoryでAWS認証情報を設定する際には、General Storageに対して少なくとも読み取り（表示）権限を付与する必要があります。_Basic_認証情報はサポートされていません。</block>
   <block id="927108002b8d97b63eeefcd5cc76ff99" category="paragraph">閲覧権限を持つ認証情報を設定していない場合は、「概要」タブを開いたときにAWS認証情報設定ページにリダイレクトされます。</block>
   <block id="148a662b6f742683655df7c4b27aab64" category="list-text">ダッシュボードをアクティブ化する</block>
@@ -664,45 +529,12 @@
   <block id="5080409a250f18c89c5d74ea0f9c644a" category="paragraph">Workload Factoryは、設定済みのAWS認証情報に関連付けられたすべてのFSx for ONTAPファイルシステムのCloudWatchメトリクスの収集を開始します。ダッシュボードは、メトリクスが利用可能になると表示されます。収集がまだ進行中の場合は、通知が表示されます。</block>
   <block id="e312388a751f42d30d5641b358538e21" category="paragraph">ダッシュボード上部のフィルターを使用して、特定のファイルシステムに絞り込んでください。これらのフィルターは、レイテンシ、使用率、およびONTAPイベントセクションとクラスターテーブルに適用されます。</block>
   <block id="5626a4ecac9741d9b0e61d578ebf1561" category="paragraph">フィルターの選択を更新すると、一致するファイルシステムのみが表示されるように、すべての情報が更新されます。</block>
-  <block id="86fb615880ed0963db413aee0ea3a83f" category="paragraph">ダッシュボードの上部には、フィルタリングされたファイルシステム全体の健全性とアクティビティの概要が表示されます。この情報は、少なくとも1つのFSx for ONTAPリンクがファイルシステムに関連付けられている場合にのみ表示されます。リンクが利用できない場合、情報は非表示になります。</block>
-  <block id="6d6322f83c4f5b960a36e7082d0766a5" category="list-text">*レイテンシ*：対象となるファイルシステム全体で検出されたレイテンシイベントの数を表示します。</block>
-  <block id="16b323f26f7bf7c818d3ae7714b799e0" category="list-text">*利用率*：SSDの使用状況を表示し、アクティブな容量推奨のあるファイルシステムを特定します。</block>
-  <block id="3121cd69c335b005ceb96cc87483c7b6" category="list-text">*ONTAPイベント*：検出されたEMSイベントの数を、容量、可用性と保護、セキュリティとその他に分類して表示します。</block>
-  <block id="b6649fa5d637bc149fc487d1f6384623" category="paragraph">対象となるファイルシステム全体で検出されたレイテンシイベントの数を表示します。</block>
-  <block id="04799c0bb895c60dc9316f987cb2a0d9" category="list-text">*Review*を選択すると、*Latency*タブが表示されます。</block>
-  <block id="a7d6e22f4e42b9f526689d7c05ed15ce" category="section-title">利用率</block>
-  <block id="8cdbff19eb37efa37ce19b0f67905d5f" category="paragraph">対象となるファイルシステムのうち、SSD使用率が80%を超えるクラスタを少なくとも1つ持つファイルシステムの数と、アクティブな容量推奨値を持つファイルシステムの数を表示します。これにより、容量の見直しが必要となる可能性のあるファイルシステムを迅速に特定できます。</block>
   <block id="adf40a5c785aaeef6afc57401dfa0da4" category="section-title">容量に関する推奨事項</block>
-  <block id="39cb2f87544e093382b57cea81963987" category="paragraph">Workload Factory は、EDAインベントリに表示される各FSx for ONTAPファイルシステムに対して容量推奨アルゴリズムを自動的に実行します。このアルゴリズムは24時間ごとにスキャンを実行し、SSDの容量調整が推奨されるタイミングを特定します。</block>
-  <block id="3a63c48dc4551e879d290e61f4b46251" category="list-text">Workload Factoryの通知設定に基づいて、即座に通知（EメールまたはWAD）が届きます。週次サマリーを待つことなく、推奨事項が特定され次第、通知が送信されます。</block>
-  <block id="75a1dd4d8cefe1f82520311498c853ad" category="list-text">アクティブな推奨事項があるファイルシステムについては、クラスタテーブルの行に電球インジケータが表示されます。</block>
-  <block id="09ba3adfe9812db33e96187bdfe9a54d" category="list-text">推奨事項が有効になっているファイルシステムの総数が表示されます。これにより、影響を受けるファイルシステムが表の最初のページに表示されていなくても、推奨事項が確実に表示されるようになります。</block>
   <block id="9cc0347665febc5bdecbb8b62b56caef" category="section-title">容量に関する推奨事項を表示して適用する</block>
-  <block id="158bcc98bb34a9f1bae855b7642437cc" category="list-text">*Clusters* テーブルで、電球インジケータが付いているファイルシステムを探します。</block>
-  <block id="46110e65a583695848fb0fd8fab2e632" category="paragraph">電球インジケータにカーソルを合わせると、推奨事項の簡単な説明が記載されたツールチップが表示されます。</block>
-  <block id="f9fd8bfd203c7d945711dbb97267655b" category="list-text">表でクラスタ名を選択して開き、推奨事項を表示します。</block>
   <block id="95f6a08d0f924200d8aedf875fe0d26f" category="list-text">SSDの推奨仕様と容量グラフを確認してください。</block>
   <block id="a91263358447ff86f00508073a54103c" category="paragraph">この勧告では、提案された変更内容とその理由について説明しています。例：_ファイルシステムSSDの使用パターンに基づいて、SSDサイズを増やすことをお勧めします。_</block>
   <block id="9a5f604071695fc8c90fa884731bdf90" category="paragraph">このグラフは、現在のSSD使用状況と過去の傾向を並べて表示し、容量推奨アルゴリズムが時間の経過とともにどのように容量を調整してきたかを示しています。</block>
   <block id="75982876f75909a704866c60073481a4" category="list-text">グラフの右上で、表示期間を変更する時間範囲を選択してください。デフォルトは1週間です。</block>
-  <block id="3ec3405475907b609b4da7594a8e30cf" category="section-title">ONTAPイベント</block>
-  <block id="a7211065fc175f16960b5d90d60f8c3b" category="paragraph">対象となるファイルシステム全体で検出されたEMSイベントの数を、容量、可用性と保護、セキュリティとその他に分類して表示します。</block>
-  <block id="cbaa36e65bbbc5b0dce1a4d1c09ecbfe" category="paragraph">容量の問題に関連するEMSメッセージの数と、影響を受けたファイルシステムの数を表示します。</block>
-  <block id="9390001cdb12f5711a81d8c61b740f33" category="paragraph">監視対象となるEMSイベントの例を次に示します：</block>
-  <block id="4c4d02e6bb3542318521ac7c16409b23" category="list-text">アグリゲートがほぼフル/フル</block>
-  <block id="2898f5e64e26ff6b682e2302bd5a5b9a" category="list-text">ボリュームがほぼフル/フル</block>
-  <block id="63063dfe876139acf73a9b4bc46a3970" category="list-text">Snapshotリザーブがほぼフル/フル</block>
-  <block id="96d655add422c797963d6fd45958de7d" category="list-text">FlexGroup満杯</block>
-  <block id="01ead1e10839911d69ee0af73d91a868" category="paragraph">可用性とデータ保護に関連するEMSメッセージの数と、影響を受けるファイルシステムの数を表示します。</block>
-  <block id="52898aff9d5407cfdfb5e422469db30b" category="paragraph">容量または可用性と保護に分類されないイベントに関するEMSメッセージの数と、影響を受けるファイルシステムの数を表示します。監視対象となるイベントには、ランサムウェア対策保護、NFS認証の失敗などが含まれます。</block>
-  <block id="f31a63d348c7c8d06fe2549282080d1b" category="paragraph">設定済みのAWS認証情報に関連付けられた各FSx for ONTAPファイルシステムの詳細なビューを提供します。アクティブなリージョンとAWSアカウントの選択によってフィルタリングされます。データはCloudWatchメトリクスから収集されます。このテーブルは、検索、列のフィルタリング、ページネーション、列のカスタマイズ、およびCSVエクスポートをサポートしています。</block>
-  <block id="1224e976e54b0ca1a91c88353ec21993" category="paragraph">主な指標は以下のとおりです：</block>
-  <block id="f28c601c40ddebcffa4ee55d24119d1f" category="list-text">名前、リージョン、およびAWSアカウント</block>
-  <block id="aa48f7c6a56d04564740cc8156c20d7e" category="list-text">SSD容量の指標（使用量、合計容量、使用率）</block>
-  <block id="a70073688b464c695e656ad94550b9f9" category="list-text">容量プールストレージ</block>
-  <block id="5e40fc6f7fc8cf1248e186708cd1be65" category="list-text">スループット指標（過去30日間の平均、P95、P99、最大）</block>
-  <block id="ee6f79302596ffa7d6d6cdb31d87b1de" category="paragraph">*SSD使用量*を使用して、容量制限に近づいているファイルシステムを特定します。*スループット使用量（P99）*を使用して、スループットの需要とプロビジョニングされたスループットSKUを比較します。計算の詳細については、スループット列のヘッダーにカーソルを合わせてください。</block>
-  <block id="87805a3d803959d3dcd34427a660d169" category="admonition">アクティブな容量推奨が設定されているファイルシステムは、表に電球アイコンで表示されます。ファイルシステム名を選択すると、そのファイルシステムのSSD容量指標、過去の使用傾向、および容量に関する推奨事項が表示されます。</block>
   <block id="6f600db4b9fe06680f2ac280db49796a" category="section-title">2026年4月6日</block>
   <block id="97c13014b9e16335b445d04850fb955f" category="doc">レイテンシイベントに関するEメールおよびSNS通知</block>
   <block id="c31a2fa4340e87df74fd4add6857d037" category="paragraph">FSx for ONTAP ボリュームでレイテンシイベントが検出されたときに、自動通知を受信できるようになりました。Workload Factory 設定で E メールまたは Amazon SNS 通知を設定すると、ボリュームが設定したレイテンシしきい値を超えたときにリアルタイムアラートを受信できます。</block>
@@ -722,7 +554,6 @@
   <block id="bd454b1eeeb8c3bf10186291d2f90f87" category="doc">Workload Factory for EDAにおける既知の制限事項</block>
   <block id="11aaba4197d60cd84ae00b147f30a239" category="doc">Workload Factory for EDAにおけるPerforceの統合について学ぶ</block>
   <block id="05e71e57ff2860f766cafa61669afd90" category="doc">EDA向けワークロードファクトリについて学ぶ</block>
-  <block id="60476976a2c1ab2169570786b32dba09" category="list-text"><block ref="4d71518cae1e26b3714fb432b3fb2249" category="inline-link-macro-rx"></block>：ボリュームの読み取りおよび書き込みレイテンシのパフォーマンスを、設定可能な警告および重大イベントのしきい値を使用してプロアクティブに監視します。イベントが検出された際に、メールまたはSNS通知を受け取ることができます。ONTAP QoS遅延センターの指標を使用した自動基本分析と、より詳細な根本原因の特定が必要な複雑なシナリオ向けのオプションのAIエージェント分析が含まれます。</block>
   <block id="4f4aa40f24b705f5a6b2c8eddeef1e5e" category="inline-link-macro">レイテンシの傾向を分析</block>
   <block id="ac4297ca80ae5408e173c35ab73d1280" category="list-text"><block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>：インタラクティブなレイテンシーグラフを使用して、時間の経過に伴うレイテンシーの動作を視覚化し、パターンを特定し、パフォーマンスの問題が繰り返し発生しているか単発的であるかを理解し、修復に関するデータ主体の決定を行います。</block>
   <block id="91a16b40f1b5f0084e50d6535c5f55b4" category="doc">Workload Factory for EDAでEDAプロジェクトを管理する</block>
@@ -738,9 +569,7 @@
   <block id="47fc6ce38b51022ce7378bb818bcbdbc" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block>FSx for ONTAP レイテンシ分析の設定</block>
   <block id="71385bd4e1d4e5dbe86dc9b6f19b8d0b" category="paragraph">シミュレーションの実行時間に影響が出る前に、パフォーマンスの問題を事前に特定して解決するために、レイテンシしきい値を設定します。警告アラートと重大アラートを設定し、メールまたはSNS通知を設定してリアルタイムアラートを受信し、自動化された基本分析を活用します。また、必要に応じて、Amazon BedrockモデルARNを設定することで、複雑なシナリオ向けのAIエージェント分析を有効にすることもできます。</block>
   <block id="e92f1fd565b0115330969e68f1df5c93" category="inline-link-macro">レイテンシの傾向を分析する</block>
-  <block id="2d6493eae43920f1f398fd04ec507f90" category="paragraph"><block ref="6c39ec3dea19789c91686480a2e1a7b5" category="inline-link-macro-rx"></block>。イベントが検出されたら、インタラクティブグラフを使用して<block ref="17d96e1b2696eabecce662ae85cda8e7" category="inline-link-macro-rx"></block>できます。</block>
   <block id="b888e1d990c199d358b31e27c7359f42" category="doc">EDA 要件に対応した Workload Factory</block>
-  <block id="4a3f64eab77f5b895962c42b557e049a" category="admonition">AWS 認証情報は、ボリュームパフォーマンス分析のための CloudWatch メトリックを収集するレイテンシー監視機能を使用する場合にも必要です。レイテンシイベントの通知を受け取るには、Workload Factory 設定で通知設定を構成してください。複雑なレイテンシーシナリオにおけるオプションの AI エージェント分析を有効にするには、Amazon Bedrock モデルの ARN も指定する必要があります。<block ref="123cec35459a259baaf9454185c7e6c4" category="inline-link-macro-rx"></block>。</block>
   <block id="656ff150d41fa1c0fc581a7d9317539b" category="list-text">ファイルシステムには、以下の構成を持つボリュームが少なくとも1つ必要です：</block>
   <block id="203f7d7dafc1c11f2f80c2510b54a471" category="list-text">ファイルシステムはリンクで構成されている必要があります<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>。</block>
   <block id="5aef21820caef7c0f864852459c0e5f6" category="doc">Workload Factory for EDAのサポートに登録する</block>
@@ -748,7 +577,6 @@
   <block id="7710e3af23bbd50fdc1e743685f0d33f" category="doc">Workload Factory で EDA のレイテンシー傾向を分析する</block>
   <block id="156ab2ccf351bba06d7f02e1ec744738" category="paragraph">遅延イベントを検出した後、インタラクティブなグラフを使用して、時間の経過に伴うボリューム遅延の挙動を分析できます。これにより、パターンを特定し、パフォーマンスの問題が繰り返し発生しているのか、それとも単発的なものなのかを理解し、修復に関するデータ主体の決定を行うことができます。</block>
   <block id="a84cf3e93039b68c477a75d0719fe3b4" category="inline-link-macro">レイテンシー監視を設定済み</block>
-  <block id="b701766ddd7336d0a918a31e319d2571" category="paragraph"><block ref="440ca031eed7454e03c10d86a7d6dd9c" category="inline-link-macro-rx"></block>があり、少なくとも1つの遅延イベントが検出されている必要があります。</block>
   <block id="4c3f875147f0522c1d3edae65b6aa9b4" category="paragraph">レイテンシーグラフは、時間の経過に伴うボリュームレイテンシーの挙動を視覚的に表現したものです。</block>
   <block id="bb50ee329f41648c14ad144ed9d1cdb6" category="paragraph">レイテンシーグラフには、影響を受けるボリュームのCloudWatchレイテンシデータが表示されます。グラフは、どのアラームがイベントをトリガーしたかに基づいて、読み取りレイテンシまたは書き込みレイテンシを自動的に表示します。時間範囲を調整することで、異なる期間におけるレイテンシの挙動を確認できます。</block>
   <block id="1e050c450cfafbc3c2fda5ecebd63af7" category="paragraph">内容は以下の通りです：</block>
@@ -781,34 +609,21 @@
   <block id="349c1be118a8dc9b143ce40e9e857c35" category="list-text">*日々のパターンを特定する*：24時間表示と72時間表示を使用して、時間帯ごとのパターンを特定します。レイテンシーの急増が予測可能な時間帯に発生する場合は、リソースを大量に消費する処理をオフピーク時にスケジュールしたり、ピーク時の負荷に対応できるよう容量を追加したりすることで、事前に対応できます。</block>
   <block id="2a4a2c3acb655929dec3604e91b0b330" category="list-text">*スパイクの種類を区別する*：短く鋭いスパイクは一時的な問題（一時的なリソース競合など）を示し、持続的に高いレイテンシはシステム的な問題（容量の制約や構成の問題など）を示唆します。それぞれ異なる修復方法が必要となります。</block>
   <block id="28e474bab8647ecce9f08a9afd675d51" category="list-text">*変更後の傾向を監視する*：しきい値の調整、容量の追加、または構成の変更を行った後は、変更が意図した効果をもたらしていることを確認するために、少なくとも72時間グラフを監視してください。</block>
-  <block id="6dbd7482391c0182c5dea0993791246b" category="doc">Workload Factory for EDA のプロジェクトダッシュボードを使用する</block>
-  <block id="80a2bede41d4c6da374d247221296718" category="summary">警告イベントと重大イベントのしきい値を設定して、ボリュームの遅延パフォーマンスを監視します。自動化された基本分析とAIエージェント分析を活用して、パフォーマンスのボトルネックを事前に特定し、解決します。</block>
-  <block id="2e83aef101312851fc79c1478837c2b4" category="doc">Workload Factory for EDA でボリュームレイテンシを監視</block>
-  <block id="9d504bf7450321a349bb17f0e68762ae" category="paragraph">レイテンシ分析では、AWSクレデンシャルに関連付けられたすべてのFSx for ONTAPボリュームの読み取りおよび書き込み操作についてCloudWatchメトリックを収集します。設定された時間範囲内のすべてのデータポイントにおいて、レイテンシしきい値とIOPSしきい値の両方が超過した場合にアラートが生成されます。これにより、実際の負荷がかかった状態で高いレイテンシが維持されることが保証され、誤検出が減少します。検出されたすべてのイベントを確認でき、通知を設定している場合は、影響を受けたボリュームの詳細を記載したEメールまたはAmazon SNS通知を受け取ることができます。</block>
-  <block id="6920ac32a3375288ebdf06facc39e6af" category="paragraph">イベントが検出されると、Workload FactoryはONTAP QoS遅延センターメトリクスを使用して基本的な分析を実行し、主な遅延要因（FlexCache、容量プール、QoS制限、ディスク、データ、クラスタ、またはその他のサブシステムなど）を特定します。その後、<block ref="672f9645415c0125cfd8e23383946617" category="inline-link-macro-rx"></block>インタラクティブなグラフを使用できます。</block>
-  <block id="d149e138ca1f3814e3ddc350907b4b4f" category="paragraph">データおよびクラスタのシナリオでは、オプションでAIエージェント分析を実行して、詳細な根本原因の説明、影響を受けるEC2クライアントのリスト、および推奨される修復手順を取得できます。</block>
   <block id="27e09936f431721e0ec32c3d3d21885c" category="list-text">基本的な分析結果を表示するには、FSx for ONTAPファイルシステムにリンクを関連付ける必要があります。リンクがなくてもイベントを検出することはできますが、分析から得られる知見は限られます。リンクがまだ関連付けられていない場合は、EDAで*リンクの関連付け*を選択し、新しいリンクを作成するか既存のリンクを関連付けるかを選択してから、*続行*を選択すると、ストレージワークロードのリンク作成ページに自動的に移動します。</block>
   <block id="7096afe055eda8f68401dc699f62aa71" category="paragraph">BedrockモデルのARNを設定しない場合でも、レイテンシ監視と自動基本分析は使用できますが、AIエージェントによる分析は利用できません。</block>
   <block id="1068f745b93ee031c494800d88399506" category="list-text">通知設定（オプション）</block>
   <block id="bccf4a154062c04971c782a1a33ba164" category="list-text">レイテンシーイベントが検出された際にメールまたはAmazon SNS通知を受信するには、Workload Factoryの設定で通知設定を構成してください。詳細については、<block ref="6c57f686ffc3c80537465140f26ad896" category="inline-xref-macro-rx"></block>を参照してください。</block>
-  <block id="d51cdc3a782f07f214d065d32392cd4a" category="paragraph">遅延分析では、CloudWatchアラームを使用してボリュームのパフォーマンスを監視します。アラートがどのようにトリガーされるかを理解することで、適切なしきい値を設定し、結果を解釈するのに役立ちます。</block>
-  <block id="38f4c4b38520d15824f4ab473c208770" category="paragraph">読み取り操作と書き込み操作に対して、警告しきい値とクリティカルしきい値を設定できます。システムはしきい値を継続的に評価し、条件が満たされた際にアラートを生成します。</block>
-  <block id="061b69757df18e0f80dd6951d4a87bc0" category="paragraph">Workload Factory は、AWS クレデンシャルに関連付けられたすべての FSx for ONTAP ボリュームのレイテンシメトリックの収集を開始します。メトリックは少なくとも 20 分ごとに収集されます。設定したしきい値を超えたボリュームはすべて表示されます。</block>
   <block id="e47a2805498d3bd68e7615f5a9695ad0" category="list-text">各ボリュームの最新の違反のみが表示されます。ボリュームで複数の違反が発生した場合は、最新のイベントのみが表示されます。</block>
   <block id="e83c229f37cf36a4d502c243dffb6c3d" category="list-text">最大200件のイベントが表示されます。新しいイベントが追加されると、古いイベントは削除されます。</block>
   <block id="b028238b7d6c951434ecd797dfecd43f" category="list-text">ファイルシステムにリンクが関連付けられていない場合でも、イベントは表示されます。基本的な分析の詳細を表示したり、AIエージェントによる分析を実行したりするには、リンクが必要です。</block>
-  <block id="81db793f48cabf755c5da85566220fe0" category="list-text">*レイテンシ*タブで、各イベントの情報を確認してください。以下が含まれます：</block>
   <block id="391d5001f0e7f63a7def2cbcdfbf9795" category="list-text">遅延イベントの詳細を表示するには、*重大度*列で該当するイベントを選択してください。これにより、そのイベントの遅延分析パネルが開きます。</block>
   <block id="256e5511799cf87e5ea3d5686def55a5" category="list-text">テーブルを並べ替えるには、任意の列ヘッダーを選択してください。デフォルトでは、まず重大なイベントが時間順に表示され、次に警告イベントが時間順に表示されます。</block>
   <block id="8f366b4a3c1ee9db68d65977ad160a9e" category="list-text">時間の経過に伴う遅延傾向を分析するには、イベントを選択して遅延分析パネルを開きます。*Over time*タブを使用して、インタラクティブな遅延グラフを表示します。詳細については、<block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="5bf8d268567f0e7ee71b32158e4a1593" category="section-title">レイテンシイベントを分析する</block>
-  <block id="e819192d011b6b3e3f4bbd9fc359c099" category="paragraph">基本的な分析を行うことで、手動による調査を行うことなく、遅延問題の根本原因を迅速に特定できます。レイテンシイベントが検出されると、Workload FactoryはONTAP QoS遅延センターの指標を使用して自動的に基本的な分析を実行します。この分析では、遅延の原因となっているコンポーネントを特定し、簡単な説明を提供します。</block>
   <block id="1bd47873c66482991cb879180d2867cc" category="paragraph">*重大度*列でレイテンシイベントを選択すると、そのイベントのレイテンシ分析パネルが開きます。このパネルには、レイテンシイベントのさまざまなビューを提供するタブが含まれています：</block>
   <block id="c2fb795bc2e1a609303d9e00777fdb2e" category="list-text">*概要*：レイテンシの原因となっているコンポーネントを示す基本的な分析結果を表示します。</block>
   <block id="748595841e3c3b1b5183a7d6077dffdd" category="list-text">*時間の経過とともに*：履歴データを含むインタラクティブなレイテンシグラフを表示します</block>
-  <block id="7bc1f28b4c89677e5f6cfb8399c63ac9" category="paragraph">*Overview* タブには、自動化された基本分析の結果が表示され、どのコンポーネントが遅延の原因となっているかが特定されます。</block>
   <block id="c9a0323fbd3e3be5e48738ff08051151" category="paragraph">Amazon Bedrock モデルの ARN が設定されている場合、 * 概要 * タブには、データおよびクラスタシナリオの AI エージェント分析を実行するオプションも含まれます。Bedrock が設定されていない場合、タブには、 Bedrock アクセスを設定できる特定のファイルシステムのストレージワークロード設定ページへのリンクが表示されます。</block>
-  <block id="7f5bfa6c2ae6835ebe3f8cfab65e7d77" category="section-title">時間の経過とともに</block>
   <block id="88b98d83646123ee99ac10d567d7bad8" category="paragraph">*Over time* タブには、影響を受けるボリュームの時間経過に伴う CloudWatch レイテンシ指標を示すインタラクティブなレイテンシグラフが表示されます。このグラフは、イベントをトリガーしたアラームの種類に応じて、読み取りレイテンシまたは書き込みレイテンシを示しています。異なる期間におけるレイテンシの挙動を確認するために、異なる時間枠（1H、3H、12H、24H、72H）を選択できます。</block>
   <block id="b938fe219e0d3269febbb2f4ce0e4d4f" category="paragraph">グラフの使用方法に関する詳細な手順については、<block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="46a6c0f7d8d51bac15ceada497addbb0" category="paragraph">Workload Factory 設定で Amazon Bedrock モデル ARN を設定します。<block ref="6c761e19260aabd782369cde93c2b1c4" category="inline-link-macro-rx"></block>を参照してください。</block>
@@ -816,27 +631,398 @@
   <block id="354b602de39fd16c2e8213c6420af87b" category="paragraph">ファイルシステムにリンクが関連付けられていない場合、影響を受けるファイルシステムにリンクを関連付けるよう求めるプロンプトが表示されます。プロンプトを選択すると、該当するファイルシステムのリンク設定ページにリダイレクトされます。</block>
   <block id="6b11475664ca5049823829bb74e3334d" category="list-text">*概要*タブを確認して、基本的な分析結果を理解し、遅延の原因を特定してください。</block>
   <block id="f59e8b0685757d07e5ad61ebc46a87c4" category="list-text">遅延の原因がデータまたはクラスタであると特定された場合は、*分析*を選択してAIエージェントによる分析を実行します。</block>
-  <block id="a34b99c45f1060fa36c26445937a8916" category="list-text">AIエージェントの分析結果を確認してください。</block>
   <block id="42ca2768ba0de807a5ef846dc69d0aad" category="section-title">レイテンシ通知を設定する</block>
   <block id="b113e6e3f414df97faffdf304f96cdea" category="inline-link-macro">通知を設定する</block>
-  <block id="3d6c653a360d87aa37c2b5f066b22cf0" category="paragraph">レイテンシイベントが検出された際にアラートを受信するように、Eメールまたは Amazon SNS 通知を設定できます。ボリュームが設定されたしきい値を超えるたびに通知が送信され、パフォーマンスの問題をリアルタイムで認識できます。通知を有効にするには、<block ref="760d5a248a4ffda4abc117648b19c119" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="fc5cf4b9e620903fdc3e72c98ed92e50" category="paragraph">レイテンシ通知はファイルシステムごとに送信されます。ファイルシステム内の1つ以上のボリュームがレイテンシのしきい値を超えると、影響を受けるすべてのボリュームを一覧表示する単一の通知が届きます。</block>
   <block id="d161804a8b38f48ce78c8bdf17d57cef" category="admonition">影響を受けるボリュームが10個を超える場合、メールには最初の10個のボリュームが表示され、さらに影響を受けるボリュームの数が示されます。影響を受けるすべてのボリュームは、Workload Factoryコンソールで確認できます。</block>
-  <block id="8f54abe0ef3af482bad46fd8ebb01724" category="paragraph">通知には次のものが含まれます：</block>
-  <block id="9575316a51e8af711966e6ef73e107a8" category="list-text">ファイルシステムの詳細</block>
-  <block id="6e5e5a57e2d312d021faf48fbf359263" category="list-text">しきい値を超えたボリュームのリスト</block>
-  <block id="29e5a7a6d5b174fac3e647e10a8e3d8f" category="list-text">イベントの重大度（警告または重大）</block>
-  <block id="f44901cc21e17ffa2243cecaabcb0d12" category="list-text">レイテンシ値としきい値の比較</block>
-  <block id="c95bd15aedfd92163fb52171e80e4aad" category="list-text">調査用のレイテンシページへの直接リンク</block>
   <block id="daab441d1213ea1ae747f6f3fc4f0f86" category="paragraph">通知チャネル：</block>
   <block id="d3ac5879c6e6d4037eeb5996a078c1eb" category="list-text">*メール*：Workload Factoryの通知設定で設定されているメールアドレスに送信されます。</block>
   <block id="521affd4c31056b034895f68689c40d6" category="list-text">*Amazon SNS*：他のシステムとの統合のために、設定済みのSNSトピックに公開されます</block>
   <block id="8fe1d189cc79e42edfd18c2ab7312a9b" category="paragraph">遅延傾向の分析に関するベストプラクティスについては、<block ref="80a684273373f0a4a9c65645f4543291" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="f2abe5914eba19478c3b813d9def8548" category="inline-link-macro">FSx for ONTAP レイテンシ分析</block>
-  <block id="00972c5586727b10755c077cb571302f" category="list-text">レイテンシ監視を有効にしている場合にのみ、レイテンシ情報を表示できます。レイテンシしきい値を構成していない場合は、*構成*を選択します。レイテンシ監視の詳細については、<block ref="e98e4afc77d2de893746a62416cafbb2" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="228ef1bb0e07fcafe49318ab6cd2b44e" category="doc">Workload Factory for EDAプロジェクトのバージョンを管理</block>
   <block id="533773babd56d9aeab3d01b7003792d3" category="paragraph">Workload Factoryから直接オンデマンドスナップショットとクローンを作成することで、EDAプロジェクトのさまざまなバージョンを操作できます。プロジェクトのスナップショットとクローンは、プロジェクト作成時に関連付けられていたファイルシステムに保存されます。<block ref="fcbcfb6a9b5948c86224e0f3dc582c2b" category="inline-link-rx"></block>を使用してスナップショットとクローンを管理することもできます。</block>
   <block id="cccb746459589dc88647e759315c1e14" category="doc">Workload Factory for EDAの新機能</block>
   <block id="a2129af669bcf43206fc6eda2e181958" category="section-title">2026年5月3日</block>
-  <block id="bef2ad04af6788871805dcd9435635f7" category="sidebar">FSx for ONTAP ボリュームのレイテンシを監視</block>
+  <block id="4f08df9e7760628c8a0fcefa27f063f4" category="doc">SSD 容量増加管理モードと自動化</block>
+  <block id="6048180efecc25affb37f0bcfc4af51f" category="paragraph">Workload Factoryでは、運用上の好みに合わせて、SSD容量増加管理モードを提供するようになりました。</block>
+  <block id="9464fbc6a7b71da353f2d54109960226" category="list-text">*自動化*</block>
+  <block id="66237dc10c2943c0563d26d3f0b6b230" category="list-text">*推奨*</block>
+  <block id="d015a34de96d3f92372df94da0f629a7" category="list-text">*なし*</block>
+  <block id="7d2c5b1dd66ac2d00e2f116602f0da91" category="paragraph">現在のモードとそのパラメータは、ファイルシステム詳細ページのSSD使用状況グラフの上部に表示されます。運用上のニーズに応じて、いつでもモードを切り替えることができます。</block>
+  <block id="df638dda507575b6f88b684af7608553" category="inline-link-macro">SSD 管理モードについて</block>
+  <block id="8726b2b1ff09bca86dd85ada696c955e" category="paragraph"><block ref="8a69182f844b7822adef7a1894417217" category="inline-link-macro-rx"></block>。</block>
+  <block id="70a1c8861535253968956554ebf8e231" category="section-title">SSD容量増加管理パラメータの一括編集</block>
+  <block id="771b4b22f5518da40bcc1511e8f12898" category="paragraph">概要ダッシュボードから、複数のファイルシステムにわたるSSD容量増加管理パラメータを調整できるようになりました。「クラスター」テーブルで1つ以上のクラスターを選択し、「しきい値（10～90%）」、「ルックバック期間（1～200時間）」、「アヘッド期間（1～200時間）」の値を一括編集します。</block>
+  <block id="012cccd7c99fecdbdf717ccb8b16b7de" category="paragraph">編集ダイアログは、選択内容に基づいて自動的に入力されます。選択したすべてのファイルシステムが同じパラメータ値を共有している場合は、それらの値が表示されます。それ以外の場合は、デフォルト値が使用されます。これにより、環境全体で一貫した容量設定を適用できます。</block>
+  <block id="68c574408eaf57fb5b79796bef1895be" category="inline-link-macro">パラメータを一括編集する方法を学ぶ</block>
+  <block id="ba63cd1a056bc80046c503ba2fa33773" category="paragraph"><block ref="fb2c15e1efaea436655e6825086014e4" category="inline-link-macro-rx"></block>。</block>
+  <block id="b02017def04604d515c33a15c45d2e8e" category="section-title">容量決定ポイントの可視化</block>
+  <block id="7dcdf7b0c669e34d376781ffb261c8f6" category="paragraph">SSD使用状況グラフに、容量推奨値が生成された時点、または自動アクションが実行された時点を示す決定ポイントが表示されるようになりました。</block>
+  <block id="473ad9d52a93a6904458becbb59cdb8f" category="list-text">*推奨事項の決定ポイント*：カーソルを合わせると、タイムスタンプ、推奨される増加サイズ、および現在の容量が表示されます。</block>
+  <block id="e13a73a214d35af7df23610e438e2773" category="list-text">*自動化の決定ポイント*：タイムスタンプ、成功または失敗ステータス、サイズの増加、および新しいアグリゲート サイズを表示するには、ホバーします。失敗した試行には、失敗理由が含まれます。</block>
+  <block id="c1d04258174a29f2132edb30e198b9ea" category="paragraph">意思決定ポイントは30分ごとに発生し、選択された時間範囲に応じて個別に表示されるか、まとめて表示されます。</block>
+  <block id="77911424f819f845cb8185bc75dd9c89" category="inline-link-macro">容量に関する決定ポイントについて</block>
+  <block id="2470c0ea25645427c285ac2c1db0ea6d" category="paragraph"><block ref="7d345c706cc4ef56c93e61e8fef7447b" category="inline-link-macro-rx"></block>。</block>
+  <block id="6730925799427eefafa41ca821775fd8" category="section-title">クラスタテーブル内のリンク設定ステータス</block>
+  <block id="00617692d401e7bead58c1c61c197639" category="paragraph">概要ダッシュボードのクラスターテーブルに、各ファイルシステムに対してFSx for ONTAPリンクが設定されているかどうかを示す関連リンク列が追加されました。接続ステータスは毎日検証され、リンク設定が必要なファイルシステムや接続に問題がある可能性のあるファイルシステムを特定するのに役立ちます。</block>
+  <block id="14447da801a1982ce517d6e1ffb0c116" category="inline-link-macro">概要ダッシュボードを表示する</block>
+  <block id="ad5ea2e791a779cc733cf94252010c1e" category="paragraph"><block ref="a3c9e85960ac01cd3d2a615266299aa4" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed577820f4fec6bbade3e14c5eb7020d" category="section-title">NetApp Workload FactoryでのAWS GovCloud（US）のサポート</block>
+  <block id="8b15ccb7fd3de568f0d6670c4c2d0d62" category="paragraph">NetApp Workload FactoryはAWS GovCloud（US）アカウントをサポートしています。GovCloudアカウントを使用すると、AWS GovCloud（US）リージョンでストレージワークロードをデプロイおよび管理できます。</block>
+  <block id="d9c90e086fcb11b72cc6731b0bd016c2" category="paragraph">Workload Factoryは、_Codebox_による組み込みの自動化機能を導入しました。Codeboxは、以下のような自動化のメリットを提供します：</block>
+  <block id="b6f776883837709d25fc83d9d2eae9ff" category="list-text"><block ref="0a2d9952596b6031f65cb9a8bb255dc7" category="inline-link-macro-rx"></block>：FSx for ONTAPクラスターの健全性、容量、スループットを監視し、新しいボリュームの配置場所を決定し、容量とスループットの拡張に関する情報に基づいた意思決定を行い、自動容量推奨事項を受け取ったり、自動容量の拡張を有効にしたりするのに役立つ集中型クラスタビューを提供します。アルゴリズムの動作を時系列で理解するために、過去の決定ポイントを確認してください。</block>
+  <block id="1d7508bcb4a820ca6a9af1b9926be0e6" category="list-text"><block ref="d9074340a1cb29ae9597ad8cd166620b" category="inline-link-macro-rx"></block>：ボリュームの読み取りおよび書き込みレイテンシのパフォーマンスを、設定可能な警告および重大イベントのしきい値を使用してプロアクティブに監視します。イベントが検出された際に、メールまたはSNS通知を受け取ることができます。ONTAP QoS遅延センターの指標を使用した自動基本分析と、より詳細な根本原因の特定が必要な複雑なシナリオ向けのオプションのAIエージェント分析が含まれます。</block>
+  <block id="0cfceb8e193bd25b3a09ad13b62f4684" category="inline-link-macro">プロジェクトダッシュボード</block>
+  <block id="9fa0441dddab8e2759fb1bbfebda4faf" category="list-text"><block ref="7ff4753ab5f61ed770ba51580587dc9c" category="inline-link-macro-rx"></block>：FSx for ONTAPファイルシステム全体のストレージ消費量を一元的に表示し、プロジェクト全体のストレージ使用状況に関する計画、コストの評価、情報の収集を支援します。</block>
+  <block id="f2cc5430dea3ca6f885c8290f9743000" category="summary">Workload Factory for EDA のレイテンシー監視が、自動基本分析とオプションの AI エージェント分析を使用して、FSx for ONTAP ボリュームのパフォーマンス問題の検出と分析にどのように役立つかを学びましょう。</block>
+  <block id="2582f7d825e8dd11c3d1bde9610079e8" category="doc">Workload Factory for EDAにおけるレイテンシ監視について学ぶ</block>
+  <block id="0a23e284c5cb73333be9d5d9c4654092" category="paragraph">Workload Factory for EDA のレイテンシ監視は、FSx for ONTAP ボリュームのパフォーマンスボトルネックを事前に特定して解決するのに役立ちます。システムは CloudWatch メトリックを使用して読み取りおよび書き込みレイテンシを監視し、パフォーマンス問題の根本原因を理解するのに役立つ自動分析を提供します。</block>
+  <block id="970512b20a71933c564749139d8f05c4" category="section-title">レイテンシ監視の仕組み</block>
+  <block id="edb6eb74dcbc71b9df975ad355262ab2" category="paragraph">遅延分析は、AWS 認証情報に関連付けられたすべての FSx for ONTAP ボリュームの読み取りおよび書き込み操作について CloudWatch メトリックを収集します。システムは、これらのメトリックを構成可能なしきい値と照らし合わせて継続的に評価し、パフォーマンスの問題を早期に検出します。</block>
+  <block id="8e26fc12fc37a6dd21d91db15f0b8565" category="paragraph">レイテンシイベントが検出されると、Workload FactoryはONTAP QoS遅延センターの指標を使用して基本的な分析を自動的に実行し、主なレイテンシの原因を特定します。データやクラスタコンポーネントが関係するより複雑なシナリオの場合、オプションでAIエージェント分析を実行して、詳細な根本原因の説明、影響を受けるクライアントリスト、および具体的な修復手順を取得できます。</block>
+  <block id="16956923f5dc480506015d938555f896" category="section-title">アラート生成</block>
+  <block id="a22f40f5344eddca52dfbd9e7c04477a" category="paragraph">設定された時間範囲内のすべてのデータポイントにおいて、レイテンシしきい値とIOPSしきい値の両方が超過した場合にアラートが生成されます。この二重条件アプローチは、実際の負荷がかかった状態で高いレイテンシが維持されることを保証することで、誤検出を低減します。</block>
+  <block id="eda2fd03c3fdf667d0e9af1170fd863a" category="paragraph">以下の項目について個別のしきい値を設定できます：</block>
+  <block id="eab33b8388cd0af9790bd6e68a7a303a" category="list-text">読み取り操作</block>
+  <block id="8c1dcfaaf71e238408215576c908846d" category="list-text">書き込み操作</block>
+  <block id="ec7060010ffc9939f6dbc9f011b152f8" category="list-text">警告の重大度</block>
+  <block id="6149f75997b892ec89443cf6333d50f4" category="list-text">重大度</block>
+  <block id="cad36f79ab035b587ca46e921753e244" category="paragraph">検出されたすべてのイベントはレイテンシーイベントテーブルに表示され、通知を設定している場合は、影響を受けるボリュームの詳細を記載したメールまたは Amazon SNS 通知が届きます。</block>
+  <block id="1d43aee85825e8086bc1205dc0f6be98" category="paragraph">アラートがどのようにトリガーされるかを理解することで、適切なしきい値を設定し、結果を解釈するのに役立ちます。</block>
+  <block id="f8e5e7514e924e1f8218ff0dc23c7274" category="section-title">レイテンシ分析</block>
+  <block id="69cdc81a75d33355f77651340a2405a9" category="paragraph">Workload Factoryは、レイテンシの問題のトラブルシューティングに役立つ2つのレベルの分析を提供します。</block>
+  <block id="04e545346e660cc912f1cc98e3d20963" category="section-title">基本分析</block>
+  <block id="63c62594a6d9595ed1eadcbb4fa9323c" category="paragraph">レイテンシイベントが検出されると、Workload Factoryは自動的に基本的な分析を実行します。ONTAP QoS遅延センターメトリクスを使用して、どのコンポーネントがレイテンシを引き起こしているかを特定します（例：FlexCache、容量プール、QoS制限、ディスク、データ、クラスタ、またはその他のサブシステム）。この分析により、手動調査を行うことなく、レイテンシの原因を迅速に特定できます。</block>
+  <block id="2a227c17e2824f1e39758cecf15ea6de" category="paragraph">FSx for ONTAP ファイルシステムにリンクを関連付けると、すべてのレイテンシイベントに対して基本的な分析が利用可能になります。リンクがなくてもイベントを検出することはできますが、分析から得られる知見は限られます。</block>
+  <block id="375303ab8b27cea67479230165094eb4" category="section-title">AIエージェント分析</block>
+  <block id="012eccf4e815963422623ec7dfcc0ada" category="paragraph">基本的な分析では遅延の原因を特定できるものの、データやクラスタコンポーネントが関わる複雑なシナリオでは、より詳細な調査が必要となる場合が多い。AIエージェント分析は、基本的な分析では検出できないbully volume、最適ではない構成、またはスケールアウト要件などの問題を特定することで、このより深いレベルのトラブルシューティングを提供します。</block>
+  <block id="4af5e41eab4ba7a3d5a13e7f221144a6" category="paragraph">AI エージェント分析を実行すると、システムは次の情報を提供します。</block>
+  <block id="34fe26b2e09c3574ae8152b248fd249f" category="paragraph">AIエージェントの分析には、Workload Factoryの設定で構成されたAmazon BedrockモデルのARNが必要です。Bedrockが設定されていない場合でも、レイテンシー監視と自動基本分析は引き続き使用できます。</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">関連情報</block>
+  <block id="8b7d52e40455ef775f8470316b16d26f" category="inline-link-macro">レイテンシー監視の設定</block>
+  <block id="ae731adc4c45bcc8cdf1b2ab6ac2654f" category="list-text"><block ref="ae731adc4c45bcc8cdf1b2ab6ac2654f" category="inline-link-macro-rx"></block></block>
+  <block id="020bb463ed0be3782ad9f2bc3c5cb62f" category="inline-link-macro">レイテンシの問題を分析</block>
+  <block id="eae40e392cce2ffde0132f5418e56ec0" category="list-text"><block ref="eae40e392cce2ffde0132f5418e56ec0" category="inline-link-macro-rx"></block></block>
+  <block id="6ebd25eb4c135c18dd20612e63ec5166" category="list-text"><block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block></block>
+  <block id="1b885b89c317b247fe2d3d33ecf2f61f" category="summary">Workload Factory for EDA の概要ダッシュボードが、大規模な FSx for ONTAP クラスターの健全性、容量、スループットの監視にどのように役立つかをご確認ください。</block>
+  <block id="e1a551f817ef75d24b9c2cd208f1653a" category="doc">Workload Factory for EDA の概要ダッシュボードについて説明します</block>
+  <block id="9e133f77006be15d6662dc0bed6de273" category="paragraph">概要ダッシュボードは、複数のFSx for ONTAPファイルシステムにわたるEDAワークロードを管理するIT管理者に一元化されたビューを提供します。これを使用すると、クラスターの状態と使用状況を迅速に評価し、新しいボリュームやジョブの配置場所を決定し、ボリュームやSVMの移動候補を特定し、容量の拡張やスループットを拡張するタイミングを判断できます。</block>
+  <block id="4ac6f0551e6084a8744c1be87906c4a1" category="paragraph">概要ダッシュボードは、設定済みのAWS認証情報に関連付けられたすべてのFSx for ONTAPファイルシステムのCloudWatchメトリクスを収集します。</block>
+  <block id="30ab11391ffa100456cac6f560454cbf" category="list-text">*クラスターの健全性ステータス*：ファイルシステム全体のレイテンシイベント、SSD の使用率と容量の推奨事項、および ONTAP EMS イベントを強調表示する概要情報が上部に表示されます。</block>
+  <block id="1a6c0ac421125cd607ad727794088009" category="paragraph">これはあなたに役立ちます：</block>
+  <block id="3b26ead485aaabd4945f63cf3400c41f" category="list-text">新しいボリュームを配置し、ワークロードのバランスを再調整する</block>
+  <block id="847ba2b1117f8f2db2b815fc7c73c605" category="list-text">容量またはスループットの拡張を計画する</block>
+  <block id="bbf4bc1a92c9c10651679ab50ca8e062" category="list-text">大規模なクラスターの健全性を監視する</block>
+  <block id="f38b951b621386e6c909a467a2fc0d2c" category="list-text">ボリューム配置について十分な情報に基づいた意思決定を行う</block>
+  <block id="26405e0e0947b4828ee6ed76d00837e9" category="list-text">容量限界に近づいているクラスタを特定する</block>
+  <block id="97c702b452a6c71f4f36f5402b29d8fd" category="section-title">ダッシュボードコンポーネント</block>
+  <block id="ad88be1e86f279e4dc2b817970253717" category="paragraph">クラスターの健全性ステータスは、フィルタリングされたファイルシステム全体の活動状況のスナップショットを提供します。この情報は、少なくとも 1 つの FSx for ONTAP リンクがファイルシステムに関連付けられている場合にのみ表示されます。</block>
+  <block id="c273f90bb18e2d345cad42a75c13525e" category="paragraph">健康ステータスには、次の領域が含まれます。</block>
+  <block id="eea2274bcc20c5ab5c322a30dcee6258" category="list-text">*レイテンシ*</block>
+  <block id="06ec85d7ef2499649ef42d2054ac226a" category="list-text">対象となるファイルシステム全体で検出されたレイテンシイベントの数を表示します。レイテンシ監視を有効にしている場合にのみ、レイテンシ情報を表示できます。</block>
+  <block id="e0b6d15d08b6ac1bf0c9ca66512009b1" category="list-text">*SSD 容量管理*</block>
+  <block id="fae1127ef684baae2da0861b0a98b91c" category="list-text">SSD使用率が80%を超えるファイルシステムの数と、アクティブな容量推奨値を持つファイルシステムの数を表示します。これにより、容量の見直しが必要となる可能性のあるファイルシステムを迅速に特定できます。</block>
+  <block id="0e2625311ccf9f45cca827ce6c0e4bca" category="list-text">*ONTAP イベント*</block>
+  <block id="d7977f08ca83e47fe2459a0029ea1287" category="list-text">検出されたEMSイベントの数を、容量、可用性および保護、セキュリティおよびその他に分類して表示します。</block>
+  <block id="79b87402abbc633ab610924741eb4961" category="paragraph">クラスターテーブルには、アクティブなリージョンとAWSアカウントの選択に基づいてフィルタリングされた各FSx for ONTAPファイルシステムの詳細なビューが表示されます。データはCloudWatchメトリックから収集されます。</block>
+  <block id="cb1a870798ac2e8e385d6091379cea05" category="paragraph">この表を使用して次の操作を実行します：</block>
+  <block id="dc6d89e2a5114daccecb6b3be64e07a2" category="list-text">容量制限に近づいているファイルシステムを特定する（SSD使用率列）</block>
+  <block id="52ffaddb041cdb3240b001532e14556c" category="list-text">プロビジョニングされたスループット SKU とスループット需要を比較します（スループット使用量 P99 列）</block>
+  <block id="9c26918e454ba2268c8c93c41218c570" category="list-text">複数のクラスタ全体でパフォーマンス指標を追跡</block>
+  <block id="ff552e5da914068f0d9d4064c2f6fb85" category="list-text">リンク設定ステータスの確認（関連リンク列） - 接続の有効性は毎日検証されます</block>
+  <block id="88b77b6c01adce036032ab7bf374a7a9" category="list-text">パラメータを一括更新する複数のクラスタを選択してください</block>
+  <block id="c6e9c9061d9167583226901e02ffb03e" category="section-title">SSD容量管理</block>
+  <block id="dc7cc5bc43b6422ea3c7c545e1014b19" category="paragraph">概要ダッシュボードは、インテリジェントな SSD 容量管理機能を提供します。</block>
+  <block id="f8ea6e988f609d0e7b256e12ea4d4718" category="section-title">管理モード</block>
+  <block id="fd46768670350478255cfec0f5a33103" category="list-text">Workload Factoryは、事前に定義されたしきい値と使用パターンに基づいて、SSD容量を自動的に増加させます。システムは手動による介入なしに容量の拡張を管理します。これは、自動管理が望ましい環境に最適です。</block>
+  <block id="7fc12d608535759ae862e7d2838e4b46" category="list-text">Workload FactoryはSSDの使用パターンを分析し、容量増加の推奨事項を提供します。推奨事項を手動で確認して適用します。これにより、自動分析のメリットを享受しながら、容量に関する意思決定を完全にコントロールできます。</block>
+  <block id="68193c71c1c2705093bc19150355c135" category="list-text">容量に関する推奨事項や自動的なアクションは実行されません。これは、システムの支援なしに手動で容量を管理したい場合に便利です。</block>
+  <block id="1b392af618a6d10bafe7d2c56de2a845" category="paragraph">Workload Factory が自動化モードまたは推奨モードの場合、システムは各 FSx for ONTAP ファイルシステムに対して容量推奨アルゴリズムを自動的に実行します。このアルゴリズムは 24 時間ごとにスキャンを実行し、SSD の容量調整が推奨されるタイミングを特定します。</block>
+  <block id="139d803d0ff80ce2d01f46d74d6582f7" category="list-text">Workload Factoryの通知設定に基づいて、即座に通知が届きます。</block>
+  <block id="7e150f354d44b3edc86020bd3bf482de" category="list-text">推奨事項のあるファイルシステムは、クラスタテーブルを「最終 SSD 増加タイムスタンプ」または「最終 SSD 増加説明」列でフィルタリングすることで特定できます</block>
+  <block id="b1c144fb181ff280716344ca0bf5b564" category="list-text">推奨事項がアクティブなファイルシステムの総数が表示されます</block>
+  <block id="68c65b2650d813b072f0481727b3e600" category="paragraph">推奨事項では、提案された変更とその理由について説明しています。例：_ファイルシステムSSDの使用パターンに基づいて、SSDのサイズを増やすことを推奨します。_</block>
+  <block id="51f96e860aa2f93672b359fa0230786b" category="section-title">SSD管理パラメータ</block>
+  <block id="fbee093eee984e997fc12a059b094399" category="paragraph">パラメータは、容量管理システムがSSDの使用状況を分析し、それに基づいてどのような動作を行うかを制御します：</block>
+  <block id="797016fdf74902992680096f55a3d63c" category="list-text">*しきい値*（10～90％）</block>
+  <block id="75143f7b1829ffcffc0c76d6103f090a" category="list-text">容量の推奨または自動化アクションをトリガーするSSD使用率。たとえば、しきい値が80%の場合、SSD使用率が80%に達すると推奨またはアクションが実行されます。推奨モードと自動化モードの両方で使用できます。</block>
+  <block id="7eb5fa704b3019bd0f6cd3883bbcf786" category="list-text">*Lookback*（1～200時間）</block>
+  <block id="9a4103f7e6d7d850b63cbe6a386c5186" category="list-text">過去のSSD使用パターンを分析するために使用される期間。ルックバック期間が長いほど、容量に関する意思決定のための履歴コンテキストが多く提供されます。Automateモードでのみ使用できます。</block>
+  <block id="8d3fdec3e987ae5a2aa90e14c81ac557" category="list-text">*Ahead*（1～200時間）</block>
+  <block id="00e09bedfec925ddc5d5fb54c9e8dd7b" category="list-text">将来の容量ニーズを予測するために使用される期間。先行期間が長いほど、容量の拡張に向けてより先の将来を計画します。Automateモードでのみ使用できます。</block>
+  <block id="233d0f7161a118f4bfe1fca3d54f5805" category="paragraph">これらのパラメータは、ファイルシステムごとに個別に設定することも、一括編集を使用して複数のファイルシステムに一貫した設定を適用することもできます。</block>
+  <block id="fa0b4e3f4266abe4ec93e3058cfcd2aa" category="section-title">容量に関する決定ポイントについて</block>
+  <block id="f2fc81162d0e5156b42fc0f47ab8be65" category="paragraph">SSD使用状況グラフには、容量推奨値が生成された時点、または自動化アクションが実行された時点を示す決定ポイントが表示されます。これらの視覚的な指標は、容量管理アルゴリズムの経時的な動作を理解するのに役立ちます。</block>
+  <block id="c27f88e562f3ed3c4000570673348297" category="list-text">*推奨事項の決定ポイント*</block>
+  <block id="0b6f730b5d0a8331f863945678771e7e" category="list-text">容量推奨アルゴリズムが追加のSSD容量が必要であると判断した場合に表示されます。SSD容量が増やされていない場合、これらのポイントは30分ごとに発生する可能性があります。グラフは、可能な限りすべての決定ポイントを表示しますが、時間範囲によって個々のポイントが密集しすぎる場合は、それらを統合します。</block>
+  <block id="153ea1a28a0f56dba57777e1680e1f76" category="list-text">*自動化の意思決定ポイント*</block>
+  <block id="c3bf00fc324bd1e2a5bea00dc59936c3" category="list-text">自動化システムがSSD容量を増やそうとした際に表示されます。これらの点は、自動化処理が成功したか失敗したかを示しています。</block>
+  <block id="476a136a9f2f06a9618d514793b81269" category="paragraph">過去のSSD使用状況グラフと意思決定ポイントを使用して、次のことを行います：</block>
+  <block id="8aa0b0a22cf225f503177c8f1de7df3c" category="list-text">容量調整がどのくらいの頻度で必要になるかを理解する</block>
+  <block id="dc036d0aefd6c43f7e0e90f879128e16" category="list-text">自動化モードと推奨モードのどちらがワークロードパターンに適しているかを評価してください。</block>
+  <block id="274e06045627d8934cd9bb52e8c64f53" category="list-text">繰り返し発生する容量制約を特定する</block>
+  <block id="38e979158d55ae25a36aba4d97b0a8b4" category="list-text">成長傾向に基づいて将来の容量ニーズを計画する</block>
+  <block id="2814ccd9bf1ef1faffa5931e29ee7f74" category="list-text">自動化の失敗に関するトラブルシューティング</block>
+  <block id="0a77401b929110d42e7c36ac77c37872" category="inline-link-macro">概要ダッシュボードを有効にする</block>
+  <block id="b20e509aee340813d832ff54146a6123" category="list-text"><block ref="b20e509aee340813d832ff54146a6123" category="inline-link-macro-rx"></block></block>
+  <block id="a35e94495c93c5d785f8b1240c15be6a" category="inline-link-macro">概要ダッシュボードを使用する</block>
+  <block id="2cfa6ed38cd9b96055529b98595c7f05" category="list-text"><block ref="2cfa6ed38cd9b96055529b98595c7f05" category="inline-link-macro-rx"></block></block>
+  <block id="1fef93f9f92b01f7585a092a233eafbf" category="summary">Workload Factory for EDA のプロジェクトダッシュボードが、FSx for ONTAP ファイルシステムとボリューム全体でプロジェクトストレージの使用状況を監視および分析するのにどのように役立つかを学びましょう。</block>
+  <block id="03d481d74c86f291f70a37bc6d99bacc" category="doc">Workload Factory for EDA のプロジェクトダッシュボードについて説明します</block>
+  <block id="1e7333346e2a9dbbcd3453a78f617b87" category="paragraph">プロジェクトダッシュボードは、IT管理者とプロジェクトマネージャーがFSx for ONTAPファイルシステムとボリューム全体でのプロジェクトの使用状況を監視および分析するのに役立ちます。これにより、ストレージの使用パターンを可視化し、リソースを大量に消費するプロジェクトを特定し、コストを追跡し、容量やパフォーマンスの問題がEDAシミュレーションに影響を与える前にストレージ割り当てを最適化するのに役立ちます。</block>
+  <block id="892ac5de0a553fb26263738c6b3ac6c0" category="section-title">プロジェクトダッシュボードの仕組み</block>
+  <block id="4f73e9ac2d9aa087a998162375a59080" category="paragraph">Projectsダッシュボードは、AWSクレデンシャルに関連付けられたすべてのFSx for ONTAPボリュームのCloudWatchメトリクスを収集します。AWSタグに基づいて最大5つのカスタムフィルターを作成し、プロジェクト、チーム、アプリケーションなどの特定のビジネス要件に従ってデータを整理およびフィルタリングできます。</block>
+  <block id="199a3f98999b1f3375557fad10f10de7" category="paragraph">ダッシュボードは以下のことに役立ちます：</block>
+  <block id="82666dafa234f45cabe3625de34a5f75" category="list-text">容量を計画してコストを評価</block>
+  <block id="16274c963f4e10200a38134100c21a76" category="list-text">リソース配分に関するデータ主体の意思決定を行う</block>
+  <block id="09aa814f8d07622a7bbdaa77dfccba3a" category="list-text">リソース集約型プロジェクトを特定する</block>
+  <block id="2c8ae5e80e5e8a3ccc9b17cd544e5d66" category="list-text">プロジェクトやチームを横断してコストを正確に追跡する</block>
+  <block id="589db9e44f14d1b63fc7cd6c982d5c14" category="list-text">問題が発生する前にストレージ割り当てを最適化する</block>
+  <block id="4235b5cada2c2a7728609dad4574916b" category="paragraph">プロアクティブなレイテンシパフォーマンス監視については、<block ref="9a573596af789d1f770a6210c953bdc7" category="inline-link-macro-rx"></block>をご覧ください。</block>
+  <block id="629d6be32a985512603216d463999725" category="section-title">CloudWatch メトリクスが収集されました</block>
+  <block id="5020798659be7e61c823cd1d1929af36" category="paragraph">ダッシュボードは以下のCloudWatchメトリックを収集して表示します：</block>
+  <block id="ba2c3990ea90ebde8562339fd3ae3f6c" category="list-text">*プロビジョニング済み容量*：プロビジョニングされたストレージ容量を表すボリュームレベルのメトリック。</block>
+  <block id="40124c0f60d4a6942c02d071872194c3" category="list-text">*使用容量*: 使用されているストレージを表すボリュームレベルの指標。</block>
+  <block id="e0a528bf3321c5fe952d945ce552f608" category="list-text">*平均/最大スループット*：指定された期間におけるDataReadBytesとDataWriteBytesの合計の平均または最大として計算されます。</block>
+  <block id="225e8943beeadd05eadea4ebe44b95ea" category="list-text">*平均/最大IOPS*：指定された期間におけるDataReadOperations、DataWriteOperations、およびMetadataOperationsの合計の平均または最大値として計算されます。</block>
+  <block id="634cc1e06136ed9a6cda032b40eab9e4" category="section-title">カスタムフィルター</block>
+  <block id="ca7f05b533ea4f1ff83d68a0d8d24c46" category="paragraph">AWSタグに基づいて、最大5つのカスタムフィルターを設定できます。各カスタムフィルターには、以下のコンポーネントが必要です：</block>
+  <block id="5fde0a9e8a4014f645f905a61be8ace5" category="list-text">*フィルターラベル名*：ダッシュボードに表示される表示名</block>
+  <block id="6b70b2d0c88a40e5e6bb99fc6a535e1a" category="list-text">*AWS タグキー名*：リソースで実際に使用されている AWS タグキー</block>
+  <block id="bdd460f1f0de8e6e38647493ef8223c8" category="list-text">*選択タイプ*：単一選択または複数選択</block>
+  <block id="df82a7dd6fb4b7ea71df6f3a9f63e94d" category="paragraph">カスタムフィルターを設定しない場合は、デフォルトのフィルター（ファイルシステム、ボリュームタイプ、時間範囲）が引き続き使用できるため、ダッシュボードの表示と操作は引き続き可能です。</block>
+  <block id="7361a183281559c3437dc1e10f08e1a2" category="section-title">AWSタグ</block>
+  <block id="f650a27526149ff56cf6d5c5e247d6e7" category="paragraph">AWS タグは、AWS リソースのメタデータです。これらは、プロジェクト、アプリケーション、ビジネスユニットなど、さまざまな方法で AWS リソースを分類するのに役立ちます。</block>
+  <block id="6df24d81756653ed47affdce3456f625" category="paragraph">カスタムフィルタを効果的に使用するには、ビジネス要件に基づいて FSx for ONTAP ボリュームに AWS タグを設定します。たとえば、プロジェクト、チーム、または事業部門を表すタグなどです。</block>
+  <block id="cfe6397044c28200ccf8b2d4634d45a3" category="paragraph">タグ付けの詳細については、<block ref="3a728828042c1a731e3aa740ed780475" category="inline-link-rx"></block>および<block ref="53b3c63786d21199a28ae32477919693" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="b46f7b9a5f4cec130e128bd4b91daf6b" category="section-title">ボリュームの詳細</block>
+  <block id="e77931f727dc31af32f0b877f5e13dee" category="paragraph">ダッシュボードには、ストレージの指標をさまざまな詳細レベルで分析するのに役立つ表示モードが用意されています。</block>
+  <block id="e7dd4c9a6d36b6512dda7f2c3e278b77" category="paragraph">合計ビュー（デフォルト）には、選択したフィルターに一致するすべてのボリュームの集計メトリックが表示されます。このビューには、全体的なストレージパフォーマンスの概要が表示され、容量、IOPS、スループットメトリックの合計が示されます。</block>
+  <block id="97f3bff322ad4528b8222b841b04855f" category="paragraph">このビューを使用して次の操作を実行します。</block>
+  <block id="fafa8edf50579b2cafa7ea0a24e46225" category="list-text">全体的な傾向を理解する</block>
+  <block id="e2c49ddc6ebfbc655dd8cbc99cb1ef54" category="list-text">将来の容量ニーズを計画する</block>
+  <block id="9f48e65a04e08b0e8cf9dfe081309c3b" category="list-text">プロジェクトまたはチーム全体の総リソース消費量に関するレポート</block>
+  <block id="e3f5fd2f57f7a82a665af7de374483ac" category="paragraph">ボリュームビューには、時間の経過に伴う個々のボリュームのパフォーマンスが表示され、各メトリックの上位10件のボリュームが表示されます。このビューは、リソース使用量を増加させている特定のボリュームを識別し、選択した期間にわたるその動作を観察するのに役立ちます。</block>
+  <block id="ab3ee4ef1e3fb91ff912439bdc380f6f" category="list-text">パフォーマンスのボトルネックを見つける</block>
+  <block id="2a08e1425b31ef8a7a98d7e7fb553b0e" category="list-text">サイズ調整が必要なボリュームを特定する</block>
+  <block id="9b0d7e13c4fe312ecf9dab076452c581" category="list-text">どの特定のプロジェクトやワークロードが最も多くのリソースを消費しているかを特定します</block>
+  <block id="4ab07bb0982ff135ba0b0b745fd54c3f" category="paragraph">個々のボリュームを表示すると、ダッシュボードには各指標について、総ボリューム数の中から上位10件のボリュームが表示されます：</block>
+  <block id="31cae1b23d85a9661c0183ea459afdf4" category="list-text">*ボリューム使用容量*：現在使用容量が最も大きいボリュームを表示します。</block>
+  <block id="18bc6b4cb32f09b1900c3e69f51a5832" category="list-text">*IOPS*：選択した期間中に平均IOPSが最も高かったボリュームを表示します。</block>
+  <block id="7dcd6b49daf4c25214e7996ae1eee8d3" category="list-text">*スループット*：選択した期間中に平均スループットが最も高かったボリュームを表示します。</block>
+  <block id="dc74be241689ed0826c350bb272ce442" category="paragraph">複数の指標で同じボリュームが表示される場合、ダッシュボードは凡例に一貫した色分けを使用して、異なる指標間での特定のボリュームの追跡を容易にします。</block>
+  <block id="a0ca5217fe1d64a7998e7a178761fd63" category="paragraph">グラフ上の任意のボリュームラインにカーソルを合わせると、次の情報が表示されます：</block>
+  <block id="95b1e0c7f84855e8733c999d6968738b" category="list-text">*ボリューム使用容量*：ボリューム名、その時点での使用容量、および割り当て容量</block>
+  <block id="1f19490938ce8fa51ec88ea36ec23471" category="list-text">*IOPS*：ボリューム名、期間内の平均IOPS、および期間内の最大IOPS</block>
+  <block id="777214340a76e50a8115a46311c38612" category="list-text">*スループット*：ボリューム名、期間内の平均スループット、および期間内の最大スループット</block>
+  <block id="efbd83d0c11ea6afcdd0d30684f3dde1" category="inline-link-macro">プロジェクトダッシュボードを設定する</block>
+  <block id="3b598c1b1d20faa144bd5aea06af5c7a" category="list-text"><block ref="3b598c1b1d20faa144bd5aea06af5c7a" category="inline-link-macro-rx"></block></block>
+  <block id="8c93925923e610151f40d554eb847d3d" category="inline-link-macro">プロジェクトダッシュボードを使用する</block>
+  <block id="ecd0a7e23a1fe6520b2f5f319a43a541" category="list-text"><block ref="ecd0a7e23a1fe6520b2f5f319a43a541" category="inline-link-macro-rx"></block></block>
+  <block id="9c2a400f16596db71684b7bf853679f6" category="inline-link-macro">概要ダッシュボードをアクティブ化する方法を学ぶ</block>
+  <block id="ba484746496fd986236ce05e4941b11e" category="paragraph"><block ref="b8ebfe6424e9d27bf3ad5b5b28bbc547" category="inline-link-macro-rx"></block>。</block>
+  <block id="6a95e8fe1af51766347f08a14a5010e7" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block>プロジェクトダッシュボードを設定する</block>
+  <block id="ac8c955f7158cbf6e26b2fe132a5da5a" category="paragraph">プロジェクトダッシュボードを設定して、システムの状態、パフォーマンス、ストレージの使用状況を監視することで、EDA環境を効果的に最適化できます。</block>
+  <block id="cdf7ca0f732e877c2df79adf8b2dec38" category="inline-link-macro">プロジェクトダッシュボードの設定方法を学びましょう</block>
+  <block id="54aae42a8d9b94a669be4faf760989f4" category="paragraph"><block ref="df110d106150b671a1fd119c3817e75e" category="inline-link-macro-rx"></block>。</block>
+  <block id="679aabdd1ec95ed7b75c71ce374528d5" category="paragraph"><block ref="fb26305f25ca1288ccacde22bbaccb07" category="inline-link-macro-rx"></block>。イベントが検出されたら、インタラクティブグラフを使用して<block ref="17d96e1b2696eabecce662ae85cda8e7" category="inline-link-macro-rx"></block>できます。</block>
+  <block id="434c0bf5962496285865a6a2af2512b4" category="paragraph">Workload Factory REST APIを使用して、EDAをサービスポータルやPerforce Helix Coreなどの他のサービスと統合します。</block>
+  <block id="6c2ad847adbf8275a81d27b0041c2eeb" category="inline-link-macro">FSx for ONTAP のレイテンシー監視を設定する</block>
+  <block id="33e8cd62c5bd2c372d74e35ddcd604c9" category="list-text"><block ref="33e8cd62c5bd2c372d74e35ddcd604c9" category="inline-link-macro-rx"></block></block>
+  <block id="96afe0475ccb7811d8305bfd735bda85" category="inline-link-macro">EDA ワークロードについて学ぶ</block>
+  <block id="56e2aab97773449521aa9af4ce274c35" category="list-text"><block ref="56e2aab97773449521aa9af4ce274c35" category="inline-link-macro-rx"></block></block>
+  <block id="717b1fcf2fa3f0bf03821258bbab9ebb" category="inline-link-macro">EDAに関するサポートを受ける</block>
+  <block id="3bae13d1a4785964d0f9047cf3c7501e" category="list-text"><block ref="3bae13d1a4785964d0f9047cf3c7501e" category="inline-link-macro-rx"></block></block>
+  <block id="55df1ea48b09b075b4b7dd39f32b38ee" category="list-text">Workload Factoryのログインとアカウント</block>
+  <block id="00ecefed795b538c02fb15b08d5063de" category="admonition">AWS 認証情報は、ボリュームパフォーマンス分析のための CloudWatch メトリックを収集するレイテンシー監視機能を使用する場合にも必要です。レイテンシイベントの通知を受け取るには、Workload Factory 設定で通知設定を構成してください。複雑なレイテンシーシナリオにおけるオプションの AI エージェント分析を有効にするには、Amazon Bedrock モデルの ARN も指定する必要があります。<block ref="9a573596af789d1f770a6210c953bdc7" category="inline-link-macro-rx"></block>。</block>
+  <block id="b6870950036e95a95fdae168dfdc709c" category="summary">概要ダッシュボードをアクティブ化して、FSx for ONTAP ファイルシステムの CloudWatch メトリクスの収集を開始します。</block>
+  <block id="c437f9e5b13280b7d49a32c00034ffa0" category="doc">Workload Factory for EDAで概要ダッシュボードをアクティブ化する</block>
+  <block id="9d3d0e67ac2074ab2c028c8f14aa12b2" category="paragraph">概要ダッシュボードをアクティブ化して、FSx for ONTAP ファイルシステムの CloudWatch メトリクスの収集を開始します。アクティブ化すると、ダッシュボードはクラスタの健全性、容量、スループットの一元的な監視を提供します。</block>
+  <block id="2219f6b80cc5e00e73486326fcc8afbf" category="paragraph">ダッシュボードを有効化する前に、以下の要件を満たしていることを確認してください。</block>
+  <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">次の手順</block>
+  <block id="b7b10c1304f383232f064dc193d3492b" category="paragraph">ダッシュボードを有効化すると、以下の操作が可能になります：</block>
+  <block id="84dbb7b1eccc71ff5f71a7198ff13b68" category="list-text"><block ref="2cfa6ed38cd9b96055529b98595c7f05" category="inline-link-macro-rx"></block>クラスタの健全性と容量を監視</block>
+  <block id="fdc13b7c9d56bd2522e96ae8d5d9ee87" category="list-text">SSD容量管理モード（Automate、Recommend、またはNone）を設定します。</block>
+  <block id="f872ab9156293273da8e58555b68ca2e" category="list-text">特定のリージョンまたはAWSアカウントに絞り込むためのフィルターを設定します</block>
+  <block id="526ad94042b150fca39290f6bef86a67" category="inline-link-macro">概要ダッシュボードについて</block>
+  <block id="91b5f8f96066d41fb5057458a69d5f81" category="list-text"><block ref="91b5f8f96066d41fb5057458a69d5f81" category="inline-link-macro-rx"></block></block>
+  <block id="d6ee3800554290c9e115d787e45dcdb5" category="summary">FSx for ONTAP ボリュームのパフォーマンスの問題を特定するために、レイテンシイベントを表示および分析します。自動化された基本分析とオプションの AI エージェント分析を使用して、根本原因と推奨される修復手順を特定します。</block>
+  <block id="7c7708c4a86b73bb59e5e08ced5293bf" category="doc">Workload Factory for EDAにおけるレイテンシーの問題を分析する</block>
+  <block id="f93d776e20b3559d2e81217afec2301f" category="paragraph">検出されたレイテンシイベントを表示し、自動分析ツールを使用して根本原因を特定し、FSx for ONTAPボリュームのパフォーマンスボトルネックを解決します。</block>
+  <block id="ed960c97b9cba50c54da4a4beb0cddea" category="paragraph">遅延イベントを表示および分析する前に、<block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block>を実行しておく必要があります。</block>
+  <block id="c7091d0edc98eba35097c5fee111cbeb" category="list-text">レイテンシイベントテーブルの各イベントの情報を確認します。</block>
+  <block id="88fbfd6354324b9cdd705c761300b539" category="paragraph">基本的な分析を行うことで、手動による調査を行うことなく、遅延問題の根本原因を迅速に特定できます。</block>
+  <block id="1d75c8bd88c404ae20531903bd0c61be" category="section-title">概要タブ</block>
+  <block id="52af9505de5b15077766d36819ff0cf8" category="paragraph">*Overview* タブには、自動化された基本分析の結果が表示され、遅延の原因となっているコンポーネントが特定されます。</block>
+  <block id="90106254d1f94b759470c5feef52980a" category="section-title">時間経過タブ</block>
+  <block id="eb0d7435aac1126c7c337315ad2941fa" category="list-text">必要に応じて、*Over time* タブを選択すると、影響を受けるボリュームのレイテンシ傾向を確認できます。</block>
+  <block id="ad0f0db54b5a3b206fdf8d52b0e6cc0f" category="list-text">遅延の原因についてより詳細な調査が必要な場合（データまたはクラスタのシナリオなど）、AI-agent による分析を実行します。</block>
+  <block id="687a036a8cac81738e9dbc9ed1f90a68" category="paragraph">AIエージェントによる分析は、より詳細な調査を行い、具体的な根本原因と潜在的な改善策を特定します。</block>
+  <block id="d567e1f3ce7e05a07b8b9671d5273fc7" category="paragraph">AIエージェントによる分析を実行すると、システムは自動的に基本分析データを更新し、それをAIエージェントへの入力として使用します。</block>
+  <block id="5055db3a66918ab425f287fd06627fef" category="list-text">AI エージェントの分析結果を確認します。結果には以下が含まれます：</block>
+  <block id="d5f97a1cb8e0382743f28559f0c6ace7" category="list-text">潜在的な根本原因の説明</block>
+  <block id="0a3d11a9c21fb1f2a4dc021dc4a83aad" category="list-text">推奨される修復手順</block>
+  <block id="f6da12ee5ed910433c51d88e2e61a406" category="paragraph">レイテンシの問題を分析する際には、次の推奨事項を考慮してください：</block>
+  <block id="9a573596af789d1f770a6210c953bdc7" category="list-text"><block ref="9a573596af789d1f770a6210c953bdc7" category="inline-link-macro-rx"></block></block>
+  <block id="81bf6a81ce8716c79a737105001a37e5" category="paragraph"><block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block>があり、少なくとも1つの遅延イベントが検出されている必要があります。</block>
+  <block id="a9146a550d659eddf2448c0081b1397f" category="summary">FSx for ONTAP ボリュームのパフォーマンスの問題を検出して対応するために、レイテンシー監視のしきい値と通知設定を構成します。</block>
+  <block id="571931ca54db28da90418e0e1aeccddb" category="doc">Workload Factory for EDAでレイテンシ監視を設定する</block>
+  <block id="7a2c73e3cf1de42d62db29556d94999d" category="paragraph">読み取りおよび書き込みレイテンシの警告しきい値とクリティカルしきい値を設定して、FSx for ONTAP ボリュームのパフォーマンスを監視します。オプションのメールまたは Amazon SNS 通知を設定して、レイテンシイベントが検出されたときにリアルタイムアラートを受信します。</block>
+  <block id="b9425e1e278de08c5d7d32f2ec3fdf21" category="paragraph">レイテンシー監視を設定する前に、以下の要件を満たしていることを確認してください。</block>
+  <block id="798bca0593da51c40ef2141d8e58a22c" category="paragraph">読み取りおよび書き込み操作に対する警告しきい値とクリティカルしきい値を設定します。システムはしきい値を継続的に評価し、条件が満たされた際にアラートを生成します。</block>
+  <block id="23c5453e58978700866d71c75dc41108" category="admonition">EDAで設定したレイテンシのしきい値は、デフォルトではアカウント全体に適用されます。また、一般ストレージワークロードで個々のボリュームのレイテンシしきい値を設定することもでき、そのボリュームの設定は当該ボリュームに対して優先されます。EDAでアカウントレベルのしきい値を更新しても、ボリュームレベルの設定は変更されません。</block>
+  <block id="acf76aff5d06c6d756bcfd4fb3b61d11" category="list-text">EDAレイテンシ設定ページで、以下のしきい値を設定します：</block>
+  <block id="f90ba9f6de06599f5a0135783f0e0663" category="list-text">読み取りレイテンシ（警告および重大）</block>
+  <block id="8529c5693a9a2cdc9f721a2297ceb4bf" category="list-text">書き込みレイテンシ（警告および重大）</block>
+  <block id="763302f8ff688c0c89f9b68730bab872" category="list-text">各IOPSのしきい値</block>
+  <block id="8c7f651901d697c87ca383001e86c18c" category="list-text">評価の期間</block>
+  <block id="4bb380b53ae6059a8ca9f7c119e77bff" category="list-text">*適用*を選択して設定を保存します。</block>
+  <block id="879b218e7702810c61e8d5a32fdaeccd" category="paragraph">Workload Factory は、AWS クレデンシャルに関連付けられたすべての FSx for ONTAP ボリュームのレイテンシメトリックの収集を開始します。メトリックは少なくとも 20 分ごとに収集されます。設定したしきい値を超えたボリュームはすべて、レイテンシイベントテーブルに表示されます。</block>
+  <block id="d7a09d452c3d476d55137e0a0eff281e" category="paragraph">レイテンシーイベントが検出された際にアラートを受信するように、メールまたはAmazon SNS通知を設定します。ボリュームが設定されたしきい値を超えるたびに通知が送信され、パフォーマンスの問題をリアルタイムで認識できます。</block>
+  <block id="8fdf6d96070c398324fc1f3cd8bb44f5" category="paragraph">通知を有効にするには、<block ref="760d5a248a4ffda4abc117648b19c119" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="6e507b033fdf4e60c548939bdb29a926" category="paragraph">初期設定後、必要に応じてしきい値を編集できます。</block>
+  <block id="07ba6f406b4506df814952c513441ef3" category="paragraph">レイテンシー監視を設定する際には、以下の推奨事項を考慮してください：</block>
+  <block id="408435491d63d2438d80b5935f332ff0" category="summary">プロジェクトダッシュボードにカスタムフィルターを設定することで、プロジェクト、チーム、アプリケーションなど、ビジネス構造に基づいて指標を整理できます。</block>
+  <block id="5d29144fbe1ed49d08e42f38228178d9" category="doc">Workload Factory for EDA でプロジェクトダッシュボードを設定します。</block>
+  <block id="291b19028abff726bcfa0339550dd60b" category="paragraph">プロジェクトダッシュボードにカスタムフィルターを設定することで、プロジェクト、チーム、コストセンターなど、ビジネス構造に応じて指標を整理できます。これにより、コストを正確に追跡し、どのリソースが最も多くの容量の拡張を消費しているかを特定し、リソースの配分と予算計画について十分な情報に基づいた意思決定を行うことができます。フィルターを組織の業務プロセスに合わせて設定することで、関連データに迅速にアクセスし、容量の拡張プランニング、コスト追跡、パフォーマンス監視の効率を向上させることができます。</block>
+  <block id="8deb39fc950827761d4f7e5bbdb9f37a" category="admonition">プロジェクトダッシュボードに最初にアクセスした管理者ユーザーのみが、カスタムフィルターの設定、追加、または削除を行うことができます。後任の管理者を含むその他のすべてのユーザーは、フィルターへの読み取り専用アクセス権を持ちます。</block>
+  <block id="afc444ae6b2600c89778da329a1e6111" category="paragraph">AWSタグに基づいて最大5つのカスタムフィルターを設定できます。各カスタムフィルターには、フィルターラベル名、AWSタグキー名、選択タイプ（単一選択または複数選択）の3つのコンポーネントが必要です。</block>
+  <block id="d4eb50f151a6322783f858b7c3c7303c" category="list-text">*Projects* を選択します。</block>
+  <block id="070adb8a716d543e99ddc3e92bc71a25" category="list-text">作成するカスタムフィルタごとに、詳細を追加します。</block>
+  <block id="743dd9050d7f1e882cf603d6ba11585a" category="list-text">フィルターラベル名（ダッシュボードでの表示名）</block>
+  <block id="228f79c9c15cb5e65a655a8273b2916f" category="list-text">AWSタグキー名（リソースで実際に使用されるタグキー）</block>
+  <block id="d388088c299ac1d5afe4b497384ad6f8" category="list-text">選択タイプ（単一選択または複数選択）</block>
+  <block id="00b3890321528a91a32d0f48642d4b03" category="list-text">タグやフィルターを適用した後の変更内容を確認するには、ダッシュボードの更新アイコンを選択してください。</block>
+  <block id="28bcfd5334aa4e7f2abb8e7d84151683" category="paragraph">これらのタグが適用されると、Workload Factoryは関連するCloudWatchメトリクスの収集と表示を開始します。ダッシュボードは、組織のニーズに基づいてリソースを整理、コストを追跡、フィルタリングするための動的なツールとなります。</block>
+  <block id="57ba2727dd56ad729929975ac4544628" category="inline-link-macro">プロジェクトダッシュボードについて</block>
+  <block id="393c0c1ecdbc9253df9e2224ce340393" category="list-text"><block ref="393c0c1ecdbc9253df9e2224ce340393" category="inline-link-macro-rx"></block></block>
+  <block id="830b8c7d4b87c3891c9850421339be6d" category="summary">概要ダッシュボードを使用して、クラスタの健全性を監視し、容量に関する推奨事項を表示し、SSD容量設定を管理し、FSx for ONTAPファイルシステム全体のパフォーマンス傾向を分析します。</block>
+  <block id="79181b2c6ed46060150e77e4602bc886" category="doc">Workload Factory for EDA の概要ダッシュボードを使用する</block>
+  <block id="3b5ede3b2845f322b52add440c0d07f9" category="paragraph">概要ダッシュボードを使用して、FSx for ONTAP ファイルシステム全体のクラスターの健全性と容量を監視します。データのフィルタリング、容量の推奨事項の表示、SSD 容量設定の管理、パフォーマンス傾向の分析により、ボリュームの配置と容量の拡張について十分な情報に基づいた意思決定を行います。</block>
+  <block id="f4d32e19fbe53c2c3a060145a3cb089e" category="inline-link-macro">概要ダッシュボードをアクティブ化しました</block>
+  <block id="b989d81a69fe7883dca4d1012f53d338" category="paragraph">ファイルシステムを監視するために使用する前に、<block ref="38c0848a99095f730ae7166b7cd5884e" category="inline-link-macro-rx"></block>を実行しておく必要があります。</block>
+  <block id="e8f3159a468f02961bca7416aa632c34" category="list-text">利用可能なフィルタを使用して、表示を絞り込みます。</block>
+  <block id="d342482acd33d7552071f729806f7f08" category="list-text">*AWSアカウント*：設定済みの認証情報に関連付けられている1つ以上のAWSアカウントでフィルタリングします</block>
+  <block id="b6c7799b0c3cb63df1897b6e33e5ffe9" category="list-text">*認証情報*：複数のAWS認証情報を設定している場合は、特定の認証情報でフィルタリングしてください</block>
+  <block id="dd10257a52cc4af5c67ff37ab0bb4d74" category="list-text">*リージョン*：1つ以上のAWSリージョンでフィルタリングします</block>
+  <block id="fb3123e7d905f809c3bdf82e3ceca6af" category="section-title">クラスタの健全性ステータスを表示する</block>
+  <block id="c25f90f05d993001b74961b028d011a1" category="paragraph">ダッシュボードの上部には、フィルタリングされたファイルシステム全体の健全性とアクティビティの概要が表示されます。この情報は、少なくとも1つのFSx for ONTAPリンクがファイルシステムに関連付けられている場合にのみ表示されます。</block>
+  <block id="7da261fafbc98c685b2c0c780ccdbcf1" category="paragraph">クラスタの健全性ステータスには、次の主要な領域が含まれます。</block>
+  <block id="ac97fe213f96cc9db6b4ee38d70f798b" category="list-text">*レイテンシ*：検出されたレイテンシイベントの数</block>
+  <block id="250cb0358f46fe26f5f0eaa93ff565d5" category="list-text">*SSD容量モード*：SSDの使用状況とアクティブな容量推奨事項があるファイルシステム</block>
+  <block id="a51f6183fddbec434723cff9a6cb22f0" category="list-text">*ONTAPイベント*：カテゴリ別（容量、可用性と保護、セキュリティ、その他）のEMSイベント数</block>
+  <block id="c569953f651916e8d6fb2a2e26996486" category="list-text">ダッシュボード上部のクラスタの健全性ステータスを確認します。</block>
+  <block id="45cd3072594a40004f1648f957b11b4f" category="list-text">レイテンシイベントを表示するには：</block>
+  <block id="9bab24fe4c951c13841b658922a21a8b" category="list-text">*Review*を選択して*Latency*タブに移動します</block>
+  <block id="d88a1f1774fe796edce9fbdb30450768" category="list-text">レイテンシ監視が設定されていない場合は、*Configure* を選択してレイテンシのしきい値を設定してください</block>
+  <block id="3fc40acdeffa85e640e04decb4a3c8a1" category="paragraph">レイテンシ監視の詳細については、<block ref="9fa375caf288330dba08fd0144ac3746" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="fc28c48860928b711f31c63cbbeac8d0" category="list-text">FSx for ONTAP ファイルシステムの ONTAP イベントを表示するには、*Review* を選択します。</block>
+  <block id="b89294c44923d00aeca4413b78b17341" category="inline-link-macro">ONTAP CLI ドキュメント</block>
+  <block id="1c9d8ee06541dbbb5c46a2f2dcb0188e" category="paragraph">ONTAP イベントビューカードには、カテゴリ別（容量、可用性と保護、セキュリティとその他）の EMS イベント数が表示されます。監視対象の EMS イベントの全リストについては、<block ref="95232132a00f2412cfd89d25359e73da" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="b8c00318f797849269641da1be81d959" category="paragraph">Workload Factory は、FSx for ONTAP ファイルシステムごとに容量推奨アルゴリズムを自動的に実行します。クラスタテーブルをフィルタリングすることで、容量に関する推奨事項が設定されているファイルシステムを特定できます。</block>
+  <block id="d33ac222baabd8a5273563fe2a419ee3" category="list-text">* Clusters *テーブルで、* Last SSD increase timestamp *列または* Last SSD increase description *列でフィルタリングします。</block>
+  <block id="a218720ad1764a3566691dfa57178ccf" category="paragraph">容量に関する推奨事項が記載されているファイルシステムは、表の一番上に表示されます。</block>
+  <block id="ec249c58f3b3eb7688626779c92fc2ea" category="list-text">表からファイルシステム名を選択すると、そのファイルシステムが開き、推奨事項が表示されます。</block>
+  <block id="76a0ca3e805dbf2778413ce26855f65b" category="paragraph">グラフには、推奨決定ポイントと自動化決定ポイント（自動化モードが有効になっている場合）も表示されます。任意の決定ポイントにカーソルを合わせると、その時点での容量の拡張に関する推奨事項または自動化アクションの詳細が表示されます。</block>
+  <block id="37b5b20fd94de2275a255ae79e7ac8f0" category="list-text">推奨事項を適用するには、推奨事項メッセージに記載されているガイダンスに従ってください。</block>
+  <block id="95138c66b91ee03084dfba9068536d5e" category="section-title">SSD管理モードを変更する</block>
+  <block id="9f4aa5d2e4e86680927fc296364f55f8" category="paragraph">個々のファイルシステムのSSD容量管理モードを変更して、手動による推奨事項と自動による容量の拡張のどちらを使用するかを制御できます。</block>
+  <block id="75bea9328c43d21648ead08a87bf10a7" category="paragraph">SSD管理モードには以下が含まれます：</block>
+  <block id="0691cfb7cd3c9ba639721e8f1009e52f" category="list-text">*自動化*：事前定義されたしきい値に基づいて、SSD容量を自動的に増加します。</block>
+  <block id="6b57222b0c56ec9d17ebe5bd0559e407" category="list-text">*推奨*：容量に関する推奨事項を受け取り、手動で確認して適用します。</block>
+  <block id="c0b8684a43b1fa6e9f8f11645a25c575" category="list-text">*なし*：容量に関する推奨事項や自動アクションはありません</block>
+  <block id="1265c45931617f8276c61e909a9ca008" category="paragraph">自動化モードを選択すると、容量管理システムがSSDの使用状況を分析し、自動化の判断を行う方法を制御するしきい値、参照期間、および先読みパラメータを設定できます。推奨モードを選択した場合、しきい値パラメータのみを設定できます。</block>
+  <block id="aabee2ded4098c6bf74ef47a9d869f14" category="list-text">*しきい値*（10～90％）：容量の推奨または自動化アクションをトリガーするSSD使用率</block>
+  <block id="e2ac4d7ef432e15e5c103e31a0b2f9cf" category="list-text">*Lookback*（1～200時間）：過去のSSD使用パターンを分析するために使用される期間</block>
+  <block id="773c50099421b3183829965f31e9419f" category="list-text">*今後*（1～200時間）：将来の容量ニーズを予測するために使用される期間</block>
+  <block id="6d8ccfb06da581a2d86feacefa3b4869" category="inline-image-macro">アクションメニューアイコン</block>
+  <block id="c9eecdb0eb0ca75174ea4d40e628f365" category="list-text">Clustersテーブルでファイルシステム名を確認します。その横にある<block ref="db26b5e8c520e1d883813594c799d7f7" category="inline-image-macro-rx" type="image"></block>を開き、*Change SSD capacity management*を選択します。</block>
+  <block id="b689124bbd04a08329d8f616990fa06d" category="list-text">お好みのモードを選択してください：</block>
+  <block id="627b9e640f1785bd7be5aff9d8741dbb" category="list-text">*なし*：容量管理を無効にする</block>
+  <block id="496444b8d58f48ae9fb24aa5598a769e" category="list-text">*推奨*：推奨分析のしきい値パラメータを設定します</block>
+  <block id="e997410074a60221c4db923d26db9751" category="list-text">*自動化*：自動容量の拡張のために、しきい値、ルックバック、およびアヘッドのパラメーターを設定します</block>
+  <block id="784896ec6c955c85079b2d1d64942d41" category="paragraph">ファイルシステムは新しいモードを即座に使用します。「推奨」または「自動化」を選択した場合、システムは設定されたパラメータを使用して容量分析と意思決定を行います。</block>
+  <block id="3dea2cb2632e143a32d4bed1ffd3f529" category="section-title">SSD管理パラメータの一括編集</block>
+  <block id="926b4d933ae1585e3743dd4abed22a66" category="paragraph">複数のファイルシステムに対してSSD容量の拡張管理パラメータを同時に調整することで、クラスター全体に一貫した設定を適用できます。</block>
+  <block id="52a98bdb03909a35ffb977120e61a393" category="paragraph">複数のファイルシステムを選択して一括編集する場合：</block>
+  <block id="40cd894006f5e1bab1c91fc0cb340bf0" category="list-text">選択されたすべてのファイルシステムのパラメータ値が同一である場合、それらの値は編集ダイアログにデフォルト値として表示されます</block>
+  <block id="f7cf43c095a54eebd8a941b76f91053c" category="list-text">選択されたファイルシステムのいずれかが None モードの場合、ダイアログにデフォルト値が表示されます</block>
+  <block id="4d6c46a1be81647fb17efde513e4d6b8" category="list-text">選択したファイルシステム間でパラメータ値が異なる場合、ダイアログにはデフォルト値が表示されます</block>
+  <block id="cc009bfb1b3b40af528a54a164d8b953" category="list-text">*Overview* タブから、表内で編集したいファイルシステムを選択します。</block>
+  <block id="8cd7391e66f29fd726ffdf9a59961f54" category="admonition">個々のファイルシステムを選択することも、ヘッダーのチェックボックスを使用して表示されているすべてのファイルシステムを選択することもできます。</block>
+  <block id="b1d2239c82d829e54a9ea5651662da17" category="list-text">表の上にある *SSD容量管理の変更* を選択します。</block>
+  <block id="b97c770bb654f2ef0b93eb759a99c159" category="list-text">お好みのモードを選択してください。</block>
+  <block id="c3c051399d43b90a41f5b4085ef45788" category="list-text">編集ダイアログで、必要に応じてThreshold、Lookback、およびAheadの各パラメーターを調整してください。</block>
+  <block id="43c2e4748a7a87eb44a6cb86329b0750" category="paragraph">各パラメータフィールドには、その目的と有効範囲を説明するツールチップが含まれています。このダイアログには、選択内容に基づいた現在の値またはデフォルト値が表示されます。</block>
+  <block id="3f254e874f94d9cc6daffdbea2c76012" category="list-text">*適用*を選択すると、選択したすべてのファイルシステムに変更が適用されます。</block>
+  <block id="87163b97740368f6147eaa72bca1608a" category="paragraph">選択されたすべてのファイルシステムのパラメータが更新されます。推奨モードまたは自動化モードのファイルシステムは、容量の拡張と意思決定のために新しいパラメータを即座に使用します。</block>
+  <block id="84a7874f129070a914f70dd3d70a6716" category="section-title">容量の傾向と意思決定ポイントを分析する</block>
+  <block id="452ce32deefedd3d20e8c210efca65d2" category="paragraph">SSD使用状況グラフを使用して、時間の経過に伴う容量の挙動を把握し、容量管理におけるパターンを特定します。</block>
+  <block id="4dbca2bab9fb0222adee0d079e0d2127" category="paragraph">グラフ上の決定点は、次の時点を示します：</block>
+  <block id="0db031b7f1f975d91c716c7b47a4eaf3" category="list-text">*推奨決定ポイント*：容量推奨アルゴリズムにより、追加のSSD容量が必要であることが判明しました。SSD容量が増やされていない場合、これらは30分ごとに発生する可能性があります。</block>
+  <block id="9c655904bd0e04ac0ba04bb9ed012d78" category="list-text">*自動化の決定ポイント*：自動化システムはSSD容量の増加を試みました。これらの点は、その行動が成功したか失敗したかを示しています。</block>
+  <block id="322cceacdd52c951c88a1d93df7f0dd8" category="list-text">*Overview* タブから、表内のファイルシステム名を選択します。</block>
+  <block id="c7967065af6ac7703ee14f60f2812ccb" category="list-text">SSD使用状況グラフで過去の容量推移を確認してください。</block>
+  <block id="6f6089a81e1a8064861733b4969654d6" category="list-text">異なる期間を選択して、さまざまな期間における容量の動作を確認できます。</block>
+  <block id="8d33ce28efafbfe7600930c556bcfd55" category="list-text">グラフ上の決定ポイントにカーソルを合わせると、特定の時点における推奨事項や自動化アクションの詳細が表示されます。</block>
+  <block id="4d43a6d1e695bf0a99e5bc33d3ca3fda" category="list-text">グラフから得られる知見を活用して、次のことを行います。</block>
+  <block id="e307894bdae8efc4f4fdacf666cf2573" category="section-title">クラスタテーブルを使用する</block>
+  <block id="2a6dc3e215954d784e0fad600db4c43e" category="paragraph">クラスターテーブルには、パフォーマンスと使用状況の指標を含む各FSx for ONTAPファイルシステムの詳細なビューが表示されます。</block>
+  <block id="88dc1144edaa697995919551780b6e93" category="list-text">* Overview * タブから、クラスタテーブルを確認します。</block>
+  <block id="8e6be07248fc78ed27f8d01305999436" category="list-text">検索ボックスを使用して、名前で特定のファイルシステムを検索します。</block>
+  <block id="692fa05a7000ba02729e6f466571ba2b" category="list-text">データをソートするには、列ヘッダーを選択します。</block>
+  <block id="06a57d9cb1c2ba70fc4222d27e62067b" category="list-text">*SSD使用量*を使用して、容量制限に近づいているファイルシステムを特定します。</block>
+  <block id="0cb19f95e4c129ad241c7ecbba16421a" category="list-text">*スループット使用量（P99）*を使用して、スループットの需要とプロビジョニングされたスループットSKUを比較します。</block>
+  <block id="5d9b4714a7a0165dd3acdabe8fbfec83" category="paragraph">計算の詳細については、スループット列のヘッダーにカーソルを合わせてください。</block>
+  <block id="c5fbe288f3a29e2574124940a06509ca" category="list-text">列をカスタマイズするには、列設定アイコンを選択し、表示する列を選択します。</block>
+  <block id="35b3a35f3ecc34588b8e96f244fd4a40" category="list-text">データをエクスポートするには、エクスポートアイコンを選択してCSVファイルをダウンロードします。</block>
+  <block id="97edac0f494f26b7cf4c816f6bb1ae11" category="list-text">一括操作を実行するには、チェックボックスを使用して複数のファイルシステムを選択し、次に*パラメーターの編集*を選択します。</block>
+  <block id="b2aeb761bc232400fd3df8f389115970" category="paragraph">概要ダッシュボードを使用する際は、以下の推奨事項を考慮してください：</block>
+  <block id="9bd5180502491de23c0440e89ab9a92d" category="list-text">*定期的な監視*：ダッシュボードを定期的に確認し、問題になる前に傾向を把握してください。</block>
+  <block id="3750fdc2a9a668c13ca2e4e74624a749" category="list-text">*適切なしきい値を設定する*：ワークロードのパターンと容量計画の好みに合わせて、SSD管理のしきい値を設定します。</block>
+  <block id="0734af016893f7957fbac97ba51079d9" category="list-text">*フィルターを効果的に活用する*：地域フィルターとアカウントフィルターを組み合わせて、インフラストラクチャの特定のサブセットに焦点を当てます。</block>
+  <block id="7fdb1bd2091944ecfd776dd4c28de6df" category="list-text">*推奨事項を速やかに確認してください*：クラスタテーブルを、最後のSSD増加のタイムスタンプまたは説明でフィルタリングして、容量に関する推奨事項があるファイルシステムを特定します。容量制約を回避するため、これらの推奨事項を検討し、実行に移してください。</block>
+  <block id="d78a2add44e4ba60b28e8e19d14d9f5e" category="list-text">*適切なモードを選択してください*：容量決定を自分でコントロールしたい場合は推奨モードを、管理を自動化したい場合は自動化モードを使用してください。</block>
+  <block id="fa0a8f5f3f5930dd398d7bc64cac0c7b" category="list-text">*意思決定ポイントの監視*：容量グラフ上の意思決定ポイントを定期的に確認し、アルゴリズムの動作を理解し、設定がニーズに合致していることを検証します。</block>
+  <block id="5a0d2514d6e71270ef7be826a016140b" category="list-text">*一括編集を活用する*：複数のファイルシステムを管理する場合は、パラメータの一括編集を使用して、一貫性のある容量管理ポリシーを維持します。</block>
+  <block id="1fa1c236c7c4e85b71969a980c4956d3" category="summary">プロジェクトダッシュボードを使用して、ストレージの使用状況を監視し、プロジェクトまたはチームごとにデータをフィルタリングし、ボリュームのパフォーマンスを分析してリソース割り当てを最適化します。</block>
+  <block id="dcc687e70127f35861ac1fa0778b7f6a" category="doc">Workload Factory for EDA のプロジェクトダッシュボードを使用します</block>
+  <block id="4c7d2551f52769c250f9fab0a6289702" category="paragraph">プロジェクトダッシュボードを使用して、FSx for ONTAP ファイルシステムとボリューム全体のストレージ使用状況を監視します。プロジェクト、チーム、またはアプリケーションごとにデータをフィルタリングし、集計されたボリュームパフォーマンスと個々のボリュームパフォーマンスの両方を分析することで、キャパシティプランニングとリソース最適化に関する情報に基づいた意思決定を行うことができます。</block>
+  <block id="3a42e7d77c98eadb4829e0fd27cf4e82" category="inline-link-macro">設定済みのカスタムフィルター</block>
+  <block id="53f11ec9607ad6fab240d54051d120a3" category="paragraph">プロジェクトダッシュボード用に<block ref="67b28fbfe439f0cd0c20d0391b336e4b" category="inline-link-macro-rx"></block>が必要です。カスタムフィルターを設定していない場合でも、デフォルトのフィルター（ファイルシステム、ボリュームタイプ、期間）を使用できます。</block>
+  <block id="285011d26b49da65c520f3b46f379e77" category="paragraph">ダッシュボードに表示される情報は、デフォルトのフィルタと設定したカスタムフィルタを組み合わせて絞り込むことができます。</block>
+  <block id="35d5788955b24565bda0cc3b7a05c1eb" category="list-text">利用可能なオプションから、適用するフィルタを選択します。</block>
+  <block id="bc6ce3b77e237982da0bf7efc9592a11" category="list-text">デフォルトフィルタ（ファイルシステム、ボリュームタイプ、期間）</block>
+  <block id="73de028fbf0511151517cc094b13f1fd" category="list-text">設定したカスタムフィルター</block>
+  <block id="894a744c3b5a0e31b918c1a6cb8beebb" category="list-text">更新アイコンを選択すると、フィルタの選択内容に基づいてダッシュボードの情報が更新されます。</block>
+  <block id="5e17404dcc73fba76b9c1b4d1e91ee24" category="section-title">集計されたボリュームメトリックを表示</block>
+  <block id="c65020059f873181c54a9da47d36644e" category="paragraph">合計ビューには、選択したフィルターに一致するすべてのボリュームにわたる集計メトリックが表示されます。</block>
+  <block id="917d8665b0a19f0c6ca2d8c6ffcebc0b" category="list-text">*Project* タブで、*Total* タブが選択されていることを確認してください（これがデフォルトの表示です）。</block>
+  <block id="0edc759aed0aa13d642a5fcc5c6b439f" category="list-text">表示されている指標を確認してください：</block>
+  <block id="c08aa51f5dd683385bd6183a6a29ba37" category="list-text">すべてのボリュームの合計容量</block>
+  <block id="5cf38d2339ecd95ae611864d1f2b32cc" category="list-text">集計IOPS</block>
+  <block id="a7b3fe4db7fb9963d4534f547ad0b7b1" category="list-text">集約スループット</block>
+  <block id="b28f5915c68158c380e1db9a2f5837b0" category="list-text">このビューを使用して、全体的な傾向を把握し、将来の容量ニーズを計画してください。</block>
+  <block id="d53386b0691befba6e69a068093a0f4e" category="section-title">個々のボリュームのパフォーマンスを表示</block>
+  <block id="fa85c863fbfa45e42861e023fb56482d" category="paragraph">ボリュームビューには、時間の経過に伴う個々のボリュームのパフォーマンスが表示され、各メトリックの上位10件のボリュームが表示されます。</block>
+  <block id="b2880e7bb61e946ab1fef7540da55d35" category="list-text">*Project* タブで、*Volume* タブを選択します。</block>
+  <block id="641e309b6e1c47b2582f337f287f7c96" category="list-text">ボリューム指標を確認します。</block>
+  <block id="8ba19ef5affd20c9df5744d67da98231" category="list-text">*ボリューム使用容量*：現在使用容量が最も高いボリュームを表示します</block>
+  <block id="1a21640b898e08223523a18355209291" category="list-text">*IOPS*：選択した期間中に平均IOPSが最も高かったボリュームを表示します</block>
+  <block id="a1f09b2ba4cb89801fe2d81958d31299" category="list-text">*スループット*：選択した期間中に平均スループットが最も高かったボリュームを表示します</block>
+  <block id="9a721ee972e7d384ecc5b694bd5f09c1" category="list-text">グラフ上のいずれかのボリュームラインにカーソルを合わせると、詳細情報が表示されます：</block>
+  <block id="d012736c3cac6b88455b00f2d12ffe55" category="list-text">凡例を使用して、特定のボリュームを特定してください。複数の指標で同じボリュームが表示される場合、ダッシュボードは一貫した色分けを使用してボリュームの追跡を容易にします。</block>
+  <block id="404e25100ef1045c5e6af3fdd0c1eba6" category="paragraph">このインタラクティブなデータは、以下の点で役立ちます：</block>
+  <block id="30ea3d0cec2833175017691c23c53af0" category="list-text">ボリュームのパフォーマンスパターンを分析</block>
+  <block id="d73a9cdf3a6e29141fce2bc9f125bb07" category="list-text">潜在的なボトルネックを特定する</block>
+  <block id="e40b939fb972e0ff389ce79fb15fca8a" category="list-text">サイズ調整が必要なボリュームを見つける</block>
+  <block id="f62ae674df132e5f97f87c3204876222" category="paragraph">プロジェクトダッシュボードを使用する際は、以下の推奨事項を考慮してください：</block>
+  <block id="513968dc3eeb639c3ddeee3c4aac6967" category="list-text">*フィルターを戦略的に組み合わせる*：複数のフィルターを組み合わせて使用することで、リソースの使用状況に関する具体的なビジネス上の疑問に答えることができます。</block>
+  <block id="a9aeb15fa23ed8a62e0456923b63010f" category="list-text">*ビューの比較*：合計ビューとボリュームビューの両方を併用してください。合計ビューは計画に、ボリュームビューはトラブルシューティングに使用します。</block>
+  <block id="902d9a8c0dd7d6709dcba0746e055e08" category="list-text">*時間の経過に伴う追跡*：さまざまな期間を使用して、パフォーマンスのパターンが通常の変動なのか、それとも傾向を示しているのかを理解します。</block>
+  <block id="2a52fb0f6ee480cba21b7a07991dbf61" category="list-text">*基準値を文書化*：ボリュームの通常のパフォーマンスレベルを記録しておくと、異常を迅速に特定できます。</block>
+  <block id="80a6d2fa6720dd17d46d9ba1715fdfd5" category="list-text">*洞察に基づいて行動する*：ボリュームパフォーマンスデータを使用して、問題がワークロードに影響を与える前に、リソースの割り当て、適切なサイジング、または最適化について積極的な意思決定を行います。</block>
+  <block id="10836e9060848be17a14b99fc485975e" category="paragraph">Workload Factoryはプロジェクトの新しいクローンを作成し、そのクローンはプロジェクトページに新しいプロジェクトとして表示されます。</block>
+  <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">2026年5月31日</block>
 </blocks>

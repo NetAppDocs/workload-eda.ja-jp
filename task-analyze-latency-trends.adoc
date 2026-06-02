@@ -17,7 +17,7 @@ summary: インタラクティブなレイテンシグラフを使用して、�
 
 == 開始する前に
 
-link:task-monitor-latency.html["レイテンシー監視を設定済み"]があり、少なくとも1つの遅延イベントが検出されている必要があります。
+link:task-configure-latency-monitoring.html["レイテンシー監視を設定済み"]があり、少なくとも1つの遅延イベントが検出されている必要があります。
 
 
 

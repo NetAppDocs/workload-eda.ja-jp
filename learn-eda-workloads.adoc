@@ -48,7 +48,7 @@ NetApp ONTAPのスナップショット機能とクローン機能を使用す�
 
 == Workload Factory Codebox による自動化
 
-ワークロード ファクトリーでは、_Codebox_ による組み込みの自動化が導入されています。Codebox は次のような自動化の利点を提供します。
+Workload Factoryは、_Codebox_による組み込みの自動化機能を導入しました。Codeboxは、以下のような自動化のメリットを提供します：
 
 * *コード スニペットの生成*: リソースの作成中に Infrastructure-as-Code (IaC) スニペットが生成され、既存のオーケストレーション ワークフローとのシームレスな統合が可能になります。
 * *Infrastructure-as-code のコパイロット*: Codebox は、開発者と DevOps が Workload Factory でサポートされているあらゆる操作を実行するためのコードを生成するのに役立つ Infrastructure-as-code (IaC) コパイロットです。
@@ -76,7 +76,6 @@ EDA は、FSx for ONTAPがサポートされているすべての商用リージ
 次の AWS リージョンはサポートされていません。
 
 * 中国地域
-* GovCloud（米国）リージョン
 * シークレットクラウド
 * トップシークレットクラウド
 

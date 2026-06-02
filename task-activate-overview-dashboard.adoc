@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-activate-overview-dashboard.html 
+keywords: activate dashboard, CloudWatch metrics, AWS credentials, view permissions, FSx for ONTAP, cluster overview, enable dashboard 
+summary: 概要ダッシュボードをアクティブ化して、FSx for ONTAP ファイルシステムの CloudWatch メトリクスの収集を開始します。 
+---
+= Workload Factory for EDAで概要ダッシュボードをアクティブ化する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+概要ダッシュボードをアクティブ化して、FSx for ONTAP ファイルシステムの CloudWatch メトリクスの収集を開始します。アクティブ化すると、ダッシュボードはクラスタの健全性、容量、スループットの一元的な監視を提供します。
+
+
+
+== 開始する前に
+
+ダッシュボードを有効化する前に、以下の要件を満たしていることを確認してください。
+
+
+
+=== 表示権限を持つ AWS クレデンシャル
+
+Workload FactoryでAWS認証情報を設定する際には、General Storageに対して少なくとも読み取り（表示）権限を付与する必要があります。_Basic_認証情報はサポートされていません。
+
+閲覧権限を持つ認証情報を設定していない場合は、「概要」タブを開いたときにAWS認証情報設定ページにリダイレクトされます。
+
+AWS 認証情報をまだ設定していない場合は、link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS認証情報を追加する"^]を参照してください。
+
+
+
+== ダッシュボードをアクティブ化する
+
+Workload Factoryが閲覧権限を持つ認証情報を確認した後、ダッシュボードをアクティブ化して、FSx for ONTAPファイルシステムのCloudWatchメトリクスの収集を開始する必要があります。
+
+
+NOTE: 同意してからメトリックの収集に時間がかかる場合があります。初期収集の進行中はダッシュボードに通知が表示されます。
+
+.手順
+. 次のいずれかを使用してログインします link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソール体験"^]。
+. メニューimage:workloads-menu-icon.png["ハンバーガーメニューアイコン"]を選択し、*EDA*を選択します。
+. * Overview *タブを選択します。
+. 表示権限を持つ認証情報が検出されない場合は、*認証情報の追加*を選択し、プロンプトに従って表示権限を持つ AWS 認証情報を設定します。次に、*概要*タブに戻ります。
+. FSx for ONTAP ファイルシステムに対して収集される CloudWatch メトリクスについて説明している同意プロンプトを確認します。
+. ダッシュボードをアクティブ化し、メトリックの収集を開始するには、* Activate * を選択します。
+
+
+.結果
+Workload Factoryは、設定済みのAWS認証情報に関連付けられたすべてのFSx for ONTAPファイルシステムのCloudWatchメトリクスの収集を開始します。ダッシュボードは、メトリクスが利用可能になると表示されます。収集がまだ進行中の場合は、通知が表示されます。
+
+
+
+== 次の手順
+
+ダッシュボードを有効化すると、以下の操作が可能になります：
+
+* link:task-use-overview-dashboard.html["概要ダッシュボードを使用する"]クラスタの健全性と容量を監視
+* SSD容量管理モード（Automate、Recommend、またはNone）を設定します。
+* 特定のリージョンまたはAWSアカウントに絞り込むためのフィルターを設定します
+
+
+
+
+== 関連情報
+
+* link:learn-overview-dashboard.html["概要ダッシュボードについて"]
+* link:task-use-overview-dashboard.html["概要ダッシュボードを使用する"]
+

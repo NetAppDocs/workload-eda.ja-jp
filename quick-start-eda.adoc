@@ -42,25 +42,35 @@ link:requirements-eda.html["EDA要件の詳細"^]。
 概要ダッシュボードを有効にして、FSx for ONTAP クラスタの健全性、容量、スループットを監視します。同意プロンプトを承認して、Workload Factory が CloudWatch メトリックの収集を開始できるようにします。
 
 [role="quick-margin-para"]
-link:task-use-overview-dashboard.html["概要ダッシュボードを有効にする方法を確認する"^].
+link:task-activate-overview-dashboard.html["概要ダッシュボードをアクティブ化する方法を学ぶ"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] プロジェクトダッシュボードの設定
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]プロジェクトダッシュボードを設定する
 [role="quick-margin-para"]
 プロジェクトダッシュボードを設定して、システムの状態、パフォーマンス、ストレージの使用状況を監視することで、EDA環境を効果的に最適化できます。
 
 [role="quick-margin-para"]
-link:task-configure-dashboard.html["プロジェクトダッシュボードの設定方法を学びましょう"^].
+link:task-configure-project-dashboard.html["プロジェクトダッシュボードの設定方法を学びましょう"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]FSx for ONTAP レイテンシ分析の設定
 [role="quick-margin-para"]
 シミュレーションの実行時間に影響が出る前に、パフォーマンスの問題を事前に特定して解決するために、レイテンシしきい値を設定します。警告アラートと重大アラートを設定し、メールまたはSNS通知を設定してリアルタイムアラートを受信し、自動化された基本分析を活用します。また、必要に応じて、Amazon BedrockモデルARNを設定することで、複雑なシナリオ向けのAIエージェント分析を有効にすることもできます。
 
 [role="quick-margin-para"]
-link:task-monitor-latency.html["レイテンシ監視の設定方法を確認する"^]。イベントが検出されたら、インタラクティブグラフを使用してlink:task-analyze-latency-trends.html["レイテンシの傾向を分析する"^]できます。
+link:task-configure-latency-monitoring.html["レイテンシ監視の設定方法を確認する"^]。イベントが検出されたら、インタラクティブグラフを使用してlink:task-analyze-latency-trends.html["レイテンシの傾向を分析する"^]できます。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["セブン"] 他のサービスとの統合
 [role="quick-margin-para"]
-ワークロード Factory REST APIを使用して、EDA をサービス ポータルや Perforce Helix Core などの他のサービスと統合します。
+Workload Factory REST APIを使用して、EDAをサービスポータルやPerforce Helix Coreなどの他のサービスと統合します。
 
 [role="quick-margin-para"]
 link:integrate-perforce.html["EDAとPerforceを統合する方法を学ぶ"^]。
+
+
+
+== 次は何?
+
+* link:task-configure-latency-monitoring.html["FSx for ONTAP のレイテンシー監視を設定する"]
+* link:task-configure-project-dashboard.html["プロジェクトダッシュボードを設定する"]
+* link:learn-eda-workloads.html["EDA ワークロードについて学ぶ"]
+* link:get-help-eda.html["EDAに関するサポートを受ける"]
+
