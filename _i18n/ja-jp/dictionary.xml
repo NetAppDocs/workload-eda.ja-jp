@@ -875,7 +875,6 @@
   <block id="c8cc2ccf33cdc30737f78ff90de2445d" category="paragraph">レイテンシ分析は、お客様の AWS アカウントに接続されているすべての FSx for ONTAP ボリュームの読み取りおよび書き込みアクティビティに関する CloudWatch メトリクスを収集します。パフォーマンスの問題を早期に検出するために、これらのメトリクスを定義された制限値と継続的に照合します。</block>
   <block id="590fb1ff71e09ae10025da434d4a576d" category="paragraph">レイテンシが上昇した場合、Workload Factory は ONTAP QoS 遅延メトリクスを自動的に確認し、速度低下の主な原因を特定します。データやクラスタコンポーネントに関わるより複雑な問題については、オプションの AI 分析を実行することで、考えられる根本原因を特定し、影響を受けるクライアントを識別し、問題を解決するための手順を提案できます。</block>
   <block id="f5c07c8cce2b621540390923f8c67ffc" category="paragraph">アラートは、選択された時間範囲全体にわたって以下の条件が満たされた場合にのみトリガーされます。すなわち、レイテンシがしきい値を超え、かつIOPSがしきい値を超え続ける場合です。両方の条件を必須とすることで、システムが実際のワークロードを処理している間に高いレイテンシが発生した場合にのみアラートが発生するようになり、誤報を減らすことができます。</block>
-  <block id="7719c0ad2aed2107222044fb60d905ae" category="paragraph">検出されたすべてのイベントは、レイテンシイベントテーブルに表示されます。通知が設定されている場合は、影響を受けるボリュームの詳細を記載したメールまたは Amazon SNS メッセージも受信します。</block>
   <block id="dc61eabb4b4720779ffd0ea863639346" category="paragraph">レイテンシイベントが発生すると、Workload Factory は自動的に基本的な分析を実行して原因を特定します。ONTAP QoS 遅延センターメトリクスを使用して、FlexCache、容量プール、QoS 制限、ディスク、データ、クラスタ、またはその他のサブシステムなど、速度低下の原因となっているコンポーネントを確認します。これにより、手動による調査を必要とせずに、レイテンシの原因を迅速に特定できます。</block>
   <block id="8eb98f7a0459d22ab367426190a3fb48" category="admonition">コンポーネントの内訳は、リンクが FSx for ONTAP ファイルシステムに関連付けられている場合にのみ表示できます。リンクが存在しない場合でも、レイテンシ、IOPS、およびスループットのグラフを表示できます。</block>
   <block id="eb40849137a407e18ca35f8df5165003" category="admonition">ONTAP QoS 分析と CloudWatch のレイテンシ値は、データの収集方法が異なるため、若干の違いが生じる場合があります。基本的な分析では、ONTAP データを使用して根本原因を特定します。</block>
@@ -992,7 +991,6 @@
   <block id="59cbd9a4d580062062bfc4ff383f14c2" category="paragraph">読み取りと書き込みの警告レベルおよびクリティカルレベルを設定します。システムはこれらの制限値を継続的に監視し、制限値に達するとアラートを送信します。</block>
   <block id="11fda7252f626757b0488cd577f27860" category="admonition">重大イベントのしきい値を警告しきい値よりも高く設定してください。そうしないと、設定を保存できません。</block>
   <block id="5a1211a74ff4c3bb3c0672678c971e1f" category="paragraph">Workload Factory は、お客様の AWS 認証情報にリンクされているすべての FSx for ONTAP ボリュームのレイテンシメトリックを収集します。これらのメトリックは、少なくとも 20 分ごとに収集されます。設定したしきい値を超えたボリュームは、レイテンシイベントテーブルに表示されます。</block>
-  <block id="14bf5360fe55779f5e2e14b0c58169e4" category="paragraph">高遅延が検出された際にアラートを受け取るには、メールまたは Amazon SNS 通知を設定してください。設定したしきい値をボリュームが超えるたびに通知が届くので、パフォーマンスの問題が発生しているかどうかをすぐに把握できます。</block>
   <block id="d1b1c2aa5d228f69be0ebddab772256e" category="admonition">影響を受けるボリュームが10個を超える場合、メールには最初の10個のボリュームが表示され、さらに影響を受けるボリュームの数が表示されます。影響を受けるすべてのボリュームは、Workload Factoryコンソールで確認できます。</block>
   <block id="95ae0d98cc5a0df87238eb0392c461da" category="paragraph">設定後、しきい値はいつでも変更できます。</block>
   <block id="f40c1de6b7f8b45f157d4a9ef124471c" category="admonition">クリティカルしきい値を警告しきい値よりも高く設定してください。クリティカルしきい値を低く設定すると、システムにエラーが表示されます。</block>
@@ -1051,4 +1049,16 @@
   <block id="06557d42c1d11c10994b04fb503bc5ea" category="list-text">通常のパフォーマンスレベルを記録しておくと、後で異常な動作を発見しやすくなります。</block>
   <block id="910779fa193225b42eb7f118f9e0fbf8" category="list-text">データから得られた知見を活用して、ワークロードに影響が出る前にリソースを調整したり、ボリュームのサイズを変更したり、パフォーマンスを改善したりしてください。</block>
   <block id="52c4cfa377c69894b03ee8c538f7d3c7" category="section-title">2026年7月5日</block>
+  <block id="7e2652d4b25a337c594774fc14c2ab17" category="section-title">遅延通知の頻度を設定する</block>
+  <block id="39b4011c4c170e1b29e7d8710812c644" category="paragraph">レイテンシ違反に関するメール通知の受信頻度を選択できるようになりました。</block>
+  <block id="9b4c72b587622d268ed8a5a315219fb5" category="list-text">*毎日通知する（推奨）*：FSx for ONTAP ファイルシステムで新しい問題が発生した場合に通知を受け取ります。</block>
+  <block id="b1960d91c54aac51310626fca3cc3b48" category="paragraph">同じファイルシステムで1日に複数回のレイテンシ問題が発生した場合でも、送信されるメールは1通のみです。</block>
+  <block id="a6f20e83b8038d1aeb40bd01b25f763e" category="paragraph">Workload Factoryは、ファイルシステムの遅延アラートを送信した後、そのファイルシステムに対して次のアラートを送信するまで24時間待機します。</block>
+  <block id="e2a4178b795c9afb4497b6549895fe0f" category="list-text">*レイテンシ違反が発生した場合の通知（20分ごと）*：違反が検出された場合、最大20分ごとに通知を受け取ります。</block>
+  <block id="943fb48a5bde64c680308a09af0a0832" category="paragraph">遅延の問題を通知しつつメールの量を減らすため、デフォルトでは毎日の通知が有効になっています。遅延監視の設定時やしきい値設定の編集時に、通知設定を変更できます。</block>
+  <block id="496e68c00adfe40e8730acfccde74f6b" category="paragraph"><block ref="9cf52e304b2518ca53073fc069c5a89c" category="inline-link-rx"></block>。</block>
+  <block id="c078c522f0c0f69cbe3ee348a3929074" category="paragraph">検出されたすべてのイベントは、レイテンシイベントテーブルに表示されます。通知が設定されている場合は、影響を受けるボリュームの詳細を記載したメールまたは Amazon SNS メッセージも受信します。通知を受け取る頻度は、ファイルシステムごとに毎日、または 20 分ごとに設定できます。</block>
+  <block id="eeaf9b0486df56b5ef23ab55b9b5c590" category="paragraph">高遅延が検出された際にアラートを受け取るには、メールまたはAmazon SNS通知を設定してください。通知頻度は、以下の2つの方法で制御できます：</block>
+  <block id="f0ac07f7c61e9a1057c26af44dc07e0f" category="list-text">*毎日通知する（推奨）*：ファイルシステムで新たな侵害が発生した際に通知を受け取ります。ファイルシステムに関する通知を送信した後、同じファイルシステムに対して再度通知を送信する前に24時間待機してください。</block>
+  <block id="787290df504f1549bf1bea416b297658" category="list-text">*レイテンシ違反が発生した場合の通知（20分ごと）*：違反が検出された場合、最大で20分ごとに1回通知を受け取ります。</block>
 </blocks>
