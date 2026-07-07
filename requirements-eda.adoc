@@ -20,7 +20,7 @@ AWS の認証情報と権限:: 読み取り / 書き込み権限を持つ AWS �
 現時点では、_Basic_モードおよび_Read-only_モードの権限はサポートされていません。
 
 
-NOTE: AWS 認証情報は、ボリュームパフォーマンス分析のための CloudWatch メトリックを収集するレイテンシー監視機能を使用する場合にも必要です。レイテンシイベントの通知を受け取るには、Workload Factory 設定で通知設定を構成してください。複雑なレイテンシーシナリオにおけるオプションの AI エージェント分析を有効にするには、Amazon Bedrock モデルの ARN も指定する必要があります。link:learn-latency-monitoring.html["レイテンシ監視について学ぶ"]。
+NOTE: レイテンシー監視機能を使用するには、AWS 認証情報も必要です。この機能は、ボリュームパフォーマンス分析のためにCloudWatchメトリクスを収集します。レイテンシーイベントの通知を受け取るには、Workload Factory の設定で通知設定を構成してください。複雑なレイテンシーシナリオに対するオプションの AI 分析を有効にするには、Amazon Bedrock モデルの ARN も指定する必要があります。link:learn-latency-monitoring.html["レイテンシ監視について学ぶ"]。
 
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Workload FactoryにAWS認証情報を追加する方法を学ぶ"^]
 

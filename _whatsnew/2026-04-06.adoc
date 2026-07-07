@@ -23,15 +23,15 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html#capa
 
 === 自動AI レイテンシ分析
 
-レイテンシ分析に、AIエージェント分析が新たに加わりました。
+レイテンシ分析にAI分析が組み込まれるようになりました。
 
-データ遅延やクラスタ遅延を伴う複雑なシナリオでは、AIエージェント分析を呼び出して以下の情報を受け取ることができます：
+データ遅延やクラスタ遅延を伴う複雑なシナリオでは、AI分析を呼び出して以下の情報を取得できます。
 
 * 詳細な根本原因の特定
 * 影響を受けるEC2クライアントのリスト
 * 具体的な修復手順
 
 
-AIエージェント分析にはAmazon BedrockモデルのARN構成が必要で、基本的な分析でより詳細な調査が推奨されるシナリオに対してオンデマンドで利用できます。AIエージェントは、バリーボリューム、最適ではないマウントポイント構成、FlexGroupリバランシングの必要性、スケールアウト要件などの問題を特定できます。
+AI分析にはAmazon BedrockモデルのARN構成が必要で、基本的な分析結果からより詳細な調査が推奨されるシナリオに対してオンデマンドで利用できます。AIエージェントは、バリーボリューム、最適でないマウントポイント構成、FlexGroupの再バランスニーズ、およびスケールアウト要件などの問題を特定できます。
 
-https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#run-ai-agent-analysis["AIエージェント分析の詳細"^].
+https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#run-ai-agent-analysis["AI分析の詳細"^]。

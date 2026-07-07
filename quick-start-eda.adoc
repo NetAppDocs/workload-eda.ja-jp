@@ -53,7 +53,7 @@ link:task-configure-project-dashboard.html["プロジェクトダッシュボー
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]FSx for ONTAP レイテンシ分析の設定
 [role="quick-margin-para"]
-シミュレーションの実行時間に影響が出る前に、パフォーマンスの問題を事前に特定して解決するために、レイテンシしきい値を設定します。警告アラートと重大アラートを設定し、メールまたはSNS通知を設定してリアルタイムアラートを受信し、自動化された基本分析を活用します。また、必要に応じて、Amazon BedrockモデルARNを設定することで、複雑なシナリオ向けのAIエージェント分析を有効にすることもできます。
+シミュレーションの実行時間に影響が出る前に、パフォーマンスの問題を事前に特定して解決するために、遅延しきい値を設定します。警告アラートと重大アラートを設定し、メールまたは SNS 通知を設定してリアルタイムアラートを受信し、自動化された基本分析を活用して、必要に応じて Amazon Bedrock モデルの ARN を設定することで複雑なシナリオ向けの AI 分析を有効化します。
 
 [role="quick-margin-para"]
 link:task-configure-latency-monitoring.html["レイテンシ監視の設定方法を確認する"^]。イベントが検出されたら、インタラクティブグラフを使用してlink:task-analyze-latency-trends.html["レイテンシの傾向を分析する"^]できます。
