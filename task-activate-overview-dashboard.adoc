@@ -15,12 +15,14 @@ summary: 概要ダッシュボードをアクティブ化して、FSx for ONTAP 
 
 
 
+[[before-you-begin]]
 == 開始する前に
 
 ダッシュボードを有効化する前に、以下の要件を満たしていることを確認してください。
 
 
 
+[[aws-credentials-with-view-permissions]]
 === 表示権限を持つ AWS クレデンシャル
 
 Workload FactoryでAWS認証情報を設定する際には、General Storageに対して少なくとも読み取り（表示）権限を付与する必要があります。_Basic_認証情報はサポートされていません。
@@ -31,6 +33,7 @@ AWS 認証情報をまだ設定していない場合は、link:https://docs.neta
 
 
 
+[[activate-the-dashboard]]
 == ダッシュボードをアクティブ化する
 
 Workload Factory が閲覧権限を持つ認証情報を検証した後、ダッシュボードをアクティブ化して、FSx for ONTAP ファイルシステムの CloudWatch メトリクスの収集を開始します。
@@ -52,6 +55,7 @@ Workload Factory は、AWS 認証情報にリンクされているすべての F
 
 
 
+[[next-steps]]
 == 次の手順
 
 ダッシュボードを有効化すると、以下の操作が可能になります：
@@ -63,6 +67,7 @@ Workload Factory は、AWS 認証情報にリンクされているすべての F
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:learn-overview-dashboard.html["概要ダッシュボードについて"]

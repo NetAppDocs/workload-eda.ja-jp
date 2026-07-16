@@ -4,6 +4,7 @@
 
 
 
+[[netapp-workload-factory-for-builders-now-netapp-workload-factory-for-eda]]
 === NetApp Workload Factory for Builders がNetApp Workload Factory for EDA に
 
 Workload Factory for Builders は Workload Factory for EDA になりました。名前の変更は、電子設計自動化 (EDA) ワークロードに重点が置かれていることを反映しています。
@@ -12,6 +13,7 @@ Workload Factory for EDA は、複数のファイルシステムにわたって 
 
 
 
+[[ask-me-ai-assistant-home-page-integration]]
 === Ask me AIアシスタントのホームページ統合
 
 Workload Factory コンソールのホームページには Ask me AI アシスタントが組み込まれており、独自のストレージ資産について質問したり、環境から直接パーソナライズされた分析情報を取得したり、以前の会話を参照したりすることができます。コンソールを離れることなく、「Ask me」と対話してワークロードを理解し、問題をトラブルシューティングし、Workload Factory について詳しく知ることができます。

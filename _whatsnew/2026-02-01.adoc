@@ -4,6 +4,7 @@
 
 
 
+[[enhanced-dashboard-filtering-with-customizable-tags-in-eda-workloads]]
 === EDAワークロードにおけるカスタマイズ可能なタグによるダッシュボードフィルタリング機能の強化
 
 EDAダッシュボードで、AWSタグに基づいて最大5つのカスタムフィルターを設定できるようになりました。各カスタムフィルターには、ラベル名、AWSタグキー、選択タイプ（単一選択または複数選択）が含まれます。
@@ -16,6 +17,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html["カス
 
 
 
+[[volume-details-view-for-granular-performance-analysis]]
 === 詳細なパフォーマンス分析のためのボリューム詳細ビュー
 
 ダッシュボードに、合計ビューとボリュームビューの2つの表示モードが追加されました。合計ビューでは全ボリュームの集計指標が表示され、ボリュームビューでは上位10件のボリュームの個別パフォーマンスが時系列で表示されます。
@@ -26,6 +28,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html#view-vo
 
 
 
+[[latency-analysis-for-proactive-performance-monitoring]]
 === プロアクティブなパフォーマンス監視のためのレイテンシ分析
 
 レイテンシー分析により、FSx for ONTAP ファイルシステム全体のボリューム読み取りおよび書き込みレイテンシーを監視できます。カスタマイズ可能な警告イベントおよび重要イベントのしきい値を設定することで、EDA ワークロードに影響を与える前にパフォーマンスのボトルネックをプロアクティブに特定できます。

@@ -15,6 +15,7 @@ summary: Workload Factory for EDA の概要ダッシュボードが、大規模�
 
 
 
+[[overview]]
 == 概要
 
 概要ダッシュボードは、設定済みのAWS認証情報に関連付けられたすべてのFSx for ONTAPファイルシステムのCloudWatchメトリクスを収集します。
@@ -36,10 +37,12 @@ summary: Workload Factory for EDA の概要ダッシュボードが、大規模�
 
 
 
+[[dashboard-components]]
 == ダッシュボードコンポーネント
 
 
 
+[[cluster-health-status]]
 === クラスタのヘルスステータス
 
 クラスターの状態は、選択したファイルシステム全体のアクティビティを簡単に確認できる機能です。これは、少なくとも 1 つの FSx for ONTAP リンクがファイルシステムに接続されている場合にのみ表示されます。
@@ -53,6 +56,7 @@ summary: Workload Factory for EDA の概要ダッシュボードが、大規模�
 
 
 
+[[clusters-table]]
 === クラスタテーブル
 
 クラスターテーブルには、アクティブなリージョンとAWSアカウントの選択に基づいてフィルタリングされた各FSx for ONTAPファイルシステムの詳細なビューが表示されます。データはCloudWatchメトリックから収集されます。
@@ -68,10 +72,12 @@ summary: Workload Factory for EDA の概要ダッシュボードが、大規模�
 
 
 
+[[ssd-capacity-management]]
 == SSD容量管理
 
 
 
+[[management-modes]]
 === 管理モード
 
 *自動化*:: Workload Factoryは、使用量が設定された制限に達すると、自動的にSSDの容量を追加します。これは自動的に処理されるため、手作業は必要ありません。これは、自動管理を好む環境に適しています。
@@ -81,6 +87,7 @@ summary: Workload Factory for EDA の概要ダッシュボードが、大規模�
 
 
 
+[[capacity-recommendations]]
 === 容量に関する推奨事項
 
 Workload Factory が自動化モードまたは推奨モードの場合、各 FSx for ONTAP ファイルシステムを自動的にチェックし、容量推奨アルゴリズムを実行します。システムは 24 時間ごとにスキャンを実行し、SSD の容量を調整する必要があるかどうかを確認します。
@@ -96,6 +103,7 @@ Workload Factory が自動化モードまたは推奨モードの場合、各 FS
 
 
 
+[[ssd-management-parameters]]
 === SSD管理パラメータ
 
 パラメータは、容量管理システムがSSDの使用状況を分析し、それに基づいてどのような動作を行うかを制御します：
@@ -109,6 +117,7 @@ Workload Factory が自動化モードまたは推奨モードの場合、各 FS
 
 
 
+[[understanding-capacity-decision-points]]
 === 容量に関する決定ポイントについて
 
 SSD使用状況グラフは、システムが容量に関する推奨事項を提示したり、自動的なアクションを実行したりした時点を示します。これらのマーカーは、容量管理アルゴリズムが時間の経過とともにどのように動作したかを示しています。
@@ -128,6 +137,7 @@ SSD使用履歴グラフを使用して、次の操作を実行できます。
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:task-activate-overview-dashboard.html["概要ダッシュボードを有効にする"]

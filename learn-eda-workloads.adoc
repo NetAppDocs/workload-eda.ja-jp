@@ -17,6 +17,7 @@ EDA における継続的インテグレーションと継続的デプロイメ�
 
 
 
+[[what-is-cicd]]
 == CI/CD とは何ですか?
 
 CI/CD を使用すると、開発者がソフトウェアのさまざまなバージョンを管理および操作する方法を効率化できます。Perforce Helix Core と連携して、ソフトウェア バージョンを即座に複製し、開発、QA、CI/CD 用のワークスペースを作成します。
@@ -27,6 +28,7 @@ NetApp ONTAPのスナップショット機能とクローン機能を使用す�
 
 
 
+[[cicd-features]]
 == CI/CD 機能
 
 * プロジェクトを作成、編集、削除します。見る link:manage-projects.html["プロジェクトの管理"]。
@@ -40,12 +42,14 @@ NetApp ONTAPのスナップショット機能とクローン機能を使用す�
 
 
 
+[[projects-and-workspaces-in-eda]]
 == EDAのプロジェクトとワークスペース
 
 プロジェクトを作成し、ソフトウェア環境とその成果物を表すボリュームを割り当てることができます。ソフトウェアの新しいバージョンを作成するたびに、ボリューム データを再同期し、プロジェクト スナップショットを作成して、ボリュームの状態を既知のバージョンとしてマークする必要があります。プロジェクトのソース ボリュームはローリング アップデートを取得し、複数のバージョンをマークするために複数のスナップショットを持つ場合があります。各スナップショットは、開発者、QA、またはビルド プロセスで使用できる専用または共有の編集可能なリポジトリであるインスタント クローンとしてすぐに使用できます。特定のソフトウェア バージョンのコンテキストにおけるクローンとは、ワークスペースのことです。
 
 
 
+[[automation-with-workload-factory-codebox]]
 == Workload Factory Codebox による自動化
 
 Workload Factoryは、_Codebox_による組み込みの自動化機能を導入しました。Codeboxは、以下のような自動化のメリットを提供します：
@@ -57,18 +61,21 @@ Workload Factoryは、_Codebox_による組み込みの自動化機能を導入�
 
 
 
+[[cost]]
 == 料金
 
 Workload Factory の CI/CD 機能の使用には料金はかかりません。
 
 
 
+[[licensing]]
 == ライセンス
 
 Workload Factory の CI/CD 機能を使用するために、 NetAppからの特別なライセンスは必要ありません。
 
 
 
+[[regions]]
 == 地域
 
 EDA は、FSx for ONTAPがサポートされているすべての商用リージョンでサポートされています。 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["サポートされている Amazon リージョンを表示します。"^]
@@ -82,6 +89,7 @@ EDA は、FSx for ONTAPがサポートされているすべての商用リージ
 
 
 
+[[getting-help]]
 == 助けを得る
 
 Amazon FSx for NetApp ONTAPは、AWS ファーストパーティソリューションです。サポートについては、AWS マネジメントコンソールのサポートセンターを使用してケースを開いてください。「FSx for ONTAP」とカテゴリを選択し、必要な情報を入力します。

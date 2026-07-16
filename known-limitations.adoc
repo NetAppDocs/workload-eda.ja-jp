@@ -15,6 +15,7 @@ summary: 今回のリリースでサポートされていない、または今�
 
 
 
+[[operator-permissions-required]]
 == オペレーターの権限が必要
 
 NetApp Workload Factory for EDA が正しく機能するにはオペレータ権限が必要です。

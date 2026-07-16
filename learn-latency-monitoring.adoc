@@ -15,6 +15,7 @@ Workload Factory for EDA のレイテンシ監視は、FSx for ONTAP ボリュ�
 
 
 
+[[how-latency-monitoring-works]]
 == レイテンシ監視の仕組み
 
 レイテンシ分析は、お客様の AWS アカウントに接続されているすべての FSx for ONTAP ボリュームの読み取りおよび書き込みアクティビティに関する CloudWatch メトリクスを収集します。パフォーマンスの問題を早期に検出するために、これらのメトリクスを定義された制限値と継続的に照合します。
@@ -23,6 +24,7 @@ Workload Factory for EDA のレイテンシ監視は、FSx for ONTAP ボリュ�
 
 
 
+[[alert-generation]]
 === アラート生成
 
 アラートは、選択された時間範囲全体にわたって以下の条件が満たされた場合にのみトリガーされます。すなわち、レイテンシがしきい値を超え、かつIOPSがしきい値を超え続ける場合です。両方の条件を必須とすることで、システムが実際のワークロードを処理している間に高いレイテンシが発生した場合にのみアラートが発生するようになり、誤報を減らすことができます。
@@ -39,12 +41,14 @@ Workload Factory for EDA のレイテンシ監視は、FSx for ONTAP ボリュ�
 
 
 
+[[understanding-alerts]]
 == アラートについて
 
 アラートがどのようにトリガーされるかを理解することで、適切なしきい値を設定し、結果を解釈するのに役立ちます。
 
 
 
+[[metrics-collected]]
 === 収集されたメトリック
 
 システムは各ボリュームについて次のCloudWatchメトリックを収集します：
@@ -55,6 +59,7 @@ Workload Factory for EDA のレイテンシ監視は、FSx for ONTAP ボリュ�
 
 
 
+[[alert-trigger-conditions]]
 === アラートのトリガー条件
 
 次の条件がすべて満たされると、アラートがトリガーされます：
@@ -68,6 +73,7 @@ Workload Factory for EDA のレイテンシ監視は、FSx for ONTAP ボリュ�
 
 
 
+[[event-severity]]
 === イベントの重大度
 
 * *警告イベント*：注意が必要な可能性のあるレイテンシの上昇を示します
@@ -76,12 +82,14 @@ Workload Factory for EDA のレイテンシ監視は、FSx for ONTAP ボリュ�
 
 
 
+[[latency-analysis]]
 == レイテンシ分析
 
 Workload Factoryは、レイテンシの問題のトラブルシューティングに役立つ2つのレベルの分析を提供します。
 
 
 
+[[basic-analysis]]
 === 基本分析
 
 レイテンシイベントが発生すると、Workload Factory は自動的に基本的な分析を実行して原因を特定します。ONTAP QoS 遅延センターメトリクスを使用して、FlexCache、容量プール、QoS 制限、ディスク、データ、クラスタ、またはその他のサブシステムなど、速度低下の原因となっているコンポーネントを確認します。これにより、手動による調査を必要とせずに、レイテンシの原因を迅速に特定できます。
@@ -94,6 +102,7 @@ NOTE: ONTAP QoS 分析と CloudWatch のレイテンシ値は、データの収�
 
 
 
+[[ai-analysis]]
 === AI分析
 
 基本的な分析によって遅延の原因を特定できる場合もありますが、データやクラスタコンポーネントが関わるより複雑な状況では、より詳細な調査が必要となることが多いです。AI分析は、過負荷状態のボリューム、不適切な設定、容量追加の必要性など、基本的な分析では見落とされる可能性のある問題を発見することで、より詳細なトラブルシューティングを可能にします。
@@ -109,6 +118,7 @@ AI分析には、Workload Factoryの設定にAmazon BedrockモデルのARNが必
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:task-configure-latency-monitoring.html["レイテンシー監視の設定"]

@@ -4,6 +4,7 @@
 
 
 
+[[builders-workload-initial-release]]
 === ビルダーワークロードの初期リリース
 
 BlueXP Workload Factory for Builders はソフトウェア バージョンの使用とアクセスを簡素化し、カスタム ツールやスクリプトの必要性を排除します。これにより、開発プロセスに便利なワークスペースとして Perforce Helix Core と統合されたインスタント クローンとしてソフトウェア バージョンを使用できるようになるため、時間とリソースを節約できます。

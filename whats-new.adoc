@@ -15,31 +15,30 @@ Workload Factory の EDA 機能の新機能について説明します。
 
 
 
+[[5-july-2026]]
 == 2026年7月5日
 
 
 
-=== IOPSとスループットグラフによるレイテンシ分析の強化
+[[enhanced-latency-analysis-with-synchronized-latency-iops-and-throughput-charts]]
+=== 同期されたレイテンシ、IOPS、スループットのグラフによる高度なレイテンシ分析
 
-レイテンシー分析パネルの *Over time* タブに、同期されたパフォーマンスグラフが表示されるようになりました：
+レイテンシー分析パネルに、同期されたパフォーマンスグラフを含む *Detailed latency analysis* ページが追加されました。
 
 * *レイテンシグラフ*：レイテンシが時間とともにどのように変化するかを示し、しきい値線と、制限を超えた場合のアラートが表示されます。
 * *IOPSグラフ*：1秒あたりの操作数を表示し、しきい値線と過去の制限超過を示すインジケーターも表示します。
-* *スループットグラフ*：データ転送速度を表示します（DataReadBytesまたはDataWriteBytes）。
+* *スループットグラフ*：データ転送速度を表示します（DataReadBytesまたはDataWriteBytes）。フィルターでメタデータを選択した場合、スループットグラフにはデータが表示されません。
 
 
 すべてのグラフは同じタイムラインを使用し、イベントが読み取りか書き込みかに基づいて、適切な指標を自動的に表示します。
 
-新しいフィルターを使用すると、より詳細な分析のために、「すべて」、「読み取り」、「書き込み」、「メタデータ」の操作を切り替えることができます。
-
-これらのグラフは、レイテンシ、IOPS、スループットが互いにどのように関連しているかを視覚的に把握するのに役立ち、パフォーマンスの問題の原因を特定し、その解決方法を決定しやすくなります。
-
-パフォーマンスグラフは、AWS認証情報が提供されている場合にのみ利用可能になりました。FSx for ONTAPリンクは、基本分析およびAI分析における構成要素の内訳を示す場合にのみ必要です。
+表示を調整することで、レイテンシの急増とIOPSおよびスループットの変化との相関関係を把握できます。違反マーカーとホバー時の詳細情報により、しきい値を超えたタイミングを確認したり、検出された違反に関する主要な指標をレビューしたりできます。
 
 https://docs.netapp.com/us-en/workload-eda/task-analyze-latency-trends.html["複数のグラフを使用してレイテンシーの傾向を分析する方法を説明します。"^]。
 
 
 
+[[set-latency-notification-frequency]]
 === 遅延通知の頻度を設定する
 
 レイテンシ違反に関するメール通知の受信頻度を選択できるようになりました。
@@ -60,10 +59,12 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-latency-monitoring.htm
 
 
 
+[[31-may-2026]]
 == 2026年5月31日
 
 
 
+[[ssd-capacity-increase-management-modes-and-automation]]
 === SSD 容量増加管理モードと自動化
 
 Workload Factoryでは、運用上の好みに合わせて、SSD容量増加管理モードを提供するようになりました。
@@ -79,6 +80,7 @@ link:https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html
 
 
 
+[[bulk-edit-ssd-capacity-increase-management-parameters]]
 === SSD容量増加管理パラメータの一括編集
 
 概要ダッシュボードから、複数のファイルシステムにわたるSSD容量増加管理パラメータを調整できるようになりました。「クラスター」テーブルで1つ以上のクラスターを選択し、「しきい値（10～90%）」、「ルックバック期間（1～200時間）」、「アヘッド期間（1～200時間）」の値を一括編集します。
@@ -89,6 +91,7 @@ link:https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html
 
 
 
+[[capacity-decision-points-visualization]]
 === 容量決定ポイントの可視化
 
 SSD使用状況グラフに、容量推奨値が生成された時点、または自動アクションが実行された時点を示す決定ポイントが表示されるようになりました。
@@ -103,6 +106,7 @@ link:https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html
 
 
 
+[[link-configured-status-in-clusters-table]]
 === クラスタテーブル内のリンク設定ステータス
 
 概要ダッシュボードのクラスターテーブルに、各ファイルシステムに対してFSx for ONTAPリンクが設定されているかどうかを示す関連リンク列が追加されました。接続ステータスは毎日検証され、リンク設定が必要なファイルシステムや接続に問題がある可能性のあるファイルシステムを特定するのに役立ちます。
@@ -111,16 +115,19 @@ link:https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html
 
 
 
+[[support-for-aws-govcloud-us-in-netapp-workload-factory]]
 === NetApp Workload FactoryでのAWS GovCloud（US）のサポート
 
 NetApp Workload FactoryはAWS GovCloud（US）アカウントをサポートしています。GovCloudアカウントを使用すると、AWS GovCloud（US）リージョンでストレージワークロードをデプロイおよび管理できます。
 
 
 
+[[3-may-2026]]
 == 2026年5月3日
 
 
 
+[[email-and-sns-notifications-for-latency-events]]
 === レイテンシイベントに関するEメールおよびSNS通知
 
 FSx for ONTAP ボリュームでレイテンシイベントが検出されたときに、自動通知を受信できるようになりました。Workload Factory 設定で E メールまたは Amazon SNS 通知を設定すると、ボリュームが設定したレイテンシしきい値を超えたときにリアルタイムアラートを受信できます。
@@ -131,6 +138,7 @@ https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#configure-l
 
 
 
+[[latency-trend-visualization-with-interactive-graphs]]
 === インタラクティブなグラフによるレイテンシ傾向の可視化
 
 レイテンシー分析パネルに、包括的なレイテンシー分析のためのタブ付きインターフェースが追加されました：
@@ -147,10 +155,12 @@ https://docs.netapp.com/us-en/workload-eda/task-analyze-latency-trends.html["レ
 
 
 
+[[6-april-2026]]
 == 2026年4月6日
 
 
 
+[[eda-capacity-recommendations]]
 === EDA容量に関する推奨事項
 
 Workload Factory は、EDA インベントリ内の各 FSx for ONTAP クラスタの SSD 容量を自動的に分析し、調整が必要な場合に容量に関する推奨事項を生成します。このアルゴリズムは、各クラスタに対して 24 時間ごとに 1 回実行されます。
@@ -168,6 +178,7 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html#capa
 
 
 
+[[automated-ai-latency-analysis]]
 === 自動AI レイテンシ分析
 
 レイテンシ分析にAI分析が組み込まれるようになりました。
@@ -185,10 +196,12 @@ https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#run-ai-agen
 
 
 
+[[1-march-2026]]
 == 2026年3月1日
 
 
 
+[[overview-dashboard-for-eda-storage-management]]
 === EDA ストレージ管理の概要ダッシュボード
 
 数十台のFSx for ONTAPファイルシステムを管理するIT管理者は、概要ダッシュボードを使用して、クラスタの状態、使用率、ボリュームの配置に関する一般的な運用上の質問に答えることができます。
@@ -205,6 +218,7 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html["概
 
 
 
+[[automated-latency-analysis]]
 === 自動レイテンシ分析
 
 レイテンシ分析に自動化された基本分析が含まれるようになりました。レイテンシイベントが検出されると、システムは自動的に ONTAP QoS 遅延センターメトリックを分析して、レイテンシ問題の原因を特定します。
@@ -213,6 +227,7 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html["概
 
 
 
+[[new-ask-me-bookmark-available-in-workload-factory]]
 === Workload Factory で新しい Ask Me ブックマークが利用可能になりました
 
 Workload Factory コンソールのすべての画面に新しい Ask Me ブックマークを追加しました。この改善により、ヘルプが必要なときにいつでも Ask Me に簡単かつ迅速にアクセスできるようになります。Ask Me は AI アシスタントであり、独自のワークロード環境について質問したり、環境から直接パーソナライズされた分析情報を取得したり、以前の会話を参照したりすることができます。
@@ -223,10 +238,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overvie
 
 
 
+[[1-february-2026]]
 == 2026年2月1日
 
 
 
+[[enhanced-dashboard-filtering-with-customizable-tags-in-eda-workloads]]
 === EDAワークロードにおけるカスタマイズ可能なタグによるダッシュボードフィルタリング機能の強化
 
 EDAダッシュボードで、AWSタグに基づいて最大5つのカスタムフィルターを設定できるようになりました。各カスタムフィルターには、ラベル名、AWSタグキー、選択タイプ（単一選択または複数選択）が含まれます。
@@ -239,6 +256,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html["カス
 
 
 
+[[volume-details-view-for-granular-performance-analysis]]
 === 詳細なパフォーマンス分析のためのボリューム詳細ビュー
 
 ダッシュボードに、合計ビューとボリュームビューの2つの表示モードが追加されました。合計ビューでは全ボリュームの集計指標が表示され、ボリュームビューでは上位10件のボリュームの個別パフォーマンスが時系列で表示されます。
@@ -249,6 +267,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html#view-vo
 
 
 
+[[latency-analysis-for-proactive-performance-monitoring]]
 === プロアクティブなパフォーマンス監視のためのレイテンシ分析
 
 レイテンシー分析により、FSx for ONTAP ファイルシステム全体のボリューム読み取りおよび書き込みレイテンシーを監視できます。カスタマイズ可能な警告イベントおよび重要イベントのしきい値を設定することで、EDA ワークロードに影響を与える前にパフォーマンスのボトルネックをプロアクティブに特定できます。
@@ -261,10 +280,12 @@ https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html["レイテ�
 
 
 
+[[4-january-2026]]
 == 2026年1月4日
 
 
 
+[[netapp-workload-factory-for-builders-now-netapp-workload-factory-for-eda]]
 === NetApp Workload Factory for Builders がNetApp Workload Factory for EDA に
 
 Workload Factory for Builders は Workload Factory for EDA になりました。名前の変更は、電子設計自動化 (EDA) ワークロードに重点が置かれていることを反映しています。
@@ -273,26 +294,31 @@ Workload Factory for EDA は、複数のファイルシステムにわたって 
 
 
 
+[[ask-me-ai-assistant-home-page-integration]]
 === Ask me AIアシスタントのホームページ統合
 
 Workload Factory コンソールのホームページには Ask me AI アシスタントが組み込まれており、独自のストレージ資産について質問したり、環境から直接パーソナライズされた分析情報を取得したり、以前の会話を参照したりすることができます。コンソールを離れることなく、「Ask me」と対話してワークロードを理解し、問題をトラブルシューティングし、Workload Factory について詳しく知ることができます。
 
 
 
+[[5-october-2025]]
 == 2025年10月5日
 
 
 
+[[bluexp-workload-factory-now-netapp-workload-factory]]
 === BlueXP workload factoryがNetApp Workload Factoryに
 
 BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。その結果、 BlueXP workload factoryの名前がNetApp Workload Factoryに変更されました。
 
 
 
+[[16-june-2025]]
 == 2025年6月16日
 
 
 
+[[clone-support-in-workload-factory-for-builders]]
 === Workload Factory for Buildersにおけるクローンサポート
 
 BlueXP Workload Factory for Builders でプロジェクトを複製できるようになりました。プロジェクトを複製すると、Builders はスナップショットから元のプロジェクトと同じ構成の新しいプロジェクトを作成します。クローン作成は、類似のプロジェクトをすばやく作成したり、テストしたりする場合に役立ちます。ビルダーの指示に従って、新しいプロジェクトのクローンをマウントできます。
@@ -301,20 +327,24 @@ https://docs.netapp.com/us-en/workload-builders/version-projects.html["BlueXP Wo
 
 
 
+[[4-may-2025]]
 == 2025年5月4日
 
 
 
+[[updated-permissions-terminology-in-workload-factory-for-eda]]
 === Workload Factory for EDA の権限に関する用語が更新されました
 
 Workload Factory のユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り / 書き込み」を使用するようになりました。
 
 
 
+[[1-december-2024]]
 == 2024年12月1日
 
 
 
+[[builders-workload-initial-release]]
 === ビルダーワークロードの初期リリース
 
 BlueXP Workload Factory for Builders はソフトウェア バージョンの使用とアクセスを簡素化し、カスタム ツールやスクリプトの必要性を排除します。これにより、開発プロセスに便利なワークスペースとして Perforce Helix Core と統合されたインスタント クローンとしてソフトウェア バージョンを使用できるようになるため、時間とリソースを節約できます。

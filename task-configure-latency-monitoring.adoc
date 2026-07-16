@@ -15,12 +15,14 @@ FSx for ONTAP ボリュームパフォーマンスを追跡するために、読
 
 
 
+[[before-you-begin]]
 == 開始する前に
 
 レイテンシー監視を設定する前に、以下の要件を満たしていることを確認してください。
 
 
 
+[[aws-credentials-and-permissions]]
 === AWS の認証情報と権限
 
 読み取り / 書き込み権限を持つAWS認証情報をWorkload Factoryに追加する必要があります。レイテンシ監視機能では、AWS認証情報に関連付けられたすべてのFSx for ONTAPボリュームのCloudWatchメトリクスへのアクセスが必要です。
@@ -31,12 +33,14 @@ AWS 認証情報をまだ設定していない場合は、link:https://docs.neta
 
 
 
+[[fsx-for-ontap-file-system]]
 === FSx for ONTAPファイルシステム
 
 AWS 環境にデプロイされたボリュームを持つ少なくとも 1 つの FSx for ONTAP ファイルシステムが必要です。
 
 
 
+[[link-to-fsx-for-ontap]]
 === FSx for ONTAP へのリンク
 
 基本分析でコンポーネントの内訳を表示するには、FSx for ONTAP ファイルシステムにリンクを関連付ける必要があります。リンクがなくても、レイテンシ、IOPS、スループットのグラフを表示することは可能です。リンクがまだ関連付けられていない場合は、EDA で「リンクの関連付け」を選択し、新しいリンクを作成するか既存のリンクを関連付けるかを選択してから、「続行」を選択すると、Storage workloads のリンク作成ページに自動的に移動します。
@@ -45,6 +49,7 @@ AWS 環境にデプロイされたボリュームを持つ少なくとも 1 つ�
 
 
 
+[[amazon-bedrock-model-arn-optional]]
 === Amazon Bedrock モデル ARN（オプション）
 
 （オプション）AI分析を使用するには、Workload Factoryの設定でAmazon BedrockモデルのARNを指定します。指定しない場合でも、レイテンシー監視と基本的な分析は引き続き利用できます。
@@ -53,12 +58,14 @@ AWS 環境にデプロイされたボリュームを持つ少なくとも 1 つ�
 
 
 
+[[notification-configuration-optional]]
 === 通知設定（オプション）
 
 レイテンシーイベントが検出された際にメールまたはAmazon SNS通知を受信するには、Workload Factoryの設定で通知設定を構成してください。詳細については、<<レイテンシ通知を設定する>>を参照してください。
 
 
 
+[[configure-latency-thresholds]]
 == レイテンシしきい値を設定する
 
 読み取りと書き込みの警告レベルおよびクリティカルレベルを設定します。システムはこれらの制限値を継続的に監視し、制限値に達するとアラートを送信します。
@@ -89,6 +96,7 @@ Workload Factory は、お客様の AWS 認証情報にリンクされている�
 
 
 
+[[configure-latency-notifications]]
 == レイテンシ通知を設定する
 
 高遅延が検出された際にアラートを受け取るには、メールまたはAmazon SNS通知を設定してください。通知頻度は、以下の2つの方法で制御できます：
@@ -112,6 +120,7 @@ NOTE: 影響を受けるボリュームが10個を超える場合、メールに
 
 
 
+[[manage-latency-configuration]]
 == レイテンシ設定を管理する
 
 設定後、しきい値はいつでも変更できます。
@@ -128,6 +137,7 @@ NOTE: クリティカルしきい値を警告しきい値よりも高く設定�
 
 
 
+[[best-practices]]
 == ベストプラクティス
 
 レイテンシー監視を設定する際には、以下の推奨事項を考慮してください：
@@ -141,6 +151,7 @@ NOTE: クリティカルしきい値を警告しきい値よりも高く設定�
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:learn-latency-monitoring.html["レイテンシ監視について学ぶ"]

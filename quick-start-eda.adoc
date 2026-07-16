@@ -67,6 +67,7 @@ link:integrate-perforce.html["EDAとPerforceを統合する方法を学ぶ"^]。
 
 
 
+[[whats-next]]
 == 次は何?
 
 * link:task-configure-latency-monitoring.html["FSx for ONTAP のレイテンシー監視を設定する"]

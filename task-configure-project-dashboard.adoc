@@ -15,12 +15,14 @@ summary: プロジェクトダッシュボードにカスタムフィルター�
 
 
 
+[[before-you-begin]]
 == 開始する前に
 
 カスタムフィルターを使用するには、プロジェクト、チーム、事業部門などのニーズに応じたタグを FSx for ONTAP ボリュームに AWS タグとして追加してください。
 
 
 
+[[configure-custom-filters]]
 == カスタムフィルターを設定する
 
 
@@ -63,6 +65,7 @@ NOTE: フィルターは、設定した順序でダッシュボードに表示�
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:learn-project-dashboard.html["プロジェクトダッシュボードについて"]
