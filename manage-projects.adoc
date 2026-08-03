@@ -34,7 +34,7 @@ EDA プロジェクトを管理して、 NetApp Workload Factory for EDA で各�
 ... *地域*：このFSx for ONTAPファイルシステムが存在するリージョンを選択します。
 ... *FSx for ONTAP ファイルシステム*：このプロジェクトで使用する FSx for ONTAP ファイルシステムを選択します。
 +
-リンクが設定されているファイルシステムのみを選択できます https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["リンクについてさらに詳しく"^]。
+リンクが設定されているファイルシステムのみを選択できます。link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["リンクについてさらに詳しく"^]。
 
 ... *ボリュームを選択*: プロジェクトを保存するボリュームを選択します。EDA はこのボリュームをソフトウェア リポジトリとして使用します。
 +

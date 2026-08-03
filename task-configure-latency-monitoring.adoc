@@ -29,7 +29,7 @@ FSx for ONTAP ボリュームパフォーマンスを追跡するために、読
 
 レイテンシ監視では、_Basic_モードおよび_Read-only_モードの権限はサポートされていません。
 
-AWS 認証情報をまだ設定していない場合は、link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS認証情報を追加する"^]を参照してください。
+AWS認証情報を設定していない場合は、link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS認証情報を追加する"^]を参照してください。
 
 
 
@@ -49,12 +49,10 @@ AWS 環境にデプロイされたボリュームを持つ少なくとも 1 つ�
 
 
 
-[[amazon-bedrock-model-arn-optional]]
-=== Amazon Bedrock モデル ARN（オプション）
+[[turn-on-ai-settings]]
+=== AI設定をオンにする
 
-（オプション）AI分析を使用するには、Workload Factoryの設定でAmazon BedrockモデルのARNを指定します。指定しない場合でも、レイテンシー監視と基本的な分析は引き続き利用できます。
-
-詳細については、link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html#basic-genai-requirements["GenAIの基本要件"^]を参照してください。
+アカウント管理者がAI機能を無効にしている場合、メッセージが表示され、AI分析を使用できなくなります。管理者に問い合わせるか、link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["AI管理について学ぶ"^]を参照してください。
 
 
 
@@ -92,7 +90,7 @@ NOTE: EDAで設定したレイテンシのしきい値は、デフォルトで�
 
 
 .結果
-Workload Factory は、お客様の AWS 認証情報にリンクされているすべての FSx for ONTAP ボリュームのレイテンシメトリックを収集します。これらのメトリックは、少なくとも 20 分ごとに収集されます。設定したしきい値を超えたボリュームは、レイテンシイベントテーブルに表示されます。
+Workload Factory は、お客様の AWS 認証情報にリンクされているすべての FSx for ONTAP ボリュームのレイテンシメトリックを収集します。設定したしきい値を超えたボリュームは、レイテンシイベントテーブルに表示されます。
 
 
 

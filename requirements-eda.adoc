@@ -20,7 +20,7 @@ AWS の認証情報と権限:: 読み取り / 書き込み権限を持つ AWS �
 現時点では、_Basic_モードおよび_Read-only_モードの権限はサポートされていません。
 
 
-NOTE: レイテンシー監視機能を使用するには、AWS 認証情報も必要です。この機能は、ボリュームパフォーマンス分析のためにCloudWatchメトリクスを収集します。レイテンシーイベントの通知を受け取るには、Workload Factory の設定で通知設定を構成してください。複雑なレイテンシーシナリオに対するオプションの AI 分析を有効にするには、Amazon Bedrock モデルの ARN も指定する必要があります。link:learn-latency-monitoring.html["レイテンシ監視について学ぶ"]。
+NOTE: レイテンシー監視機能を使用するには、AWS 認証情報も必要です。この機能は、ボリュームパフォーマンス分析のために CloudWatch メトリクスを収集します。レイテンシーイベントの通知を受け取るには、Workload Factory の設定で通知設定を構成してください。複雑なレイテンシーシナリオに対するオプションの AI 分析は、NetApp マネージド AI 分析が有効になっている場合に利用できます。link:learn-latency-monitoring.html["レイテンシ監視について学ぶ"]。
 
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Workload FactoryにAWS認証情報を追加する方法を学ぶ"^]
 
@@ -35,7 +35,7 @@ FSx for ONTAPファイルシステム:: ONTAPファイル システムには少�
 * ファイルシステムには、以下の構成を持つボリュームが少なくとも1つ必要です：
 +
 ** ボリュームは NFS 共有として構成する必要があります。
-** ファイルシステムはリンクで構成されている必要があります https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["リンクについてさらに詳しく"^]。
+** ファイルシステムはリンクで構成されている必要があります。link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["リンクについてさらに詳しく"^]。
 
 
 * このデプロイメントの一部である AWS リソースに適用するタグのキーと値のペアを考慮する必要があります (オプション)。

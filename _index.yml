@@ -12,6 +12,8 @@ indexpage:
       url: "/learn-eda.html"
     - title: クイック スタート
       url: "/quick-start-eda.html"
+    - title: 要件
+      url: "/requirements-eda.html"
   - title: EDAストレージの概要
     links:
     - title: 概要ダッシュボードについて
@@ -40,8 +42,6 @@ indexpage:
     links:
     - title: Perforce 統合について学ぶ
       url: "/learn-eda-workloads.html"
-    - title: 要件
-      url: "/requirements-eda.html"
     - title: Codeboxで自動化
       url: "/automate-codebox.html"
   - title: 知識とサポート

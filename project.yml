@@ -27,6 +27,8 @@ sidebar:
       url: "/learn-eda.html"
     - title: クイック スタート
       url: "/quick-start-eda.html"
+    - title: 要件
+      url: "/requirements-eda.html"
   - title: EDAストレージの概要
     entries:
     - title: 概要ダッシュボードについて
@@ -57,8 +59,6 @@ sidebar:
     entries:
     - title: Perforce 統合について学ぶ
       url: "/learn-eda-workloads.html"
-    - title: 要件
-      url: "/requirements-eda.html"
     - title: プロジェクトの管理
       url: "/manage-projects.html"
     - title: プロジェクトのバージョンを管理する

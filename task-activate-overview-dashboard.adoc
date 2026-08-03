@@ -25,7 +25,7 @@ summary: 概要ダッシュボードをアクティブ化して、FSx for ONTAP 
 [[aws-credentials-with-view-permissions]]
 === 表示権限を持つ AWS クレデンシャル
 
-Workload FactoryでAWS認証情報を設定する際には、General Storageに対して少なくとも読み取り（表示）権限を付与する必要があります。_Basic_認証情報はサポートされていません。
+Workload FactoryでAWS認証情報を設定する際には、一般ストレージに対して少なくとも読み取り（表示）権限を付与する必要があります。_Basic_ 認証情報は、CloudWatch メトリクスに必要な読み取り権限が含まれていないため、サポートされていません。
 
 閲覧権限を持つ認証情報を設定していない場合は、「概要」タブを開いたときにAWS認証情報設定ページにリダイレクトされます。
 
@@ -61,15 +61,7 @@ Workload Factory は、AWS 認証情報にリンクされているすべての F
 ダッシュボードを有効化すると、以下の操作が可能になります：
 
 * link:task-use-overview-dashboard.html["概要ダッシュボードを使用する"]クラスタの健全性と容量を監視
-* SSD容量管理モード（Automate、Recommend、またはNone）を設定します。
+* link:task-use-overview-dashboard.html#change-ssd-management-mode["SSD容量管理モードを有効にして構成する"]（Recommend、Automate、またはNone）
+* link:task-use-overview-dashboard.html#change-throughput-management-mode["スループット管理モードを有効にして構成する"]（Recommend、Automate、またはNone）
 * 特定のリージョンまたはAWSアカウントに絞り込むためのフィルターを設定します
-
-
-
-
-[[related-information]]
-== 関連情報
-
-* link:learn-overview-dashboard.html["概要ダッシュボードについて"]
-* link:task-use-overview-dashboard.html["概要ダッシュボードを使用する"]
 
