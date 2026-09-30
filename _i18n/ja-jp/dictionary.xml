@@ -621,11 +621,6 @@
   <block id="fa0b4e3f4266abe4ec93e3058cfcd2aa" category="section-title">容量に関する決定ポイントについて</block>
   <block id="c27f88e562f3ed3c4000570673348297" category="list-text">*推奨事項の決定ポイント*</block>
   <block id="153ea1a28a0f56dba57777e1680e1f76" category="list-text">*自動化の意思決定ポイント*</block>
-  <block id="8aa0b0a22cf225f503177c8f1de7df3c" category="list-text">容量調整がどのくらいの頻度で必要になるかを理解する</block>
-  <block id="dc036d0aefd6c43f7e0e90f879128e16" category="list-text">自動化モードと推奨モードのどちらがワークロードパターンに適しているかを評価してください。</block>
-  <block id="274e06045627d8934cd9bb52e8c64f53" category="list-text">繰り返し発生する容量制約を特定する</block>
-  <block id="38e979158d55ae25a36aba4d97b0a8b4" category="list-text">成長傾向に基づいて将来の容量ニーズを計画する</block>
-  <block id="2814ccd9bf1ef1faffa5931e29ee7f74" category="list-text">自動化の失敗に関するトラブルシューティング</block>
   <block id="0a77401b929110d42e7c36ac77c37872" category="inline-link-macro">概要ダッシュボードを有効にする</block>
   <block id="b20e509aee340813d832ff54146a6123" category="list-text"><block ref="b20e509aee340813d832ff54146a6123" category="inline-link-macro-rx"></block></block>
   <block id="a35e94495c93c5d785f8b1240c15be6a" category="inline-link-macro">概要ダッシュボードを使用する</block>
@@ -739,21 +734,9 @@
   <block id="76a0ca3e805dbf2778413ce26855f65b" category="paragraph">グラフには、推奨決定ポイントと自動化決定ポイント（自動化モードが有効になっている場合）も表示されます。任意の決定ポイントにカーソルを合わせると、その時点での容量の拡張に関する推奨事項または自動化アクションの詳細が表示されます。</block>
   <block id="37b5b20fd94de2275a255ae79e7ac8f0" category="list-text">推奨事項を適用するには、推奨事項メッセージに記載されているガイダンスに従ってください。</block>
   <block id="95138c66b91ee03084dfba9068536d5e" category="section-title">SSD管理モードを変更する</block>
-  <block id="6d8ccfb06da581a2d86feacefa3b4869" category="inline-image-macro">アクションメニューアイコン</block>
-  <block id="c9eecdb0eb0ca75174ea4d40e628f365" category="list-text">Clustersテーブルでファイルシステム名を確認します。その横にある<block ref="db26b5e8c520e1d883813594c799d7f7" category="inline-image-macro-rx" type="image"></block>を開き、*Change SSD capacity management*を選択します。</block>
   <block id="b689124bbd04a08329d8f616990fa06d" category="list-text">お好みのモードを選択してください：</block>
-  <block id="cc009bfb1b3b40af528a54a164d8b953" category="list-text">*Overview* タブから、表内で編集したいファイルシステムを選択します。</block>
-  <block id="8cd7391e66f29fd726ffdf9a59961f54" category="admonition">個々のファイルシステムを選択することも、ヘッダーのチェックボックスを使用して表示されているすべてのファイルシステムを選択することもできます。</block>
-  <block id="b97c770bb654f2ef0b93eb759a99c159" category="list-text">お好みのモードを選択してください。</block>
-  <block id="43c2e4748a7a87eb44a6cb86329b0750" category="paragraph">各パラメータフィールドには、その目的と有効範囲を説明するツールチップが含まれています。このダイアログには、選択内容に基づいた現在の値またはデフォルト値が表示されます。</block>
-  <block id="3f254e874f94d9cc6daffdbea2c76012" category="list-text">*適用*を選択すると、選択したすべてのファイルシステムに変更が適用されます。</block>
   <block id="84a7874f129070a914f70dd3d70a6716" category="section-title">容量の傾向と意思決定ポイントを分析する</block>
   <block id="4dbca2bab9fb0222adee0d079e0d2127" category="paragraph">グラフ上の決定点は、次の時点を示します：</block>
-  <block id="322cceacdd52c951c88a1d93df7f0dd8" category="list-text">*Overview* タブから、表内のファイルシステム名を選択します。</block>
-  <block id="c7967065af6ac7703ee14f60f2812ccb" category="list-text">SSD使用状況グラフで過去の容量推移を確認してください。</block>
-  <block id="6f6089a81e1a8064861733b4969654d6" category="list-text">異なる期間を選択して、さまざまな期間における容量の動作を確認できます。</block>
-  <block id="8d33ce28efafbfe7600930c556bcfd55" category="list-text">グラフ上の決定ポイントにカーソルを合わせると、特定の時点における推奨事項や自動化アクションの詳細が表示されます。</block>
-  <block id="4d43a6d1e695bf0a99e5bc33d3ca3fda" category="list-text">グラフから得られる知見を活用して、次のことを行います。</block>
   <block id="e307894bdae8efc4f4fdacf666cf2573" category="section-title">クラスタテーブルを使用する</block>
   <block id="88dc1144edaa697995919551780b6e93" category="list-text">* Overview * タブから、クラスタテーブルを確認します。</block>
   <block id="8e6be07248fc78ed27f8d01305999436" category="list-text">検索ボックスを使用して、名前で特定のファイルシステムを検索します。</block>
@@ -827,7 +810,6 @@
   <block id="a3eb814e72de4d40c0767efe37beafe1" category="list-text">インターフェースには、現在有効な推奨事項があるファイルシステムの総数が表示されます。</block>
   <block id="f7f59f0b5632d026e80fe90b1eec8f63" category="list-text">SSDの使用率のうち、容量推奨や自動化アクションがトリガーされる割合。例えば、しきい値が80%の場合、SSDの使用率が80%に達したときに推奨事項やアクションが実行されます。この設定は、推奨モードと自動化モードの両方で利用可能です。</block>
   <block id="d5a40446a028d90d5bf46fe40624722d" category="paragraph">これらのパラメータは、ファイルシステムごとに個別に設定することも、一括編集機能を使用して複数のファイルシステムに同じ設定を適用することもできます。</block>
-  <block id="1b07a2acaea0fa364496ba3afb977975" category="paragraph">SSD使用状況グラフは、システムが容量に関する推奨事項を提示したり、自動的なアクションを実行したりした時点を示します。これらのマーカーは、容量管理アルゴリズムが時間の経過とともにどのように動作したかを示しています。</block>
   <block id="47daf1022723b90d90f96e2d735e2267" category="list-text">自動化システムがSSD容量を増やそうとした際に表示されます。アクションが成功したか失敗したかを示します。</block>
   <block id="5d75c0e68111b8bb5d2e043a495c6e39" category="paragraph">SSD使用履歴グラフを使用して、次の操作を実行できます。</block>
   <block id="9515f88eb47a770a2eae21e430e5b3ff" category="list-text">ストレージサイズを変更する必要がある頻度を確認してください</block>
@@ -1008,7 +990,6 @@
   <block id="929261095300bce39be28cdc60e46b85" category="list-text">*ファイルシステムの柔軟性*</block>
   <block id="20ed77fd0e548f70d1a8b8bd340ed628" category="list-text">*SSD容量*：SSD容量の管理に「Automate」、「Recommend」、「None」のいずれかを使用しているファイルシステムの数を示します。</block>
   <block id="f811d9a1edf56398351dffaef0b6506e" category="list-text">*スループット*：スループットの管理に「自動化」、「推奨」、または「なし」を使用しているファイルシステムの数を表示します。</block>
-  <block id="94e78450902ff8802101a87715f2120e" category="paragraph">ファイルシステムを選択すると、クラスタ情報、SSD容量値、SSD Capacity Over Timeグラフなど、クラスタの詳細が表示されます。</block>
   <block id="7ae10da71cdf204162f214a176b66232" category="list-text">通知のみ（推奨モード）</block>
   <block id="a50d39f8ae7bb4152ca8de0ad153c7d5" category="list-text">SSD容量管理を有効にしていない場合、システムは容量に関する推奨事項を提供したり、自動的なアクションを実行したりしません。容量を自分で管理したい場合は、このオプションを使用してください。</block>
   <block id="f015d9c2fdd7ed0dc64dd7b4f0a18c1f" category="list-text">*Lookahead* （1～200時間）</block>
@@ -1028,7 +1009,6 @@
   <block id="622a5b145e5cdfd92b8124baf3f8e5d7" category="list-text">*最小遅延時間（ミリ秒）*（デフォルト：10 ms）</block>
   <block id="4067af77fe7df9f9047c8c4eeb9490b5" category="list-text">*最大スループットSKU*（デフォルト：なし）</block>
   <block id="e4612c732ae1c64db60c83cb8cae8381" category="section-title">ファイルシステムの柔軟性に関する推奨事項</block>
-  <block id="cc8b8287cb9875fcd93e6deecaaa1c10" category="paragraph">Workload Factory が自動化モードまたは推奨モードの場合、ONTAP ファイルシステム用の各 FSx を自動的にチェックし、容量推奨アルゴリズムを実行します。システムは定期的にスキャンを行い、SSD の容量やスループットを調整する必要があるかどうかを確認します。</block>
   <block id="1c5b8d97751372161e201f333f1b4f62" category="list-text">クラスターテーブルをフィルタリングして、推奨事項のあるファイルシステムを特定します。</block>
   <block id="25dc82340ec038ecbda8ab79823e242a" category="list-text">システムがSSDの容量追加が必要であることを検出した際に表示されます。容量が増加されていない場合、これらのポイントは30分ごとに表示される可能性があります。グラフには、可能な限り各決定ポイントが表示されます。選択した時間範囲が密集しすぎている場合、ポイントはグループ化されます。</block>
   <block id="d5781ee1e2ae2729d18fc69fc41ec67a" category="paragraph">リンクが設定されているファイルシステムのみを選択できます。<block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block>。</block>
@@ -1064,7 +1044,6 @@
   <block id="33c83a7b34dbfa47935b0be5b097865d" category="list-text">推奨事項とグラフを確認してください。</block>
   <block id="fd896caec9b1904e01ed5b6a90b096d9" category="paragraph">このグラフは、現在の利用状況と過去の傾向を並べて示しています。</block>
   <block id="7269a303313716fe145ba2b18acc49d7" category="list-text">グラフの右上で、表示期間を変更する時間範囲を選択してください。</block>
-  <block id="c7ac58faf1984cf107f3421908d2207c" category="list-text">「SSD容量管理を有効にする」を選択し、「適用」を選択します。</block>
   <block id="da35cbad278570472c076b6042a5b528" category="list-text">SSD容量管理パラメータを設定します：</block>
   <block id="166c4a53ef8fc50b9b03ca91c1c677bc" category="list-text">*しきい値（％）*：推奨事項をトリガーするSSD使用率</block>
   <block id="87ad0cdc7f64b3a67d168c0b688707d9" category="list-text">*ルックバック（%）*：分析対象となる過去の使用データ期間</block>
@@ -1073,19 +1052,11 @@
   <block id="86161e58ce8677bff58de719cb9f29a8" category="paragraph">各ファイルシステムについて、スループットの増加をどのように管理するかを選択してください。</block>
   <block id="441fc54d05bba2a603a05c500cf068c7" category="list-text">*概要*タブで、「クラスタ」テーブルから1つ以上のファイルシステムを選択します。</block>
   <block id="0231f044766e71e4fe49a62ba8e8bbbe" category="list-text">「スループット管理の変更」を選択します。</block>
-  <block id="652aab445f49bb41fa3e8774b5719cf2" category="list-text">*スループット管理を有効にする*を選択し、次に*適用*を選択します。</block>
-  <block id="16393cf33b95f8ff007d76d513b875d7" category="list-text">ダイアログで、スループット管理パラメータを設定します：</block>
   <block id="083678f0efe5919237188ee0ee5d0b90" category="list-text">*評価期間（時間）*：スループットパターンを分析する期間</block>
   <block id="ed38b15c549d9cd41a86a3787f5fee23" category="list-text">*違反指標（％）*：違反を判断するためのパーセンテージしきい値</block>
-  <block id="5e1e1daa7e6d115a54180e147895003e" category="list-text">*連続違反期間（時間）*：措置が講じられるまでの連続違反の期間</block>
   <block id="91455d18a42b79b1a34df0d97bfbaffd" category="list-text">*最小レイテンシ（ms）*：スループット増加を決定するために使用されるレイテンシのしきい値</block>
   <block id="0a2daf37cc4cac8c9a3da95290e9a399" category="list-text">*最大スループット（SKU）*：許可される最大スループット SKU</block>
   <block id="6b482ace535080820ca5dea3bb557cb6" category="paragraph">選択されたファイルシステムは、直ちに新しいスループットモードに切り替わります。</block>
-  <block id="be76a5f710c434b57d7bb9106913548d" category="section-title">一括編集管理パラメータ</block>
-  <block id="399db4c92643ea16a6e10865b34f5b4f" category="paragraph">複数のファイルシステムの設定を一度に変更することで、クラスター全体に同じ設定を適用できます。</block>
-  <block id="93343e8a72e86eb0283fa9c6fb77b48b" category="list-text">表の上にある「SSD容量管理の変更」または「スループット管理の変更」を選択します。</block>
-  <block id="a707a072d0b2b11d2c3e5a2160f9cd48" category="list-text">編集ダイアログで、必要に応じてパラメータを調整してください。</block>
-  <block id="80c68bda2149e685b2c9d4a63c1abe0b" category="paragraph">選択されたすべてのファイルシステムのパラメータが更新されます。推奨モードまたは自動化モードのファイルシステムは、新しいパラメータを分析および意思決定に即座に使用します。</block>
   <block id="232af3ec8ca37d39f0b49ddb6c81830a" category="list-text">*推奨決定ポイント*：容量推奨アルゴリズムにより、追加のSSD容量が必要であることが判明しました。</block>
   <block id="0d606a9207ef786e2b3dc99ea3fe3ad8" category="list-text">**明確なしきい値を設定する**：ワークロードと容量計画に合ったSSD使用率のしきい値とスループットパラメータを選択します。</block>
   <block id="c6e183b5112db7515b7bc4904a3b374b" category="list-text">**推奨事項をすばやく確認**：クラスターテーブルをフィルタリングして、容量またはスループットの推奨事項があるファイルシステムを見つけます。容量不足にならないよう、確認して適切な対策を講じてください。</block>
@@ -1093,4 +1064,30 @@
   <block id="88a7c4b8bd498e193a117097af5581b1" category="list-text">**一括編集**: 多数のファイルシステムを管理する場合は、一括編集を使用して設定の一貫性を維持してください。</block>
   <block id="951a51b60db3d63eb71726cd5fe6fbad" category="section-title">2026年8月3日</block>
   <block id="73c57946c156d22b4a35f2e089180ab4" category="list-text">週次サマリーには含まれず、即座にメールまたはwell-architected通知が届きます。</block>
+  <block id="08b543f700a568688a9f78d874d0ce8b" category="doc">SSD容量に関する通知機能の強化</block>
+  <block id="f37e9239265205bdf39af7b4def6f75a" category="paragraph">SSD容量管理の通知に、自動化の失敗をトラブルシューティングするための詳細なエラーメッセージが含まれるようになりました。容量増加の成功、増加操作中のエラー、容量チェックの失敗、しきい値警告、および推奨事項について通知が送信されます。エラーの詳細には、権限の不足、同時更新の進行中、AWSクールダウン期間、またはCloudWatchメトリック取得の問題など、具体的な失敗理由が含まれます。</block>
+  <block id="4a3354724a06bbb8040fa512f39a5e07" category="inline-link-macro">SSDの容量管理について</block>
+  <block id="3e69b701694082d892b97eb050525650" category="paragraph"><block ref="bc2811c6501476df42adeca777dc6dd3" category="inline-link-macro-rx"></block>。</block>
+  <block id="b1b09cb9ca77b33ed95a7406fab56623" category="section-title">レイテンシグラフの週単位の期間</block>
+  <block id="a5ff2097c50c86e897e35110fe5629d9" category="paragraph">レイテンシー分析グラフは、既存のオプション（1時間、3時間、12時間、24時間、72時間）に加えて、1週間という期間をサポートするようになりました。週表示を使用して、ボリュームレイテンシー動作における長期的なパターンと傾向を特定します。</block>
+  <block id="8d6933264e6e5f9ec4a93a7936daf177" category="inline-link-macro">レイテンシートレンド分析について</block>
+  <block id="f00c9e117aa43f7e65780e53b18b74a8" category="paragraph"><block ref="8280dff077bedc5ff5df29e3a9ab24f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="dad79f11b2960d3be921e97689e00796" category="section-title">インターフェースにおけるファイルシステムの視認性の向上</block>
+  <block id="856b733ee2011b50fb74e26e28353b8c" category="paragraph">Workload Factory のインターフェースで、ファイルシステムの状態がより分かりやすく表示されるようになりました。ファイルシステムの概要画面から、SSD の容量とスループットの使用傾向、ワークロードの概要、詳細な構成情報を直接確認できます。</block>
+  <block id="05d2715aacab706b61cab6ab5eae577f" category="paragraph">ファイルシステムを選択すると、クラスタ情報、SSD容量、グラフなど、クラスタの詳細が表示されます。クラスタの詳細ビューでは、「スループット」と「SSD容量」のオプションを使用してビューを切り替えます。</block>
+  <block id="44ad493c3ed3456875890a0633967832" category="paragraph">スループットビューには、クライアントのスループットとリソース使用率が表示されます。SSD容量ビューには、SSDの使用傾向と容量に関する推奨事項が表示されます。</block>
+  <block id="0575d3bb4ddf703c8919e95c56fd6669" category="paragraph">Workload Factory が自動化モードまたは推奨モードの場合、各 FSx for ONTAP ファイルシステムを自動的にチェックし、容量変更を推奨します。定期的にシステムをスキャンし、SSD の容量やスループットを調整する必要があるかどうかを判断します。管理機能が有効になっている場合、ファイルシステムの詳細ページには、SSD の容量とスループット、過去の傾向、および推奨される調整ポイントが表示されます。</block>
+  <block id="3b39aa368232f477c3b4544b63a58a94" category="paragraph">SSD使用状況グラフは、システムが推奨する容量変更や自動調整が行われたタイミングを示します。これらの指標は、システムが時間の経過とともにどのように容量を管理してきたかを示しています。SSD容量管理がオフになっている場合、グラフには過去の使用状況のみが表示され、推奨事項や自動アクションは表示されません。</block>
+  <block id="cc23b0ef8b8c73f4efb0ced4281250f3" category="list-text">クラスターテーブルでファイルシステム名を見つけて選択し、*SSD容量管理の変更*を選択します。</block>
+  <block id="d9a44929e0eea557983dbb6917008a70" category="list-text">*スループット管理を有効にする* を選択します。</block>
+  <block id="1cbae666f242dee35d801763ff6c587f" category="list-text">*利用率しきい値（％）*では、推奨事項や自動化アクションをトリガーする利用率レベルを設定します。</block>
+  <block id="e920df7cb27871af178ff85a428a8b4e" category="list-text">*詳細設定*で、スループット管理パラメータを設定します：</block>
+  <block id="39122245b5363dc3871538d2ef59784e" category="list-text">*連続違反期間（時間）*：措置を講じるまでの連続違反の継続時間</block>
+  <block id="a9d111294543c201d767519d991c1b8d" category="list-text">*連続違反指標（％）*：連続違反を判断するためのパーセンテージしきい値</block>
+  <block id="d385fd0ac858ff17553d407851f64c48" category="paragraph">SSD容量管理がオフになっている場合、グラフには過去の使用状況のみが表示され、推奨事項や自動化による決定は表示されません。</block>
+  <block id="1de4de358ec9c3a1cd36180e2c13a443" category="list-text">「概要」タブから、表のファイルシステム名を選択します。クラスタの詳細ビューで、「スループット」または「SSD 容量」オプションを選択して、グラフの表示を切り替えます。</block>
+  <block id="a01346bc61a98c025144199b0893e264" category="paragraph">*スループット*を選択すると、グラフにクライアントのスループットと利用率が表示され、需要を設定されたスループットレベルとしきい値と比較できます。</block>
+  <block id="e56ecd5b4053d7385c23bb7c3422bdd5" category="paragraph">*SSD Capacity* を選択すると、グラフにはSSDの使用状況が表示され、過去の容量推移や容量決定ポイントも確認できます。</block>
+  <block id="d73906b15c9fc84c1806084ce8720a42" category="paragraph">異なる期間におけるスループットや容量の傾向を確認するには、異なる期間を選択してください。。グラフ上の決定ポイントにカーソルを合わせると、特定の時点における推奨事項や自動化アクションの詳細が表示されます。。グラフから得られる情報を活用して、以下のことを行います。* 容量調整が必要な頻度を把握する * ワークロードパターンに自動化モードと推奨モードのどちらがより適しているかを評価する * 繰り返し発生する容量制約を特定する * 成長傾向に基づいて将来の容量ニーズを計画する * 自動化の失敗をトラブルシューティングする</block>
+  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">2026年9月27日</block>
 </blocks>
