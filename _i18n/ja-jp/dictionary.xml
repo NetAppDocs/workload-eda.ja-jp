@@ -1090,4 +1090,51 @@
   <block id="e56ecd5b4053d7385c23bb7c3422bdd5" category="paragraph">*SSD Capacity* を選択すると、グラフにはSSDの使用状況が表示され、過去の容量推移や容量決定ポイントも確認できます。</block>
   <block id="d73906b15c9fc84c1806084ce8720a42" category="paragraph">異なる期間におけるスループットや容量の傾向を確認するには、異なる期間を選択してください。。グラフ上の決定ポイントにカーソルを合わせると、特定の時点における推奨事項や自動化アクションの詳細が表示されます。。グラフから得られる情報を活用して、以下のことを行います。* 容量調整が必要な頻度を把握する * ワークロードパターンに自動化モードと推奨モードのどちらがより適しているかを評価する * 繰り返し発生する容量制約を特定する * 成長傾向に基づいて将来の容量ニーズを計画する * 自動化の失敗をトラブルシューティングする</block>
   <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026年9月30日</block>
+  <block id="e52235241b1ae81de07e54f4309b150e" category="summary">EDA向けNetApp Workload Factoryに関するよくある質問。</block>
+  <block id="f66051160a7d32c47d92cf8ad2688857" category="doc">Workload Factory for EDAに関するよくある質問</block>
+  <block id="cc33bbbbd3f9fbb3177da0c1c61f4634" category="paragraph">このFAQでは、EDA向けNetApp Workload Factoryに関するよくある質問にお答えします。本書は、モニタリングの設定、レイテンシイベントの分析、ダッシュボードの設定、CI/CDワークフローの管理を行う際に役立つ概念、用語、および動作に焦点を当てています。</block>
+  <block id="0991282cbc6d85f17ff2290119dbcaeb" category="section-title">遅延監視と分析</block>
+  <block id="bb07c794537866c8a9ca3520557374c2" category="paragraph-title">FSx for ONTAPファイルシステムに関連付けられたリンクが必要なのはなぜですか？</block>
+  <block id="c8ba3fe8e424cc216dc03824f4422a78" category="paragraph">基本的なレイテンシ分析における構成要素の内訳を表示するには、リンクが必要です。リンクがなくても、レイテンシ、IOPS、スループットのグラフは表示できますが、詳細な内訳は表示できません。詳細については、<block ref="5391d41e89444e55506cba0d78a3bf04" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="0241c8a6f9524f1566b690099ca0ba15" category="paragraph-title">レイテンシーアラートはどのようにトリガーされますか？</block>
+  <block id="d536fed3472bf6a28c09bd448f33a8c2" category="paragraph">アラートは、同じ操作タイプ（読み取りまたは書き込み）に対してレイテンシしきい値とIOPSしきい値の両方が超過し、かつ両方の条件が選択された時間範囲全体にわたって継続した場合にのみトリガーされます。両方を条件とすることで、システムが実際のワークロードを処理している間に高レイテンシが発生していることが確認されるため、誤報を減らすことができます。詳細については、<block ref="c41a62cb0a3dab1edd093b9069c9ad81" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="4ecd3aed2a37c04fa8132c145afed8f5" category="paragraph-title">基本的な分析とCloudWatchグラフの間でレイテンシ値が異なる可能性があるのはなぜですか？</block>
+  <block id="2ccd6d09fd6ae707d6b599be5d499dda" category="paragraph">基本的な分析ではONTAP QoS遅延センターの指標が使用される一方、レイテンシグラフではCloudWatchデータが使用されます。これら2つのソースはデータの収集方法が異なるため、わずかな差異が生じることが予想されます。根本原因の特定自体は、ONTAP QoSデータに基づいています。詳細については、<block ref="c41a62cb0a3dab1edd093b9069c9ad81" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="8c1d5de09dd1820da35fc8fefd8f7940" category="paragraph-title">レイテンシーイベントにおける基本分析とAI分析の違いは何ですか？</block>
+  <block id="3298d11cdf027bd4a1925dbe10985c2a" category="paragraph">基本的な分析はすべてのレイテンシイベントで自動的に実行され、ONTAP QoS遅延センターメトリクスを使用して、どのコンポーネント（FlexCache、キャパシティプール、QoS制限、ディスク、データ、またはクラスタなど）が速度低下の原因となっているかを特定します。AI分析はオプションであり、複雑なデータやクラスタの問題に対して、潜在的な根本原因、影響を受けるEC2クライアントのリスト、2つ以上の修復手順など、より詳細な調査を提供します。詳細については、<block ref="2db98c179e2782eb204e0186a0cf0ccd" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="3dea98759fa9a3fcdb6250eac1152597" category="paragraph-title">レイテンシイベントに対してAI分析を実行できないのはなぜですか？</block>
+  <block id="ea2b499adf49fa56488706338e037d36" category="paragraph">アカウント管理者がAI機能を無効にしている場合、またはNetApp管理のAIクレジットが有効になっていても月間予算に達している場合、AI分析は利用できません。いずれの場合もメッセージが表示され、AI分析は使用できません。</block>
+  <block id="82039348f85a637ee0440d1460f30440" category="paragraph-title">イベントテーブルには、いくつのレイテンシイベントが表示されていますか？</block>
+  <block id="4317ecdc0c7ba026aa7044aeb4f50058" category="paragraph">各ボリュームについて、最新の侵害のみが表示されます。同じボリュームの過去の侵害は表示されません。表示されるイベントの最大数は200件で、新しいイベントが追加されると古いイベントは削除されます。</block>
+  <block id="0856cbcbcf82fc641c03b6efb11201da" category="paragraph-title">レイテンシイベントに関する通知はどのくらいの頻度で届きますか？</block>
+  <block id="91ec5e4ca2fe56d38aad436140deced3" category="paragraph">通知頻度は2種類から選択できます：「毎日通知する」（推奨）は、同じファイルシステムに対して次の通知を送信するまで24時間待機します。「レイテンシ違反が発生した場合に通知する」は、最大で20分に1回通知します。通知はボリュームごとではなくファイルシステムごとに送信され、影響を受けるすべてのボリュームが1つのアラートにまとめられます（メールには最大10個のボリュームが表示されます）。詳細については、<block ref="5391d41e89444e55506cba0d78a3bf04" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="d50d912a4729c0ca5c0328c04216f93e" category="paragraph-title">アカウントレベルとボリュームレベルのレイテンシしきい値はどのように相互作用しますか？</block>
+  <block id="5e96712dd54e1e7f13500cf721f6fecc" category="paragraph">EDAで設定したレイテンシのしきい値は、デフォルトではアカウント全体に適用されます。また、General Storageワークロードで個々のボリュームのレイテンシしきい値を設定することもできます。そのボリュームレベルの設定は、そのボリュームに対して優先されます。EDAでアカウントレベルのしきい値を更新しても、既存のボリュームレベルの設定は変更されません。詳細については、<block ref="5391d41e89444e55506cba0d78a3bf04" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="74b91551d0adb88afedf4cad04a23698" category="paragraph-title">レイテンシしきい値の設定を保存できないのはなぜですか？</block>
+  <block id="60840cfc3f99f12c310d896f46fe71fa" category="paragraph">クリティカルイベントのしきい値は、警告しきい値よりも高く設定する必要があります。クリティカルしきい値を警告しきい値よりも低く設定すると、システムにエラーが表示され、設定を保存できなくなります。</block>
+  <block id="0ba8adc53c16a6ffe145978e834b02f8" category="section-title">ダッシュボード</block>
+  <block id="53ac9b54e69f5b1478c97b32f478b57e" category="paragraph-title">SSDの容量とスループット管理における自動化、推奨、なしモードの違いは何ですか？</block>
+  <block id="a56f40201cc9c500cf8e7143fa0c8fa9" category="paragraph">*通知のみ（推奨）*：Workload Factoryは使用状況を分析し、変更を提案しますが、適用するかどうかはお客様が決定するため、完全な制御権が維持されます。*自動化*：Workload Factoryは、設定された条件が満たされると、手動での作業なしに容量またはスループットの変更を自動的に行います。*なし*：システムは推奨事項や自動アクションを行わないため、容量管理はお客様自身で行う必要があります。詳細については、<block ref="7f18cd3895a733dc80417785cac6d994" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="6cb7c0bcff05e3fcfe2edb04f9a34089" category="paragraph-title">プロジェクトダッシュボードで作成できるカスタムフィルターの数はいくつですか？また、それらを管理できるのは誰ですか？</block>
+  <block id="b7482b1bee62898fcdc326829c1fd9e5" category="paragraph">AWSタグに基づいて最大5つのカスタムフィルターを設定できます。各フィルターには、フィルターラベル、AWSタグキー名、および選択タイプ（単一選択または複数選択）を指定できます。プロジェクトダッシュボードを最初に開いた管理者のみが、カスタムフィルターを作成、変更、または削除できます。他の管理者を含む他のすべてのユーザーは、フィルターを表示することしかできません。詳細については、<block ref="6d56be44586b2e0e82a2c9be80bc8297" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="94f584d9f623d6dee69c257f53d0d03a" category="paragraph-title">プロジェクトダッシュボードでカスタムフィルターを設定しなかった場合、どうなりますか？</block>
+  <block id="10c1249fb7a3b883167bbde007712f11" category="paragraph">カスタムフィルターを設定しない場合でも、デフォルトのフィルター（ファイルシステム、ボリュームタイプ、期間）は引き続き利用できるため、ダッシュボードの表示と使用を継続できます。詳細については、<block ref="d6a6a413d8b4b405d1bc73fbad4548fa" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="fbde9402fc7b4ebaabdfef2cfa1775fb" category="paragraph-title">プロジェクトダッシュボードのボリュームビューには、いくつのボリュームが表示されますか？</block>
+  <block id="6a6bb54b545fe522e3b8298213c445b0" category="paragraph">ボリュームビューには、各メトリック（使用容量、IOPS、スループット）の上位10個のボリュームのみが表示されます。ボリュームが10個を超える場合、詳細ビューには一部のボリュームが表示されません。詳細については、<block ref="d6a6a413d8b4b405d1bc73fbad4548fa" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="2c4805d197c75188b1055241f883313e" category="section-title">CI/CDとPerforceの統合</block>
+  <block id="b17d7b01f1da248caf80ecf798b89f7a" category="paragraph-title">EDA CI/CDにおけるプロジェクトとワークスペースとは何ですか？</block>
+  <block id="b10a59662e36ef0e2bc4826f9f37a0ca" category="paragraph">プロジェクトには、ソフトウェア環境と成果物を表すボリュームが割り当てられます。ソフトウェアをアップデートする際には、既知のバージョンをマークするためにボリュームのスナップショットを作成します。開発、QA、またはビルドプロセスで使用される、特定のソフトウェアバージョンのクローンは、ワークスペースと呼ばれます。詳細については、<block ref="0b528335e20bd32b905bad6284bc2bd6" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="b0a3a0823736576c66901dd2c3a4f261" category="paragraph-title">プロジェクトを削除すると、スナップショットとクローンはどうなりますか？</block>
+  <block id="ee778915372af70d65a4567406b43c7d" category="paragraph">プロジェクトを削除すると、そのプロジェクトに関連付けられているコードや成果物もボリュームから削除されます。ただし、プロジェクトのスナップショットとクローンは保持されます。詳細については、<block ref="cfa49dbefa0c5a4fe81b5ed7dd36e956" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="891d28f85425b3f6f627a7639eec589d" category="paragraph-title">プロジェクトのクローンにはどのような制限を設定できますか？</block>
+  <block id="f485748bb343fe24102d50993e0d3542" category="paragraph">プロジェクトを作成する際に、最大保持日数（この日数を過ぎるとWorkload Factoryがクローンを削除します）、ユーザーまたはグループごとの最大クローン数、最大クローンサイズ（GiB単位）などの運用ポリシーを設定できます。詳細については、<block ref="cfa49dbefa0c5a4fe81b5ed7dd36e956" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="4973303b5265a1a055acabd176496148" category="paragraph-title">Workload Factory for EDAをPerforceと統合するにはどうすればよいですか？</block>
+  <block id="114aec9c8f37978318b25d9af48891f4" category="paragraph">P4V統合ファイルをダウンロードし、P4Vを開いて*ツール* &gt; *ツールの管理* &gt; *HTMLタブ*に進み、*HTMLタブのインポート*を選択し、統合XMLファイルを選択してから、*表示* &gt; *Workload Factory*に進みます。すると、EDA用Workload FactoryのWeb UIが、P4Vクライアント内のHTMLタブとして表示されます。詳細については、<block ref="055bb1c33675bd9570a395ef859c7385" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="7b6d05204723699789ef2f86d141ec22" category="paragraph-title">Codeboxとは何ですか？また、EDAワークロードの自動化にどのように役立ちますか？</block>
+  <block id="5e83f1e7c06bac4c0aa97b880ffb70f9" category="paragraph">Codeboxは、Workload Factoryに組み込まれたInfrastructure-as-Code（IaC）コパイロットであり、Workload Factoryがサポートするあらゆる操作を実行するためのコード生成を支援します。リソース作成時にコードスニペットを生成し、開発者およびDevOps向けのIaCコパイロットとして機能するほか、迅速な再利用を可能にするコードビューアと自動化カタログを提供します。詳細については、<block ref="a4c49356aa390f5fde59164fa8bed4fa" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="db5eb84117d06047c97c9a0191b5fffe" category="section-title">サポート</block>
+  <block id="30da9e9f55076827965f5bb2f2dacb45" category="paragraph-title">FSx for ONTAPとWorkload Factory自体のサポートは誰が提供しますか？</block>
+  <block id="944e61de0f91bfc0cd15e211ebfe75af" category="inline-link-macro">EDAの支援を受ける</block>
+  <block id="1b3bafacd5fad351f7d20e33c6af1735" category="paragraph">Amazon FSx for NetApp ONTAPはAWSのファーストパーティソリューションであるため、サポートについてはAWSマネジメントコンソールのサポートセンターを使用し、「FSx for ONTAP」を選択してケースをオープンしてください。Workload Factoryまたはそのアプリケーションとサービスに関する一般的な質問については、<block ref="b373eb075b7d6f2dc82d0ceae72b0277" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="7e286d8febc5746f20c7282a62edee9c" category="sidebar">EDA向けNetApp Workload FactoryのFAQ</block>
 </blocks>
