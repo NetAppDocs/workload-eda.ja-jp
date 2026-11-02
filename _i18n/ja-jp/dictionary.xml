@@ -720,9 +720,6 @@
   <block id="b6c7799b0c3cb63df1897b6e33e5ffe9" category="list-text">*認証情報*：複数のAWS認証情報を設定している場合は、特定の認証情報でフィルタリングしてください</block>
   <block id="dd10257a52cc4af5c67ff37ab0bb4d74" category="list-text">*リージョン*：1つ以上のAWSリージョンでフィルタリングします</block>
   <block id="fb3123e7d905f809c3bdf82e3ceca6af" category="section-title">クラスタの健全性ステータスを表示する</block>
-  <block id="7da261fafbc98c685b2c0c780ccdbcf1" category="paragraph">クラスタの健全性ステータスには、次の主要な領域が含まれます。</block>
-  <block id="ac97fe213f96cc9db6b4ee38d70f798b" category="list-text">*レイテンシ*：検出されたレイテンシイベントの数</block>
-  <block id="a51f6183fddbec434723cff9a6cb22f0" category="list-text">*ONTAPイベント*：カテゴリ別（容量、可用性と保護、セキュリティ、その他）のEMSイベント数</block>
   <block id="c569953f651916e8d6fb2a2e26996486" category="list-text">ダッシュボード上部のクラスタの健全性ステータスを確認します。</block>
   <block id="45cd3072594a40004f1648f957b11b4f" category="list-text">レイテンシイベントを表示するには：</block>
   <block id="9bab24fe4c951c13841b658922a21a8b" category="list-text">*Review*を選択して*Latency*タブに移動します</block>
@@ -735,8 +732,6 @@
   <block id="37b5b20fd94de2275a255ae79e7ac8f0" category="list-text">推奨事項を適用するには、推奨事項メッセージに記載されているガイダンスに従ってください。</block>
   <block id="95138c66b91ee03084dfba9068536d5e" category="section-title">SSD管理モードを変更する</block>
   <block id="b689124bbd04a08329d8f616990fa06d" category="list-text">お好みのモードを選択してください：</block>
-  <block id="84a7874f129070a914f70dd3d70a6716" category="section-title">容量の傾向と意思決定ポイントを分析する</block>
-  <block id="4dbca2bab9fb0222adee0d079e0d2127" category="paragraph">グラフ上の決定点は、次の時点を示します：</block>
   <block id="e307894bdae8efc4f4fdacf666cf2573" category="section-title">クラスタテーブルを使用する</block>
   <block id="88dc1144edaa697995919551780b6e93" category="list-text">* Overview * タブから、クラスタテーブルを確認します。</block>
   <block id="8e6be07248fc78ed27f8d01305999436" category="list-text">検索ボックスを使用して、名前で特定のファイルシステムを検索します。</block>
@@ -890,7 +885,6 @@
   <block id="5b9d5469c481b2fd86bb70731779a54a" category="paragraph">各ファイルシステムについて、SSD容量の管理方法を選択します。手動による推奨設定を受け取るか、自動スケーリングを許可するかを選択できます。</block>
   <block id="75be33f2f4cc39082bea6e44e8406df7" category="paragraph">ファイルシステムはすぐに新しいモードに切り替わります。「推奨」または「自動化」を選択した場合、システムは設定された内容に基づいてストレージ容量を分析し、判断を下します。</block>
   <block id="65bd457971cf8d44b2a0e065d040b668" category="paragraph">SSD使用状況グラフを使用して、ストレージ使用量が時間とともにどのように変化するかを確認し、パターンを見つけてください。</block>
-  <block id="adcae559988943cef6bf4b9ce78904b2" category="list-text">*自動化の決定ポイント*：自動化システムはSSD容量を増やそうとしました。これらのポイントは、その操作が成功したか失敗したかを示しています。</block>
   <block id="27e86a81d2f78cd7f4181479163bbbeb" category="paragraph">クラスターテーブルには、パフォーマンスおよび使用状況のメトリクスとともに、各 FSx for ONTAP ファイルシステムの詳細ビューが表示されます。</block>
   <block id="27a39463cff24c056326230d2490c6d4" category="list-text">*定期的な監視*：ダッシュボードを頻繁に確認し、問題になる前に傾向を把握しましょう。</block>
   <block id="5f387dd12e491b49648cab4ae9d1263e" category="list-text">**フィルターを使用する**：地域とアカウントのフィルターを適用して、確認したいインフラストラクチャの部分に絞り込みます。</block>
@@ -935,7 +929,6 @@
   <block id="7e9591a005bdef4cdf16dfd575186f3b" category="paragraph">表示を調整することで、レイテンシの急増とIOPSおよびスループットの変化との相関関係を把握できます。違反マーカーとホバー時の詳細情報により、しきい値を超えたタイミングを確認したり、検出された違反に関する主要な指標をレビューしたりできます。</block>
   <block id="94865ed9933801afc860536ada02e496" category="summary">FSx for ONTAP ボリュームのパフォーマンスの問題を見つけるために、レイテンシーイベントを表示および分析します。基本的な分析と、必要に応じて AI 分析を使用して、根本原因と推奨される修正策を特定します。</block>
   <block id="939c818555e5fa65655d447cc97817ae" category="section-title">しきい値を超えるレイテンシを持つボリュームを表示する</block>
-  <block id="f06921222f3510361d45443110e72880" category="list-text">表に記載されている各イベントの情報を確認してください。</block>
   <block id="3cd32cbc73706e6bc220ece19622d604" category="list-text">レイテンシー分析パネルでは、レイテンシーチャートや時間枠、種類などの制御機能を含め、侵害の状況を素早く確認できます。「完全な分析を表示」を選択すると、基本分析、AI分析（オプション）、および追加のグラフを含む詳細なレイテンシー分析ページが開きます。詳細については、<block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="0665519f24690502dfcb8f5913d6b056" category="paragraph">*重大度*列でレイテンシイベントを選択すると、そのイベントのレイテンシ分析パネルが開きます。このパネルには、レイテンシイベントのさまざまな表示方法を示すタブが含まれています。</block>
   <block id="0f76eb72044a145a7b1eb778e6653a96" category="list-text">*基本*：自動分析の結果を表示します。ファイルシステムにリンクされている場合、コンポーネントの内訳を表示し、どのコンポーネントが遅延の原因となっているかを示します。リンクが存在しない場合は、追加するように促されます。影響を受けたボリュームの CloudWatch メトリクスのインタラクティブなレイテンシーグラフが表示されます。イベントをトリガーしたアラームに応じて、読み取りまたは書き込みのメトリクスが表示されます。異なる期間を選択したり、フィルターを使用して「すべて」、「読み取り」、「書き込み」、またはメタデータの操作を表示したりできます。</block>
@@ -1035,7 +1028,6 @@
   <block id="42e48676b85dbff1f2792294e6831dc0" category="list-text">「フィルターを追加」を選択します。</block>
   <block id="c71e0da6508887a77f334a554ab5495a" category="summary">概要ダッシュボードを使用して、クラスターの状態を監視し、容量に関する推奨事項を表示し、SSD とスループットの設定を管理し、FSx for ONTAP ファイルシステム全体のパフォーマンス傾向を分析します。</block>
   <block id="4c3cb97ad8dafb44b4527de840549941" category="paragraph">概要ダッシュボードを使用して、FSx for ONTAP ファイルシステムの健全性と容量を確認します。データをフィルタリングしたり、容量に関する推奨事項を確認したり、SSD とスループットの設定を調整したり、パフォーマンスの傾向を分析したりすることで、ボリュームの配置場所や容量を拡張するタイミングを決定するのに役立ちます。</block>
-  <block id="3e245db3deb2fe7b566f9dfe8f122ad3" category="list-text">*ファイルシステムの柔軟性*：</block>
   <block id="f3e0de8b6d05c856fde2eaa835f504ef" category="section-title">容量またはスループットに関する推奨事項を表示して適用する</block>
   <block id="e07b408f972ad269d9fed5451f31d8c9" category="paragraph">Workload Factory は、各 FSx for ONTAP ファイルシステムに対して推奨事項を自動的に実行します。クラスターテーブルをフィルタリングすることで、推奨事項があるファイルシステムを見つけることができます。</block>
   <block id="134805f5ae47607c74a2fad588bcc889" category="list-text">「クラスター」テーブルで、関連する時間または詳細の列でフィルタリングします。</block>
@@ -1057,7 +1049,6 @@
   <block id="91455d18a42b79b1a34df0d97bfbaffd" category="list-text">*最小レイテンシ（ms）*：スループット増加を決定するために使用されるレイテンシのしきい値</block>
   <block id="0a2daf37cc4cac8c9a3da95290e9a399" category="list-text">*最大スループット（SKU）*：許可される最大スループット SKU</block>
   <block id="6b482ace535080820ca5dea3bb557cb6" category="paragraph">選択されたファイルシステムは、直ちに新しいスループットモードに切り替わります。</block>
-  <block id="232af3ec8ca37d39f0b49ddb6c81830a" category="list-text">*推奨決定ポイント*：容量推奨アルゴリズムにより、追加のSSD容量が必要であることが判明しました。</block>
   <block id="0d606a9207ef786e2b3dc99ea3fe3ad8" category="list-text">**明確なしきい値を設定する**：ワークロードと容量計画に合ったSSD使用率のしきい値とスループットパラメータを選択します。</block>
   <block id="c6e183b5112db7515b7bc4904a3b374b" category="list-text">**推奨事項をすばやく確認**：クラスターテーブルをフィルタリングして、容量またはスループットの推奨事項があるファイルシステムを見つけます。容量不足にならないよう、確認して適切な対策を講じてください。</block>
   <block id="0ecfcdfed86b687b39299cccc3380def" category="list-text">**適切なモードを選択してください**：容量やスループットの変更を自分で承認する場合は、**Recommend** モードを使用してください。システムに容量やスループットを自動的に管理させたい場合は、**Automate** モードを使用してください。</block>
@@ -1084,11 +1075,8 @@
   <block id="e920df7cb27871af178ff85a428a8b4e" category="list-text">*詳細設定*で、スループット管理パラメータを設定します：</block>
   <block id="39122245b5363dc3871538d2ef59784e" category="list-text">*連続違反期間（時間）*：措置を講じるまでの連続違反の継続時間</block>
   <block id="a9d111294543c201d767519d991c1b8d" category="list-text">*連続違反指標（％）*：連続違反を判断するためのパーセンテージしきい値</block>
-  <block id="d385fd0ac858ff17553d407851f64c48" category="paragraph">SSD容量管理がオフになっている場合、グラフには過去の使用状況のみが表示され、推奨事項や自動化による決定は表示されません。</block>
-  <block id="1de4de358ec9c3a1cd36180e2c13a443" category="list-text">「概要」タブから、表のファイルシステム名を選択します。クラスタの詳細ビューで、「スループット」または「SSD 容量」オプションを選択して、グラフの表示を切り替えます。</block>
   <block id="a01346bc61a98c025144199b0893e264" category="paragraph">*スループット*を選択すると、グラフにクライアントのスループットと利用率が表示され、需要を設定されたスループットレベルとしきい値と比較できます。</block>
   <block id="e56ecd5b4053d7385c23bb7c3422bdd5" category="paragraph">*SSD Capacity* を選択すると、グラフにはSSDの使用状況が表示され、過去の容量推移や容量決定ポイントも確認できます。</block>
-  <block id="d73906b15c9fc84c1806084ce8720a42" category="paragraph">異なる期間におけるスループットや容量の傾向を確認するには、異なる期間を選択してください。。グラフ上の決定ポイントにカーソルを合わせると、特定の時点における推奨事項や自動化アクションの詳細が表示されます。。グラフから得られる情報を活用して、以下のことを行います。* 容量調整が必要な頻度を把握する * ワークロードパターンに自動化モードと推奨モードのどちらがより適しているかを評価する * 繰り返し発生する容量制約を特定する * 成長傾向に基づいて将来の容量ニーズを計画する * 自動化の失敗をトラブルシューティングする</block>
   <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026年9月30日</block>
   <block id="e52235241b1ae81de07e54f4309b150e" category="summary">EDA向けNetApp Workload Factoryに関するよくある質問。</block>
   <block id="f66051160a7d32c47d92cf8ad2688857" category="doc">Workload Factory for EDAに関するよくある質問</block>
@@ -1137,4 +1125,42 @@
   <block id="944e61de0f91bfc0cd15e211ebfe75af" category="inline-link-macro">EDAの支援を受ける</block>
   <block id="1b3bafacd5fad351f7d20e33c6af1735" category="paragraph">Amazon FSx for NetApp ONTAPはAWSのファーストパーティソリューションであるため、サポートについてはAWSマネジメントコンソールのサポートセンターを使用し、「FSx for ONTAP」を選択してケースをオープンしてください。Workload Factoryまたはそのアプリケーションとサービスに関する一般的な質問については、<block ref="b373eb075b7d6f2dc82d0ceae72b0277" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="7e286d8febc5746f20c7282a62edee9c" category="sidebar">EDA向けNetApp Workload FactoryのFAQ</block>
+  <block id="c13ffbb74415f75e6bfbceb28746aa00" category="doc">レイテンシー分析におけるボリュームの詳細</block>
+  <block id="e702df4af5908b691938e2a636bf0d11" category="paragraph">*詳細なレイテンシ分析*ページで、追加のボリューム詳細である*ボリュームタイプ*（RW/DP）および*ボリュームスタイル*（FlexVolおよびFlexGroup）を表示できるようになりました。</block>
+  <block id="84040e078366ab4b302c9f45a3caa89d" category="section-title">ファイルシステムのレイテンシイベントに対する負荷チェック</block>
+  <block id="06aefa6560003b3171cd7662ef2b3d9d" category="paragraph">レイテンシアラートが設定されているボリュームについては、イベント発生時にファイルシステムがパフォーマンスに影響を与えるほどの負荷を受けていたかどうかを確認できるようになりました。イベント発生前の40分間のCloudWatchデータを表示し、ファイルシステムへのリンクをたどってさらに調査することができます。</block>
+  <block id="3e7850720206a5fe00f7310f49f139ef" category="inline-link-macro">レイテンシ傾向の分析について</block>
+  <block id="4082bd9c59dc64a78f083ec07f0f1ade" category="paragraph"><block ref="e0c19bfe1186d72bb091851a5915268f" category="inline-link-macro-rx"></block>。</block>
+  <block id="84ae0158deb3f95e6027fdf8d5ff467d" category="section-title">スループット決定ポイント</block>
+  <block id="d561222faafa1c2e107d8307549a4372" category="paragraph">クライアントのスループットに関する推奨事項と、自動化の決定ポイントを確認できるようになりました。決定ポイントにカーソルを合わせると、現在のSKUと推奨SKU、または一定期間内に違反した指標（%）などの詳細情報が表示されます。</block>
+  <block id="e7e1d8130eb396a11055ef0aad27b20c" category="inline-link-macro">意思決定ポイントについて学ぶ</block>
+  <block id="b1b6afda8cefc68653435f204de78f32" category="paragraph"><block ref="c182c1de3b13ab1f612ac32dab94169a" category="inline-link-macro-rx"></block>。</block>
+  <block id="1e67c2facf6c9ccaed8c578497980ba2" category="section-title">レイテンシー分析を再実行</block>
+  <block id="95386ac844fe5334b9e7743d6098dfab" category="paragraph">*分析を再度実行* を選択して、ボリュームの新しいレイテンシ分析を開始し、オンデマンドで結果を更新できるようになりました。</block>
+  <block id="1e2beb43d53ce6e7e78ce598ad680f34" category="inline-link-macro">遅延問題の分析について</block>
+  <block id="7ab17ff19aa466bc8531cc7568dea5a6" category="paragraph"><block ref="13291cb64cb4778475d22fb041bce2e0" category="inline-link-macro-rx"></block>。</block>
+  <block id="faffdafc286086cc0dbf1bbb1be9ad24" category="section-title">ファイルシステムの負荷</block>
+  <block id="b174f2d4d910ae1039afecd55cf7605d" category="paragraph">レイテンシアラートのあるボリュームについては、オンデマンドチェックを実行して、イベント発生時にファイルシステムにパフォーマンスに影響を与えるほどの負荷がかかっていたかどうかを確認できます。このチェックでは、イベント前の40分間のCloudWatchデータを確認し、*Pressured* または *Not pressured* のいずれかを返します。Pressuredという結果は、ファイルシステムの負荷がパフォーマンスとレイテンシに影響を与えた可能性が80%以上あることを意味します。このチェックにはFSx for ONTAPリソースへのリンクも含まれているため、関連する指標を確認できます。</block>
+  <block id="e886df54588d52e0380fc881467880b0" category="section-title">スループット決定ポイントの理解</block>
+  <block id="d5b00b16ab6db83fdf23282158c24ffc" category="paragraph">クライアントのスループットグラフは、システムが推奨するスループットが変更された時、またはスループットが自動的に調整された時を示します。これらのマーカーはグラフの凡例にも表示されます。スループット管理がオフになっている場合、グラフには過去のスループットのみが表示され、推奨事項や自動変更は表示されません。</block>
+  <block id="1478d9dba08b46cdbef08e98cdb80335" category="list-text">システムがスループットの増加が必要だと判断した場合に表示されます。決定ポイントにカーソルを合わせると詳細が表示されます。同じタイムスタンプで複数の推奨事項が発生した場合、そのポイントには推奨事項の数と、最新の推奨事項の詳細が表示されます。</block>
+  <block id="0c990789e7c8c34746cdf8245924ae90" category="list-text">自動化システムがスループットを向上させようとした際に表示されます。決定ポイントにカーソルを合わせると詳細が表示されます。向上が成功した場合、新しいSKUも表示されます。失敗した場合は、代わりに簡単な説明が表示されます。複数の失敗が同時に発生した場合、ポイントには失敗の回数と直近の失敗の詳細が表示されます。</block>
+  <block id="c6f02cbeb83957a98e034aa44ac8d06b" category="paragraph">クライアントスループットグラフを使用して、次の操作を行います：</block>
+  <block id="bcc32ea0c2c748a56864977ad681aae4" category="list-text">スループットの向上をどのくらいの頻度で必要とするかを確認してください</block>
+  <block id="627aca367632fb159e4a6c08e87b8226" category="list-text">自動化モードと推奨モードのどちらがニーズに合っているかを選択してください</block>
+  <block id="c44c2990e89eee02f130dbf8adf9df07" category="list-text">繰り返し発生するスループット制限を特定する</block>
+  <block id="47c3141ddd1f9f9483f34cdb8af8ae43" category="list-text">時間の経過とともに使用量が増加するため、将来のスループットニーズを計画してください</block>
+  <block id="77940ad0aaabd15b52dda5e8a86f480b" category="list-text">結果を更新するには、*分析を再度実行*を選択します。当該ボリュームに対して新たな分析が開始され、分析が完了するとパネルが更新されます。</block>
+  <block id="6f751f6512545197043d490e308e9992" category="section-title">容量とスループットの傾向と意思決定ポイントを分析する</block>
+  <block id="322cceacdd52c951c88a1d93df7f0dd8" category="list-text">「概要」タブから、表のファイルシステム名を選択します。</block>
+  <block id="ddbda74454b43f792ee3816b12e08af9" category="list-text">クラスタの詳細ビューで、*スループット*または*SSD容量*オプションを選択して、グラフの表示を切り替えます。</block>
+  <block id="d92136d041599b752e93710c829f0583" category="list-text">異なる期間におけるスループットや容量の傾向を確認するには、異なる期間を選択してください。</block>
+  <block id="8d33ce28efafbfe7600930c556bcfd55" category="list-text">グラフ上の決定ポイントにカーソルを合わせると、特定の時点における推奨事項や自動化アクションの詳細が表示されます。</block>
+  <block id="4d43a6d1e695bf0a99e5bc33d3ca3fda" category="list-text">グラフから得られる知見を活用して、次のことを行います。</block>
+  <block id="8aa0b0a22cf225f503177c8f1de7df3c" category="list-text">容量調整がどのくらいの頻度で必要になるかを理解する</block>
+  <block id="dc036d0aefd6c43f7e0e90f879128e16" category="list-text">自動化モードと推奨モードのどちらがワークロードパターンに適しているかを評価してください。</block>
+  <block id="274e06045627d8934cd9bb52e8c64f53" category="list-text">繰り返し発生する容量制約を特定する</block>
+  <block id="38e979158d55ae25a36aba4d97b0a8b4" category="list-text">成長傾向に基づいて将来の容量ニーズを計画する</block>
+  <block id="2814ccd9bf1ef1faffa5931e29ee7f74" category="list-text">自動化の失敗に関するトラブルシューティング</block>
+  <block id="7dc50386b3284326e1114e4e7f4eb3fd" category="section-title">2026年11月1日</block>
 </blocks>

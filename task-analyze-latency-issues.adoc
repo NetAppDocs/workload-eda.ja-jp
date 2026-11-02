@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-analyze-latency-issues.html 
-keywords: latency analysis, analyze latency, latency events, root cause analysis, QoS delay center, AI analysis, latency troubleshooting, volume latency, basic analysis, affected clients, remediation steps, iops, throughput 
+keywords: latency analysis, analyze latency, latency events, root cause analysis, QoS delay center, AI analysis, latency troubleshooting, volume latency, basic analysis, affected clients, remediation steps, iops, throughput, analysis status 
 summary: FSx for ONTAP ボリュームのパフォーマンスの問題を見つけるために、レイテンシーイベントを表示および分析します。基本的な分析と、必要に応じて AI 分析を使用して、根本原因と推奨される修正策を特定します。 
 ---
 = Workload Factory for EDAにおけるレイテンシーの問題を分析する
@@ -37,7 +37,6 @@ summary: FSx for ONTAP ボリュームのパフォーマンスの問題を見つ
 . 次のいずれかを使用してログインします link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソール体験"^]。
 . メニューimage:workloads-menu-icon.png["ハンバーガーメニューアイコン"]を選択し、*EDA*を選択します。
 . *レイテンシ*タブを選択します。
-. 表に記載されている各イベントの情報を確認してください。
 . 遅延イベントの詳細を表示するには、*重大度*列で該当するイベントを選択してください。これにより、そのイベントの遅延分析パネルが開きます。
 . テーブルを並べ替えるには、任意の列ヘッダーを選択してください。デフォルトでは、まず重大なイベントが時間順に表示され、次に警告イベントが時間順に表示されます。
 . 1つまたは複数のイベントを破棄するには、各イベントの横にあるimage:icon-action.png["アクション メニュー アイコン"]*却下*を選択します。
@@ -92,6 +91,7 @@ AI分析の利用可否は、アカウント設定によって異なります。
 
 
 . *完全な分析を表示*を選択すると、選択した期間におけるCloudWatchメトリクスのボリュームレイテンシ、IOPS、スループットを示すパフォーマンスチャートを含む、AI分析の完全な結果が表示されます。
+. 結果を更新するには、*分析を再度実行*を選択します。当該ボリュームに対して新たな分析が開始され、分析が完了するとパネルが更新されます。
 . 遅延の問題を解決するには、推奨される手順に従ってください。
 . 変更を加えた後、レイテンシイベントテーブルを確認して、問題が解決されたことを確認してください。
 

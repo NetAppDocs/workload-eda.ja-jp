@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: learn-latency-monitoring.html 
-keywords: latency analysis, CloudWatch alarms, volume latency, read latency, write latency, critical events, warning events, latency thresholds, IOPS thresholds, latency monitoring, FSx for ONTAP, root cause analysis, QoS delay center, automated analysis 
+keywords: latency analysis, CloudWatch alarms, volume latency, read latency, write latency, critical events, warning events, latency thresholds, IOPS thresholds, latency monitoring, FSx for ONTAP, root cause analysis, QoS delay center, automated analysis, file system pressure 
 summary: Workload Factory for EDA のレイテンシー監視が、自動基本分析とオプションの AI 分析を使用して FSx for ONTAP ボリュームのパフォーマンス問題の検出と分析にどのように役立つかについて説明します。 
 ---
 = Workload Factory for EDAにおけるレイテンシ監視について学ぶ
@@ -124,6 +124,13 @@ AI分析を実行すると、システムは以下を提供します：
 * *影響を受けるクライアント*：レイテンシの影響を受けるEC2インスタンス名のリスト
 * *潜在的な修復手順*：問題を解決するための2つ以上の具体的なアクション
 
+
+
+
+[[file-system-pressure]]
+=== ファイルシステムの負荷
+
+レイテンシアラートのあるボリュームについては、オンデマンドチェックを実行して、イベント発生時にファイルシステムにパフォーマンスに影響を与えるほどの負荷がかかっていたかどうかを確認できます。このチェックでは、イベント前の40分間のCloudWatchデータを確認し、*Pressured* または *Not pressured* のいずれかを返します。Pressuredという結果は、ファイルシステムの負荷がパフォーマンスとレイテンシに影響を与えた可能性が80%以上あることを意味します。このチェックにはFSx for ONTAPリソースへのリンクも含まれているため、関連する指標を確認できます。
 
 
 
